@@ -1,0 +1,2984 @@
+{
+  "name": [
+    {
+      "name": "三",
+      "pinyin": "sān"
+    },
+    {
+      "name": "只",
+      "pinyin": "zhǐ"
+    },
+    {
+      "name": "小",
+      "pinyin": "xiǎo"
+    },
+    {
+      "name": "猪",
+      "pinyin": "zhū"
+    }
+  ],
+  "story": [
+    [
+      {
+        "name": "猪",
+        "pinyin": "zhū"
+      },
+      {
+        "name": "妈",
+        "pinyin": "mā"
+      },
+      {
+        "name": "妈",
+        "pinyin": "mā"
+      },
+      {
+        "name": "有",
+        "pinyin": "yǒu"
+      },
+      {
+        "name": "三",
+        "pinyin": "sān"
+      },
+      {
+        "name": "个",
+        "pinyin": "gè"
+      },
+      {
+        "name": "孩",
+        "pinyin": "hái"
+      },
+      {
+        "name": "子，",
+        "pinyin": "zi"
+      },
+      {
+        "name": "老",
+        "pinyin": "lǎo"
+      },
+      {
+        "name": "大",
+        "pinyin": "dà"
+      },
+      {
+        "name": "叫",
+        "pinyin": "jiào"
+      },
+      {
+        "name": "呼",
+        "pinyin": "hū"
+      },
+      {
+        "name": "呼，",
+        "pinyin": "hū"
+      },
+      {
+        "name": "老",
+        "pinyin": "lǎo"
+      },
+      {
+        "name": "二",
+        "pinyin": "èr"
+      },
+      {
+        "name": "叫",
+        "pinyin": "jiào"
+      },
+      {
+        "name": "噜",
+        "pinyin": "lū"
+      },
+      {
+        "name": "噜，",
+        "pinyin": "lū"
+      },
+      {
+        "name": "还",
+        "pinyin": "hái"
+      },
+      {
+        "name": "有",
+        "pinyin": "yǒu"
+      },
+      {
+        "name": "一",
+        "pinyin": "yī"
+      },
+      {
+        "name": "个",
+        "pinyin": "gè"
+      },
+      {
+        "name": "老",
+        "pinyin": "lǎo"
+      },
+      {
+        "name": "三",
+        "pinyin": "sān"
+      },
+      {
+        "name": "叫",
+        "pinyin": "jiào"
+      },
+      {
+        "name": "嘟",
+        "pinyin": "dū"
+      },
+      {
+        "name": "嘟。",
+        "pinyin": "dū"
+      }
+    ],
+    [
+      {
+        "name": "有",
+        "pinyin": "yǒu"
+      },
+      {
+        "name": "一",
+        "pinyin": "yī"
+      },
+      {
+        "name": "天，",
+        "pinyin": "tiān"
+      },
+      {
+        "name": "猪",
+        "pinyin": "zhū"
+      },
+      {
+        "name": "妈",
+        "pinyin": "mā"
+      },
+      {
+        "name": "妈",
+        "pinyin": "mā"
+      },
+      {
+        "name": "对",
+        "pinyin": "dùi"
+      },
+      {
+        "name": "小",
+        "pinyin": "xiǎo"
+      },
+      {
+        "name": "猪",
+        "pinyin": "zhū"
+      },
+      {
+        "name": "说：“",
+        "pinyin": "shuō"
+      },
+      {
+        "name": "现",
+        "pinyin": "xiàn"
+      },
+      {
+        "name": "在，",
+        "pinyin": "zài"
+      },
+      {
+        "name": "你",
+        "pinyin": "nǐ"
+      },
+      {
+        "name": "们",
+        "pinyin": "men"
+      },
+      {
+        "name": "已",
+        "pinyin": "yǐ"
+      },
+      {
+        "name": "经",
+        "pinyin": "jīng"
+      },
+      {
+        "name": "长",
+        "pinyin": "zhǎng"
+      },
+      {
+        "name": "大",
+        "pinyin": "dà"
+      },
+      {
+        "name": "了，",
+        "pinyin": "le"
+      },
+      {
+        "name": "应",
+        "pinyin": "yīng"
+      },
+      {
+        "name": "该",
+        "pinyin": "gāi"
+      },
+      {
+        "name": "学",
+        "pinyin": "xúe"
+      },
+      {
+        "name": "一",
+        "pinyin": "yī"
+      },
+      {
+        "name": "些",
+        "pinyin": "xīe"
+      },
+      {
+        "name": "本",
+        "pinyin": "běn"
+      },
+      {
+        "name": "领。",
+        "pinyin": "lǐng"
+      },
+      {
+        "name": "你",
+        "pinyin": "nǐ"
+      },
+      {
+        "name": "们",
+        "pinyin": "men"
+      },
+      {
+        "name": "各",
+        "pinyin": "gè"
+      },
+      {
+        "name": "自",
+        "pinyin": "zì"
+      },
+      {
+        "name": "去",
+        "pinyin": "qù"
+      },
+      {
+        "name": "盖",
+        "pinyin": "gài"
+      },
+      {
+        "name": "一",
+        "pinyin": "yī"
+      },
+      {
+        "name": "座",
+        "pinyin": "zuò"
+      },
+      {
+        "name": "房",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "子",
+        "pinyin": "zi"
+      },
+      {
+        "name": "吧!”",
+        "pinyin": "ba"
+      },
+      {
+        "name": "三",
+        "pinyin": "sān"
+      },
+      {
+        "name": "只",
+        "pinyin": "zhǐ"
+      },
+      {
+        "name": "小",
+        "pinyin": "xiǎo"
+      },
+      {
+        "name": "猪",
+        "pinyin": "zhū"
+      },
+      {
+        "name": "问：“",
+        "pinyin": "wèn"
+      },
+      {
+        "name": "妈",
+        "pinyin": "mā"
+      },
+      {
+        "name": "妈，",
+        "pinyin": "mā"
+      },
+      {
+        "name": "用",
+        "pinyin": "yòng"
+      },
+      {
+        "name": "什",
+        "pinyin": "shén"
+      },
+      {
+        "name": "么",
+        "pinyin": "me"
+      },
+      {
+        "name": "东",
+        "pinyin": "dōng"
+      },
+      {
+        "name": "西",
+        "pinyin": "xī"
+      },
+      {
+        "name": "盖",
+        "pinyin": "gài"
+      },
+      {
+        "name": "房",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "子",
+        "pinyin": "zi"
+      },
+      {
+        "name": "呢?”",
+        "pinyin": "ní"
+      },
+      {
+        "name": "猪",
+        "pinyin": "zhū"
+      },
+      {
+        "name": "妈",
+        "pinyin": "mā"
+      },
+      {
+        "name": "妈",
+        "pinyin": "mā"
+      },
+      {
+        "name": "说：“",
+        "pinyin": "shuō"
+      },
+      {
+        "name": "稻",
+        "pinyin": "dào"
+      },
+      {
+        "name": "草、",
+        "pinyin": "cǎo"
+      },
+      {
+        "name": "木",
+        "pinyin": "mù"
+      },
+      {
+        "name": "头、",
+        "pinyin": "tóu"
+      },
+      {
+        "name": "砖",
+        "pinyin": "zhuān"
+      },
+      {
+        "name": "都",
+        "pinyin": "dōu"
+      },
+      {
+        "name": "可",
+        "pinyin": "kě"
+      },
+      {
+        "name": "以",
+        "pinyin": "yǐ"
+      },
+      {
+        "name": "盖",
+        "pinyin": "gài"
+      },
+      {
+        "name": "房",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "子，",
+        "pinyin": "zi"
+      },
+      {
+        "name": "但",
+        "pinyin": "dàn"
+      },
+      {
+        "name": "是",
+        "pinyin": "shì"
+      },
+      {
+        "name": "草",
+        "pinyin": "cǎo"
+      },
+      {
+        "name": "房",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "没",
+        "pinyin": "méi"
+      },
+      {
+        "name": "有",
+        "pinyin": "yǒu"
+      },
+      {
+        "name": "木",
+        "pinyin": "mù"
+      },
+      {
+        "name": "房",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "结",
+        "pinyin": "jíe"
+      },
+      {
+        "name": "实，",
+        "pinyin": "shí"
+      },
+      {
+        "name": "木",
+        "pinyin": "mù"
+      },
+      {
+        "name": "房",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "没",
+        "pinyin": "méi"
+      },
+      {
+        "name": "有",
+        "pinyin": "yǒu"
+      },
+      {
+        "name": "砖",
+        "pinyin": "zhuān"
+      },
+      {
+        "name": "房",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "结",
+        "pinyin": "jíe"
+      },
+      {
+        "name": "实。”",
+        "pinyin": "shí"
+      },
+      {
+        "name": "三",
+        "pinyin": "sān"
+      },
+      {
+        "name": "只",
+        "pinyin": "zhǐ"
+      },
+      {
+        "name": "小",
+        "pinyin": "xiǎo"
+      },
+      {
+        "name": "猪",
+        "pinyin": "zhū"
+      },
+      {
+        "name": "高",
+        "pinyin": "gāo"
+      },
+      {
+        "name": "高",
+        "pinyin": "gāo"
+      },
+      {
+        "name": "兴",
+        "pinyin": "xīng"
+      },
+      {
+        "name": "兴",
+        "pinyin": "xīng"
+      },
+      {
+        "name": "走",
+        "pinyin": "zǒu"
+      },
+      {
+        "name": "了。",
+        "pinyin": "le"
+      },
+      {
+        "name": "走",
+        "pinyin": "zǒu"
+      },
+      {
+        "name": "着，",
+        "pinyin": "zhe"
+      },
+      {
+        "name": "走",
+        "pinyin": "zǒu"
+      },
+      {
+        "name": "着，",
+        "pinyin": "zhe"
+      },
+      {
+        "name": "看",
+        "pinyin": "kàn"
+      },
+      {
+        "name": "见",
+        "pinyin": "jiàn"
+      },
+      {
+        "name": "前",
+        "pinyin": "qián"
+      },
+      {
+        "name": "面",
+        "pinyin": "miàn"
+      },
+      {
+        "name": "一",
+        "pinyin": "yī"
+      },
+      {
+        "name": "堆",
+        "pinyin": "dūi"
+      },
+      {
+        "name": "稻",
+        "pinyin": "dào"
+      },
+      {
+        "name": "草。",
+        "pinyin": "cǎo"
+      },
+      {
+        "name": "老",
+        "pinyin": "lǎo"
+      },
+      {
+        "name": "大",
+        "pinyin": "dà"
+      },
+      {
+        "name": "呼",
+        "pinyin": "hū"
+      },
+      {
+        "name": "呼",
+        "pinyin": "hū"
+      },
+      {
+        "name": "忙",
+        "pinyin": "máng"
+      },
+      {
+        "name": "说：“",
+        "pinyin": "shuō"
+      },
+      {
+        "name": "我",
+        "pinyin": "wǒ"
+      },
+      {
+        "name": "就",
+        "pinyin": "jìu"
+      },
+      {
+        "name": "用",
+        "pinyin": "yòng"
+      },
+      {
+        "name": "这",
+        "pinyin": "zhè"
+      },
+      {
+        "name": "稻",
+        "pinyin": "dào"
+      },
+      {
+        "name": "草",
+        "pinyin": "cǎo"
+      },
+      {
+        "name": "盖",
+        "pinyin": "gài"
+      },
+      {
+        "name": "草",
+        "pinyin": "cǎo"
+      },
+      {
+        "name": "房",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "吧。”",
+        "pinyin": "ba"
+      },
+      {
+        "name": "呼",
+        "pinyin": "hū"
+      },
+      {
+        "name": "呼",
+        "pinyin": "hū"
+      },
+      {
+        "name": "的",
+        "pinyin": "de"
+      },
+      {
+        "name": "草",
+        "pinyin": "cǎo"
+      },
+      {
+        "name": "房",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "只",
+        "pinyin": "zhǐ"
+      },
+      {
+        "name": "花",
+        "pinyin": "huā"
+      },
+      {
+        "name": "了",
+        "pinyin": "le"
+      },
+      {
+        "name": "三",
+        "pinyin": "sān"
+      },
+      {
+        "name": "个",
+        "pinyin": "gè"
+      },
+      {
+        "name": "小",
+        "pinyin": "xiǎo"
+      },
+      {
+        "name": "时",
+        "pinyin": "shí"
+      },
+      {
+        "name": "就",
+        "pinyin": "jìu"
+      },
+      {
+        "name": "盖",
+        "pinyin": "gài"
+      },
+      {
+        "name": "好",
+        "pinyin": "hǎo"
+      },
+      {
+        "name": "了。",
+        "pinyin": "le"
+      },
+      {
+        "name": "老",
+        "pinyin": "lǎo"
+      },
+      {
+        "name": "二",
+        "pinyin": "èr"
+      },
+      {
+        "name": "噜",
+        "pinyin": "lū"
+      },
+      {
+        "name": "噜",
+        "pinyin": "lū"
+      },
+      {
+        "name": "和",
+        "pinyin": "hé"
+      },
+      {
+        "name": "老",
+        "pinyin": "lǎo"
+      },
+      {
+        "name": "三",
+        "pinyin": "sān"
+      },
+      {
+        "name": "嘟",
+        "pinyin": "dū"
+      },
+      {
+        "name": "嘟",
+        "pinyin": "dū"
+      },
+      {
+        "name": "一",
+        "pinyin": "yī"
+      },
+      {
+        "name": "起",
+        "pinyin": "qǐ"
+      },
+      {
+        "name": "向",
+        "pinyin": "xiàng"
+      },
+      {
+        "name": "前",
+        "pinyin": "qián"
+      },
+      {
+        "name": "走",
+        "pinyin": "zǒu"
+      },
+      {
+        "name": "去，",
+        "pinyin": "qù"
+      },
+      {
+        "name": "走",
+        "pinyin": "zǒu"
+      },
+      {
+        "name": "着，",
+        "pinyin": "zhe"
+      },
+      {
+        "name": "走",
+        "pinyin": "zǒu"
+      },
+      {
+        "name": "着，",
+        "pinyin": "zhe"
+      },
+      {
+        "name": "看",
+        "pinyin": "kàn"
+      },
+      {
+        "name": "见",
+        "pinyin": "jiàn"
+      },
+      {
+        "name": "前",
+        "pinyin": "qián"
+      },
+      {
+        "name": "面",
+        "pinyin": "miàn"
+      },
+      {
+        "name": "有",
+        "pinyin": "yǒu"
+      },
+      {
+        "name": "一",
+        "pinyin": "yī"
+      },
+      {
+        "name": "堆",
+        "pinyin": "dūi"
+      },
+      {
+        "name": "木",
+        "pinyin": "mù"
+      },
+      {
+        "name": "头。",
+        "pinyin": "tóu"
+      },
+      {
+        "name": "老",
+        "pinyin": "lǎo"
+      },
+      {
+        "name": "二",
+        "pinyin": "èr"
+      },
+      {
+        "name": "噜",
+        "pinyin": "lū"
+      },
+      {
+        "name": "噜",
+        "pinyin": "lū"
+      },
+      {
+        "name": "连",
+        "pinyin": "lián"
+      },
+      {
+        "name": "忙",
+        "pinyin": "máng"
+      },
+      {
+        "name": "说：“",
+        "pinyin": "shuō"
+      },
+      {
+        "name": "我",
+        "pinyin": "wǒ"
+      },
+      {
+        "name": "就",
+        "pinyin": "jìu"
+      },
+      {
+        "name": "用",
+        "pinyin": "yòng"
+      },
+      {
+        "name": "这",
+        "pinyin": "zhè"
+      },
+      {
+        "name": "木",
+        "pinyin": "mù"
+      },
+      {
+        "name": "头",
+        "pinyin": "tóu"
+      },
+      {
+        "name": "盖",
+        "pinyin": "gài"
+      },
+      {
+        "name": "间",
+        "pinyin": "jiān"
+      },
+      {
+        "name": "木",
+        "pinyin": "mù"
+      },
+      {
+        "name": "房",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "吧。”",
+        "pinyin": "ba"
+      },
+      {
+        "name": "噜",
+        "pinyin": "lū"
+      },
+      {
+        "name": "噜",
+        "pinyin": "lū"
+      },
+      {
+        "name": "的",
+        "pinyin": "de"
+      },
+      {
+        "name": "木",
+        "pinyin": "mù"
+      },
+      {
+        "name": "房",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "在",
+        "pinyin": "zài"
+      },
+      {
+        "name": "三",
+        "pinyin": "sān"
+      },
+      {
+        "name": "天",
+        "pinyin": "tiān"
+      },
+      {
+        "name": "内",
+        "pinyin": "nèi"
+      },
+      {
+        "name": "也",
+        "pinyin": "yě"
+      },
+      {
+        "name": "盖",
+        "pinyin": "gài"
+      },
+      {
+        "name": "好",
+        "pinyin": "hǎo"
+      },
+      {
+        "name": "了。",
+        "pinyin": "le"
+      },
+      {
+        "name": "老",
+        "pinyin": "lǎo"
+      },
+      {
+        "name": "三",
+        "pinyin": "sān"
+      },
+      {
+        "name": "嘟",
+        "pinyin": "dū"
+      },
+      {
+        "name": "嘟",
+        "pinyin": "dū"
+      },
+      {
+        "name": "还",
+        "pinyin": "hái"
+      },
+      {
+        "name": "是",
+        "pinyin": "shì"
+      },
+      {
+        "name": "向",
+        "pinyin": "xiàng"
+      },
+      {
+        "name": "前",
+        "pinyin": "qián"
+      },
+      {
+        "name": "走",
+        "pinyin": "zǒu"
+      },
+      {
+        "name": "去，",
+        "pinyin": "qù"
+      },
+      {
+        "name": "走",
+        "pinyin": "zǒu"
+      },
+      {
+        "name": "着，",
+        "pinyin": "zhe"
+      },
+      {
+        "name": "走",
+        "pinyin": "zǒu"
+      },
+      {
+        "name": "着，",
+        "pinyin": "zhe"
+      },
+      {
+        "name": "看",
+        "pinyin": "kàn"
+      },
+      {
+        "name": "见",
+        "pinyin": "jiàn"
+      },
+      {
+        "name": "前",
+        "pinyin": "qián"
+      },
+      {
+        "name": "面",
+        "pinyin": "miàn"
+      },
+      {
+        "name": "有",
+        "pinyin": "yǒu"
+      },
+      {
+        "name": "一",
+        "pinyin": "yī"
+      },
+      {
+        "name": "堆",
+        "pinyin": "dūi"
+      },
+      {
+        "name": "砖",
+        "pinyin": "zhuān"
+      },
+      {
+        "name": "头。",
+        "pinyin": "tóu"
+      },
+      {
+        "name": "嘟",
+        "pinyin": "dū"
+      },
+      {
+        "name": "嘟",
+        "pinyin": "dū"
+      },
+      {
+        "name": "高",
+        "pinyin": "gāo"
+      },
+      {
+        "name": "兴",
+        "pinyin": "xīng"
+      },
+      {
+        "name": "地",
+        "pinyin": "dì"
+      },
+      {
+        "name": "说：“",
+        "pinyin": "shuō"
+      },
+      {
+        "name": "我",
+        "pinyin": "wǒ"
+      },
+      {
+        "name": "就",
+        "pinyin": "jìu"
+      },
+      {
+        "name": "用",
+        "pinyin": "yòng"
+      },
+      {
+        "name": "这",
+        "pinyin": "zhè"
+      },
+      {
+        "name": "砖",
+        "pinyin": "zhuān"
+      },
+      {
+        "name": "盖",
+        "pinyin": "gài"
+      },
+      {
+        "name": "间",
+        "pinyin": "jiān"
+      },
+      {
+        "name": "砖",
+        "pinyin": "zhuān"
+      },
+      {
+        "name": "房",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "吧。”",
+        "pinyin": "ba"
+      },
+      {
+        "name": "于",
+        "pinyin": "yú"
+      },
+      {
+        "name": "是，",
+        "pinyin": "shì"
+      },
+      {
+        "name": "嘟",
+        "pinyin": "dū"
+      },
+      {
+        "name": "嘟",
+        "pinyin": "dū"
+      },
+      {
+        "name": "一",
+        "pinyin": "yī"
+      },
+      {
+        "name": "块",
+        "pinyin": "kuài"
+      },
+      {
+        "name": "砖",
+        "pinyin": "zhuān"
+      },
+      {
+        "name": "一",
+        "pinyin": "yī"
+      },
+      {
+        "name": "块",
+        "pinyin": "kuài"
+      },
+      {
+        "name": "砖",
+        "pinyin": "zhuān"
+      },
+      {
+        "name": "地",
+        "pinyin": "dì"
+      },
+      {
+        "name": "盖",
+        "pinyin": "gài"
+      },
+      {
+        "name": "起",
+        "pinyin": "qǐ"
+      },
+      {
+        "name": "来。",
+        "pinyin": "lái"
+      },
+      {
+        "name": "不",
+        "pinyin": "bù"
+      },
+      {
+        "name": "一",
+        "pinyin": "yī"
+      },
+      {
+        "name": "会",
+        "pinyin": "hùi"
+      },
+      {
+        "name": "儿，",
+        "pinyin": "ér"
+      },
+      {
+        "name": "汗",
+        "pinyin": "hàn"
+      },
+      {
+        "name": "出",
+        "pinyin": "chū"
+      },
+      {
+        "name": "来",
+        "pinyin": "lái"
+      },
+      {
+        "name": "了，",
+        "pinyin": "le"
+      },
+      {
+        "name": "胳",
+        "pinyin": "gē"
+      },
+      {
+        "name": "膊",
+        "pinyin": "bó"
+      },
+      {
+        "name": "也",
+        "pinyin": "yě"
+      },
+      {
+        "name": "酸",
+        "pinyin": "suān"
+      },
+      {
+        "name": "了，",
+        "pinyin": "le"
+      },
+      {
+        "name": "嘟",
+        "pinyin": "dū"
+      },
+      {
+        "name": "嘟",
+        "pinyin": "dū"
+      },
+      {
+        "name": "还",
+        "pinyin": "hái"
+      },
+      {
+        "name": "不",
+        "pinyin": "bù"
+      },
+      {
+        "name": "肯",
+        "pinyin": "kěn"
+      },
+      {
+        "name": "歇",
+        "pinyin": "xīe"
+      },
+      {
+        "name": "一",
+        "pinyin": "yī"
+      },
+      {
+        "name": "下。",
+        "pinyin": "xià"
+      },
+      {
+        "name": "花",
+        "pinyin": "huā"
+      },
+      {
+        "name": "了",
+        "pinyin": "le"
+      },
+      {
+        "name": "三",
+        "pinyin": "sān"
+      },
+      {
+        "name": "个",
+        "pinyin": "gè"
+      },
+      {
+        "name": "月",
+        "pinyin": "yùe"
+      },
+      {
+        "name": "时",
+        "pinyin": "shí"
+      },
+      {
+        "name": "间，",
+        "pinyin": "jiān"
+      },
+      {
+        "name": "砖",
+        "pinyin": "zhuān"
+      },
+      {
+        "name": "房",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "终",
+        "pinyin": "zhōng"
+      },
+      {
+        "name": "于",
+        "pinyin": "yú"
+      },
+      {
+        "name": "盖",
+        "pinyin": "gài"
+      },
+      {
+        "name": "好",
+        "pinyin": "hǎo"
+      },
+      {
+        "name": "啦!",
+        "pinyin": "la"
+      },
+      {
+        "name": "红",
+        "pinyin": "hóng"
+      },
+      {
+        "name": "墙",
+        "pinyin": "qiáng"
+      },
+      {
+        "name": "红",
+        "pinyin": "hóng"
+      },
+      {
+        "name": "瓦，",
+        "pinyin": "wǎ"
+      },
+      {
+        "name": "真",
+        "pinyin": "zhēn"
+      },
+      {
+        "name": "漂",
+        "pinyin": "piāo"
+      },
+      {
+        "name": "亮。",
+        "pinyin": "liàng"
+      },
+      {
+        "name": "小",
+        "pinyin": "xiǎo"
+      },
+      {
+        "name": "猪",
+        "pinyin": "zhū"
+      },
+      {
+        "name": "嘟",
+        "pinyin": "dū"
+      },
+      {
+        "name": "嘟",
+        "pinyin": "dū"
+      },
+      {
+        "name": "乐",
+        "pinyin": "lè"
+      },
+      {
+        "name": "开",
+        "pinyin": "kāi"
+      },
+      {
+        "name": "了",
+        "pinyin": "le"
+      },
+      {
+        "name": "花。",
+        "pinyin": "huā"
+      }
+    ],
+    [
+      {
+        "name": "山",
+        "pinyin": "shān"
+      },
+      {
+        "name": "后",
+        "pinyin": "hòu"
+      },
+      {
+        "name": "边",
+        "pinyin": "biān"
+      },
+      {
+        "name": "住",
+        "pinyin": "zhù"
+      },
+      {
+        "name": "着",
+        "pinyin": "zhe"
+      },
+      {
+        "name": "一",
+        "pinyin": "yī"
+      },
+      {
+        "name": "只",
+        "pinyin": "zhǐ"
+      },
+      {
+        "name": "大",
+        "pinyin": "dà"
+      },
+      {
+        "name": "灰",
+        "pinyin": "hūi"
+      },
+      {
+        "name": "狼，",
+        "pinyin": "láng"
+      },
+      {
+        "name": "它",
+        "pinyin": "tā"
+      },
+      {
+        "name": "听",
+        "pinyin": "tīng"
+      },
+      {
+        "name": "说",
+        "pinyin": "shuō"
+      },
+      {
+        "name": "来",
+        "pinyin": "lái"
+      },
+      {
+        "name": "了",
+        "pinyin": "le"
+      },
+      {
+        "name": "三",
+        "pinyin": "sān"
+      },
+      {
+        "name": "只",
+        "pinyin": "zhǐ"
+      },
+      {
+        "name": "小",
+        "pinyin": "xiǎo"
+      },
+      {
+        "name": "猪，",
+        "pinyin": "zhū"
+      },
+      {
+        "name": "哈",
+        "pinyin": "hā"
+      },
+      {
+        "name": "哈",
+        "pinyin": "hā"
+      },
+      {
+        "name": "大",
+        "pinyin": "dà"
+      },
+      {
+        "name": "笑",
+        "pinyin": "xiào"
+      },
+      {
+        "name": "说：“",
+        "pinyin": "shuō"
+      },
+      {
+        "name": "三",
+        "pinyin": "sān"
+      },
+      {
+        "name": "只",
+        "pinyin": "zhǐ"
+      },
+      {
+        "name": "小",
+        "pinyin": "xiǎo"
+      },
+      {
+        "name": "猪",
+        "pinyin": "zhū"
+      },
+      {
+        "name": "来",
+        "pinyin": "lái"
+      },
+      {
+        "name": "得",
+        "pinyin": "dé"
+      },
+      {
+        "name": "好，",
+        "pinyin": "hǎo"
+      },
+      {
+        "name": "正",
+        "pinyin": "zhèng"
+      },
+      {
+        "name": "好",
+        "pinyin": "hǎo"
+      },
+      {
+        "name": "让",
+        "pinyin": "ràng"
+      },
+      {
+        "name": "我",
+        "pinyin": "wǒ"
+      },
+      {
+        "name": "吃",
+        "pinyin": "chī"
+      },
+      {
+        "name": "个",
+        "pinyin": "gè"
+      },
+      {
+        "name": "饱!”",
+        "pinyin": "bǎo"
+      },
+      {
+        "name": "大",
+        "pinyin": "dà"
+      },
+      {
+        "name": "灰",
+        "pinyin": "hūi"
+      },
+      {
+        "name": "狼",
+        "pinyin": "láng"
+      },
+      {
+        "name": "来",
+        "pinyin": "lái"
+      },
+      {
+        "name": "到",
+        "pinyin": "dào"
+      },
+      {
+        "name": "草",
+        "pinyin": "cǎo"
+      },
+      {
+        "name": "房",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "前，",
+        "pinyin": "qián"
+      },
+      {
+        "name": "叫",
+        "pinyin": "jiào"
+      },
+      {
+        "name": "小",
+        "pinyin": "xiǎo"
+      },
+      {
+        "name": "猪",
+        "pinyin": "zhū"
+      },
+      {
+        "name": "呼",
+        "pinyin": "hū"
+      },
+      {
+        "name": "呼",
+        "pinyin": "hū"
+      },
+      {
+        "name": "开",
+        "pinyin": "kāi"
+      },
+      {
+        "name": "门。",
+        "pinyin": "mén"
+      },
+      {
+        "name": "呼",
+        "pinyin": "hū"
+      },
+      {
+        "name": "呼",
+        "pinyin": "hū"
+      },
+      {
+        "name": "不",
+        "pinyin": "bù"
+      },
+      {
+        "name": "肯",
+        "pinyin": "kěn"
+      },
+      {
+        "name": "开。",
+        "pinyin": "kāi"
+      },
+      {
+        "name": "大",
+        "pinyin": "dà"
+      },
+      {
+        "name": "灰",
+        "pinyin": "hūi"
+      },
+      {
+        "name": "狼",
+        "pinyin": "láng"
+      },
+      {
+        "name": "轻",
+        "pinyin": "qīng"
+      },
+      {
+        "name": "轻",
+        "pinyin": "qīng"
+      },
+      {
+        "name": "地",
+        "pinyin": "dì"
+      },
+      {
+        "name": "吹",
+        "pinyin": "chūi"
+      },
+      {
+        "name": "了",
+        "pinyin": "le"
+      },
+      {
+        "name": "一",
+        "pinyin": "yī"
+      },
+      {
+        "name": "下，",
+        "pinyin": "xià"
+      },
+      {
+        "name": "草",
+        "pinyin": "cǎo"
+      },
+      {
+        "name": "房",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "就",
+        "pinyin": "jìu"
+      },
+      {
+        "name": "倒",
+        "pinyin": "dǎo"
+      },
+      {
+        "name": "了。",
+        "pinyin": "le"
+      },
+      {
+        "name": "呼",
+        "pinyin": "hū"
+      },
+      {
+        "name": "呼",
+        "pinyin": "hū"
+      },
+      {
+        "name": "急",
+        "pinyin": "jí"
+      },
+      {
+        "name": "忙",
+        "pinyin": "máng"
+      },
+      {
+        "name": "逃",
+        "pinyin": "táo"
+      },
+      {
+        "name": "出",
+        "pinyin": "chū"
+      },
+      {
+        "name": "草",
+        "pinyin": "cǎo"
+      },
+      {
+        "name": "房，",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "边",
+        "pinyin": "biān"
+      },
+      {
+        "name": "跑",
+        "pinyin": "pǎo"
+      },
+      {
+        "name": "边",
+        "pinyin": "biān"
+      },
+      {
+        "name": "喊：“",
+        "pinyin": "hǎn"
+      },
+      {
+        "name": "大",
+        "pinyin": "dà"
+      },
+      {
+        "name": "灰",
+        "pinyin": "hūi"
+      },
+      {
+        "name": "狼",
+        "pinyin": "láng"
+      },
+      {
+        "name": "来",
+        "pinyin": "lái"
+      },
+      {
+        "name": "了!",
+        "pinyin": "le"
+      },
+      {
+        "name": "大",
+        "pinyin": "dà"
+      },
+      {
+        "name": "灰",
+        "pinyin": "hūi"
+      },
+      {
+        "name": "狼",
+        "pinyin": "láng"
+      },
+      {
+        "name": "来",
+        "pinyin": "lái"
+      },
+      {
+        "name": "了!”",
+        "pinyin": "le"
+      },
+      {
+        "name": "木",
+        "pinyin": "mù"
+      },
+      {
+        "name": "房",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "里",
+        "pinyin": "lǐ"
+      },
+      {
+        "name": "的",
+        "pinyin": "de"
+      },
+      {
+        "name": "噜",
+        "pinyin": "lū"
+      },
+      {
+        "name": "噜",
+        "pinyin": "lū"
+      },
+      {
+        "name": "听",
+        "pinyin": "tīng"
+      },
+      {
+        "name": "见",
+        "pinyin": "jiàn"
+      },
+      {
+        "name": "了，",
+        "pinyin": "le"
+      },
+      {
+        "name": "连",
+        "pinyin": "lián"
+      },
+      {
+        "name": "忙",
+        "pinyin": "máng"
+      },
+      {
+        "name": "打",
+        "pinyin": "dǎ"
+      },
+      {
+        "name": "开",
+        "pinyin": "kāi"
+      },
+      {
+        "name": "门，",
+        "pinyin": "mén"
+      },
+      {
+        "name": "让",
+        "pinyin": "ràng"
+      },
+      {
+        "name": "呼",
+        "pinyin": "hū"
+      },
+      {
+        "name": "呼",
+        "pinyin": "hū"
+      },
+      {
+        "name": "进",
+        "pinyin": "jìn"
+      },
+      {
+        "name": "来，",
+        "pinyin": "lái"
+      },
+      {
+        "name": "又",
+        "pinyin": "yòu"
+      },
+      {
+        "name": "把",
+        "pinyin": "bǎ"
+      },
+      {
+        "name": "门",
+        "pinyin": "mén"
+      },
+      {
+        "name": "紧",
+        "pinyin": "jǐn"
+      },
+      {
+        "name": "紧",
+        "pinyin": "jǐn"
+      },
+      {
+        "name": "地",
+        "pinyin": "dì"
+      },
+      {
+        "name": "关",
+        "pinyin": "guān"
+      },
+      {
+        "name": "上。",
+        "pinyin": "shàng"
+      },
+      {
+        "name": "大",
+        "pinyin": "dà"
+      },
+      {
+        "name": "灰",
+        "pinyin": "hūi"
+      },
+      {
+        "name": "狼",
+        "pinyin": "láng"
+      },
+      {
+        "name": "来",
+        "pinyin": "lái"
+      },
+      {
+        "name": "到",
+        "pinyin": "dào"
+      },
+      {
+        "name": "木",
+        "pinyin": "mù"
+      },
+      {
+        "name": "房",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "前，",
+        "pinyin": "qián"
+      },
+      {
+        "name": "叫",
+        "pinyin": "jiào"
+      },
+      {
+        "name": "小",
+        "pinyin": "xiǎo"
+      },
+      {
+        "name": "猪",
+        "pinyin": "zhū"
+      },
+      {
+        "name": "噜",
+        "pinyin": "lū"
+      },
+      {
+        "name": "噜",
+        "pinyin": "lū"
+      },
+      {
+        "name": "开",
+        "pinyin": "kāi"
+      },
+      {
+        "name": "门。",
+        "pinyin": "mén"
+      },
+      {
+        "name": "噜",
+        "pinyin": "lū"
+      },
+      {
+        "name": "噜",
+        "pinyin": "lū"
+      },
+      {
+        "name": "不",
+        "pinyin": "bù"
+      },
+      {
+        "name": "肯",
+        "pinyin": "kěn"
+      },
+      {
+        "name": "开。",
+        "pinyin": "kāi"
+      },
+      {
+        "name": "大",
+        "pinyin": "dà"
+      },
+      {
+        "name": "灰",
+        "pinyin": "hūi"
+      },
+      {
+        "name": "狼",
+        "pinyin": "láng"
+      },
+      {
+        "name": "用",
+        "pinyin": "yòng"
+      },
+      {
+        "name": "力",
+        "pinyin": "lì"
+      },
+      {
+        "name": "撞",
+        "pinyin": "zhuàng"
+      },
+      {
+        "name": "一",
+        "pinyin": "yī"
+      },
+      {
+        "name": "下，",
+        "pinyin": "xià"
+      },
+      {
+        "name": "小",
+        "pinyin": "xiǎo"
+      },
+      {
+        "name": "木",
+        "pinyin": "mù"
+      },
+      {
+        "name": "房",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "摇",
+        "pinyin": "yáo"
+      },
+      {
+        "name": "一",
+        "pinyin": "yī"
+      },
+      {
+        "name": "摇。",
+        "pinyin": "yáo"
+      },
+      {
+        "name": "大",
+        "pinyin": "dà"
+      },
+      {
+        "name": "灰",
+        "pinyin": "hūi"
+      },
+      {
+        "name": "狼",
+        "pinyin": "láng"
+      },
+      {
+        "name": "又",
+        "pinyin": "yòu"
+      },
+      {
+        "name": "用",
+        "pinyin": "yòng"
+      },
+      {
+        "name": "力",
+        "pinyin": "lì"
+      },
+      {
+        "name": "撞",
+        "pinyin": "zhuàng"
+      },
+      {
+        "name": "了",
+        "pinyin": "le"
+      },
+      {
+        "name": "一",
+        "pinyin": "yī"
+      },
+      {
+        "name": "下，",
+        "pinyin": "xià"
+      },
+      {
+        "name": "木",
+        "pinyin": "mù"
+      },
+      {
+        "name": "房",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "就",
+        "pinyin": "jìu"
+      },
+      {
+        "name": "倒",
+        "pinyin": "dǎo"
+      },
+      {
+        "name": "了，",
+        "pinyin": "le"
+      },
+      {
+        "name": "呼",
+        "pinyin": "hū"
+      },
+      {
+        "name": "呼",
+        "pinyin": "hū"
+      },
+      {
+        "name": "和",
+        "pinyin": "hé"
+      },
+      {
+        "name": "噜",
+        "pinyin": "lū"
+      },
+      {
+        "name": "噜",
+        "pinyin": "lū"
+      },
+      {
+        "name": "急",
+        "pinyin": "jí"
+      },
+      {
+        "name": "忙",
+        "pinyin": "máng"
+      },
+      {
+        "name": "逃",
+        "pinyin": "táo"
+      },
+      {
+        "name": "出",
+        "pinyin": "chū"
+      },
+      {
+        "name": "木",
+        "pinyin": "mù"
+      },
+      {
+        "name": "房，",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "边",
+        "pinyin": "biān"
+      },
+      {
+        "name": "跑",
+        "pinyin": "pǎo"
+      },
+      {
+        "name": "边",
+        "pinyin": "biān"
+      },
+      {
+        "name": "喊：“",
+        "pinyin": "hǎn"
+      },
+      {
+        "name": "大",
+        "pinyin": "dà"
+      },
+      {
+        "name": "灰",
+        "pinyin": "hūi"
+      },
+      {
+        "name": "狼",
+        "pinyin": "láng"
+      },
+      {
+        "name": "来",
+        "pinyin": "lái"
+      },
+      {
+        "name": "了!",
+        "pinyin": "le"
+      },
+      {
+        "name": "大",
+        "pinyin": "dà"
+      },
+      {
+        "name": "灰",
+        "pinyin": "hūi"
+      },
+      {
+        "name": "狼",
+        "pinyin": "láng"
+      },
+      {
+        "name": "来",
+        "pinyin": "lái"
+      },
+      {
+        "name": "了!”",
+        "pinyin": "le"
+      },
+      {
+        "name": "砖",
+        "pinyin": "zhuān"
+      },
+      {
+        "name": "房",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "里",
+        "pinyin": "lǐ"
+      },
+      {
+        "name": "的",
+        "pinyin": "de"
+      },
+      {
+        "name": "嘟",
+        "pinyin": "dū"
+      },
+      {
+        "name": "嘟",
+        "pinyin": "dū"
+      },
+      {
+        "name": "听",
+        "pinyin": "tīng"
+      },
+      {
+        "name": "了，",
+        "pinyin": "le"
+      },
+      {
+        "name": "连",
+        "pinyin": "lián"
+      },
+      {
+        "name": "忙",
+        "pinyin": "máng"
+      },
+      {
+        "name": "打",
+        "pinyin": "dǎ"
+      },
+      {
+        "name": "开",
+        "pinyin": "kāi"
+      },
+      {
+        "name": "门，",
+        "pinyin": "mén"
+      },
+      {
+        "name": "让",
+        "pinyin": "ràng"
+      },
+      {
+        "name": "呼",
+        "pinyin": "hū"
+      },
+      {
+        "name": "呼",
+        "pinyin": "hū"
+      },
+      {
+        "name": "和",
+        "pinyin": "hé"
+      },
+      {
+        "name": "噜",
+        "pinyin": "lū"
+      },
+      {
+        "name": "噜",
+        "pinyin": "lū"
+      },
+      {
+        "name": "进",
+        "pinyin": "jìn"
+      },
+      {
+        "name": "来，",
+        "pinyin": "lái"
+      },
+      {
+        "name": "又",
+        "pinyin": "yòu"
+      },
+      {
+        "name": "紧",
+        "pinyin": "jǐn"
+      },
+      {
+        "name": "紧",
+        "pinyin": "jǐn"
+      },
+      {
+        "name": "地",
+        "pinyin": "dì"
+      },
+      {
+        "name": "把",
+        "pinyin": "bǎ"
+      },
+      {
+        "name": "门",
+        "pinyin": "mén"
+      },
+      {
+        "name": "关",
+        "pinyin": "guān"
+      },
+      {
+        "name": "上。",
+        "pinyin": "shàng"
+      },
+      {
+        "name": "大",
+        "pinyin": "dà"
+      },
+      {
+        "name": "灰",
+        "pinyin": "hūi"
+      },
+      {
+        "name": "狼",
+        "pinyin": "láng"
+      },
+      {
+        "name": "来",
+        "pinyin": "lái"
+      },
+      {
+        "name": "到",
+        "pinyin": "dào"
+      },
+      {
+        "name": "砖",
+        "pinyin": "zhuān"
+      },
+      {
+        "name": "房",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "前，",
+        "pinyin": "qián"
+      },
+      {
+        "name": "叫",
+        "pinyin": "jiào"
+      },
+      {
+        "name": "小",
+        "pinyin": "xiǎo"
+      },
+      {
+        "name": "猪",
+        "pinyin": "zhū"
+      },
+      {
+        "name": "嘟",
+        "pinyin": "dū"
+      },
+      {
+        "name": "嘟",
+        "pinyin": "dū"
+      },
+      {
+        "name": "开",
+        "pinyin": "kāi"
+      },
+      {
+        "name": "门，",
+        "pinyin": "mén"
+      },
+      {
+        "name": "嘟",
+        "pinyin": "dū"
+      },
+      {
+        "name": "嘟",
+        "pinyin": "dū"
+      },
+      {
+        "name": "不",
+        "pinyin": "bù"
+      },
+      {
+        "name": "肯",
+        "pinyin": "kěn"
+      },
+      {
+        "name": "开。",
+        "pinyin": "kāi"
+      },
+      {
+        "name": "大",
+        "pinyin": "dà"
+      },
+      {
+        "name": "灰",
+        "pinyin": "hūi"
+      },
+      {
+        "name": "狼",
+        "pinyin": "láng"
+      },
+      {
+        "name": "用",
+        "pinyin": "yòng"
+      },
+      {
+        "name": "力",
+        "pinyin": "lì"
+      },
+      {
+        "name": "地",
+        "pinyin": "dì"
+      },
+      {
+        "name": "撞",
+        "pinyin": "zhuàng"
+      },
+      {
+        "name": "一",
+        "pinyin": "yī"
+      },
+      {
+        "name": "下，",
+        "pinyin": "xià"
+      },
+      {
+        "name": "砖",
+        "pinyin": "zhuān"
+      },
+      {
+        "name": "房",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "一",
+        "pinyin": "yī"
+      },
+      {
+        "name": "动",
+        "pinyin": "dòng"
+      },
+      {
+        "name": "也",
+        "pinyin": "yě"
+      },
+      {
+        "name": "不",
+        "pinyin": "bù"
+      },
+      {
+        "name": "动，",
+        "pinyin": "dòng"
+      },
+      {
+        "name": "又",
+        "pinyin": "yòu"
+      },
+      {
+        "name": "撞",
+        "pinyin": "zhuàng"
+      },
+      {
+        "name": "了",
+        "pinyin": "le"
+      },
+      {
+        "name": "一",
+        "pinyin": "yī"
+      },
+      {
+        "name": "下，",
+        "pinyin": "xià"
+      },
+      {
+        "name": "砖",
+        "pinyin": "zhuān"
+      },
+      {
+        "name": "房",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "还",
+        "pinyin": "hái"
+      },
+      {
+        "name": "是",
+        "pinyin": "shì"
+      },
+      {
+        "name": "一",
+        "pinyin": "yī"
+      },
+      {
+        "name": "动",
+        "pinyin": "dòng"
+      },
+      {
+        "name": "也",
+        "pinyin": "yě"
+      },
+      {
+        "name": "不",
+        "pinyin": "bù"
+      },
+      {
+        "name": "动。",
+        "pinyin": "dòng"
+      },
+      {
+        "name": "大",
+        "pinyin": "dà"
+      },
+      {
+        "name": "灰",
+        "pinyin": "hūi"
+      },
+      {
+        "name": "狼",
+        "pinyin": "láng"
+      },
+      {
+        "name": "用",
+        "pinyin": "yòng"
+      },
+      {
+        "name": "尽",
+        "pinyin": "jǐn"
+      },
+      {
+        "name": "全",
+        "pinyin": "quán"
+      },
+      {
+        "name": "身",
+        "pinyin": "shēn"
+      },
+      {
+        "name": "力",
+        "pinyin": "lì"
+      },
+      {
+        "name": "气，",
+        "pinyin": "qì"
+      },
+      {
+        "name": "对",
+        "pinyin": "dùi"
+      },
+      {
+        "name": "砖",
+        "pinyin": "zhuān"
+      },
+      {
+        "name": "房",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "重",
+        "pinyin": "zhòng"
+      },
+      {
+        "name": "重",
+        "pinyin": "zhòng"
+      },
+      {
+        "name": "地",
+        "pinyin": "dì"
+      },
+      {
+        "name": "撞",
+        "pinyin": "zhuàng"
+      },
+      {
+        "name": "了",
+        "pinyin": "le"
+      },
+      {
+        "name": "一",
+        "pinyin": "yī"
+      },
+      {
+        "name": "下，",
+        "pinyin": "xià"
+      },
+      {
+        "name": "砖",
+        "pinyin": "zhuān"
+      },
+      {
+        "name": "房",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "还",
+        "pinyin": "hái"
+      },
+      {
+        "name": "是",
+        "pinyin": "shì"
+      },
+      {
+        "name": "一",
+        "pinyin": "yī"
+      },
+      {
+        "name": "动",
+        "pinyin": "dòng"
+      },
+      {
+        "name": "也",
+        "pinyin": "yě"
+      },
+      {
+        "name": "不",
+        "pinyin": "bù"
+      },
+      {
+        "name": "动。",
+        "pinyin": "dòng"
+      },
+      {
+        "name": "大",
+        "pinyin": "dà"
+      },
+      {
+        "name": "灰",
+        "pinyin": "hūi"
+      },
+      {
+        "name": "狼",
+        "pinyin": "láng"
+      },
+      {
+        "name": "头",
+        "pinyin": "tóu"
+      },
+      {
+        "name": "上",
+        "pinyin": "shàng"
+      },
+      {
+        "name": "撞",
+        "pinyin": "zhuàng"
+      },
+      {
+        "name": "出",
+        "pinyin": "chū"
+      },
+      {
+        "name": "了",
+        "pinyin": "le"
+      },
+      {
+        "name": "三",
+        "pinyin": "sān"
+      },
+      {
+        "name": "个",
+        "pinyin": "gè"
+      },
+      {
+        "name": "疙",
+        "pinyin": "gē"
+      },
+      {
+        "name": "瘩，",
+        "pinyin": "dá"
+      },
+      {
+        "name": "四",
+        "pinyin": "sì"
+      },
+      {
+        "name": "脚",
+        "pinyin": "jiǎo"
+      },
+      {
+        "name": "朝",
+        "pinyin": "cháo"
+      },
+      {
+        "name": "天",
+        "pinyin": "tiān"
+      },
+      {
+        "name": "地",
+        "pinyin": "dì"
+      },
+      {
+        "name": "跌",
+        "pinyin": "dīe"
+      },
+      {
+        "name": "倒",
+        "pinyin": "dǎo"
+      },
+      {
+        "name": "在",
+        "pinyin": "zài"
+      },
+      {
+        "name": "地",
+        "pinyin": "dì"
+      },
+      {
+        "name": "上。",
+        "pinyin": "shàng"
+      },
+      {
+        "name": "大",
+        "pinyin": "dà"
+      },
+      {
+        "name": "灰",
+        "pinyin": "hūi"
+      },
+      {
+        "name": "狼",
+        "pinyin": "láng"
+      },
+      {
+        "name": "还",
+        "pinyin": "hái"
+      },
+      {
+        "name": "是",
+        "pinyin": "shì"
+      },
+      {
+        "name": "不",
+        "pinyin": "bù"
+      },
+      {
+        "name": "甘",
+        "pinyin": "gān"
+      },
+      {
+        "name": "心，",
+        "pinyin": "xīn"
+      },
+      {
+        "name": "看",
+        "pinyin": "kàn"
+      },
+      {
+        "name": "到",
+        "pinyin": "dào"
+      },
+      {
+        "name": "房",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "顶",
+        "pinyin": "dǐng"
+      },
+      {
+        "name": "上",
+        "pinyin": "shàng"
+      },
+      {
+        "name": "有",
+        "pinyin": "yǒu"
+      },
+      {
+        "name": "一",
+        "pinyin": "yī"
+      },
+      {
+        "name": "个",
+        "pinyin": "gè"
+      },
+      {
+        "name": "大",
+        "pinyin": "dà"
+      },
+      {
+        "name": "的",
+        "pinyin": "de"
+      },
+      {
+        "name": "烟",
+        "pinyin": "yān"
+      },
+      {
+        "name": "囱，",
+        "pinyin": "cōng"
+      },
+      {
+        "name": "就",
+        "pinyin": "jìu"
+      },
+      {
+        "name": "爬",
+        "pinyin": "pá"
+      },
+      {
+        "name": "上",
+        "pinyin": "shàng"
+      },
+      {
+        "name": "房",
+        "pinyin": "fáng"
+      },
+      {
+        "name": "顶，",
+        "pinyin": "dǐng"
+      },
+      {
+        "name": "从",
+        "pinyin": "cóng"
+      },
+      {
+        "name": "烟",
+        "pinyin": "yān"
+      },
+      {
+        "name": "囱",
+        "pinyin": "cōng"
+      },
+      {
+        "name": "里",
+        "pinyin": "lǐ"
+      },
+      {
+        "name": "钻",
+        "pinyin": "zuàn"
+      },
+      {
+        "name": "进",
+        "pinyin": "jìn"
+      },
+      {
+        "name": "去。",
+        "pinyin": "qù"
+      },
+      {
+        "name": "三",
+        "pinyin": "sān"
+      },
+      {
+        "name": "只",
+        "pinyin": "zhǐ"
+      },
+      {
+        "name": "小",
+        "pinyin": "xiǎo"
+      },
+      {
+        "name": "猪",
+        "pinyin": "zhū"
+      },
+      {
+        "name": "忙",
+        "pinyin": "máng"
+      },
+      {
+        "name": "在",
+        "pinyin": "zài"
+      },
+      {
+        "name": "炉",
+        "pinyin": "lú"
+      },
+      {
+        "name": "膛",
+        "pinyin": "táng"
+      },
+      {
+        "name": "里",
+        "pinyin": "lǐ"
+      },
+      {
+        "name": "添",
+        "pinyin": "tiān"
+      },
+      {
+        "name": "了",
+        "pinyin": "le"
+      },
+      {
+        "name": "许",
+        "pinyin": "xǔ"
+      },
+      {
+        "name": "多",
+        "pinyin": "duō"
+      },
+      {
+        "name": "柴，",
+        "pinyin": "chái"
+      },
+      {
+        "name": "烧",
+        "pinyin": "shāo"
+      },
+      {
+        "name": "了",
+        "pinyin": "le"
+      },
+      {
+        "name": "一",
+        "pinyin": "yī"
+      },
+      {
+        "name": "锅",
+        "pinyin": "guō"
+      },
+      {
+        "name": "开",
+        "pinyin": "kāi"
+      },
+      {
+        "name": "水。",
+        "pinyin": "shǔi"
+      },
+      {
+        "name": "大",
+        "pinyin": "dà"
+      },
+      {
+        "name": "灰",
+        "pinyin": "hūi"
+      },
+      {
+        "name": "狼",
+        "pinyin": "láng"
+      },
+      {
+        "name": "从",
+        "pinyin": "cóng"
+      },
+      {
+        "name": "烟",
+        "pinyin": "yān"
+      },
+      {
+        "name": "囱",
+        "pinyin": "cōng"
+      },
+      {
+        "name": "里",
+        "pinyin": "lǐ"
+      },
+      {
+        "name": "钻",
+        "pinyin": "zuàn"
+      },
+      {
+        "name": "进",
+        "pinyin": "jìn"
+      },
+      {
+        "name": "去，",
+        "pinyin": "qù"
+      },
+      {
+        "name": "结",
+        "pinyin": "jíe"
+      },
+      {
+        "name": "果",
+        "pinyin": "guǒ"
+      },
+      {
+        "name": "跌",
+        "pinyin": "dīe"
+      },
+      {
+        "name": "进",
+        "pinyin": "jìn"
+      },
+      {
+        "name": "热",
+        "pinyin": "rè"
+      },
+      {
+        "name": "锅，",
+        "pinyin": "guō"
+      },
+      {
+        "name": "被",
+        "pinyin": "bèi"
+      },
+      {
+        "name": "开",
+        "pinyin": "kāi"
+      },
+      {
+        "name": "水",
+        "pinyin": "shǔi"
+      },
+      {
+        "name": "烫",
+        "pinyin": "tàng"
+      },
+      {
+        "name": "伤",
+        "pinyin": "shāng"
+      },
+      {
+        "name": "了。",
+        "pinyin": "le"
+      },
+      {
+        "name": "从",
+        "pinyin": "cóng"
+      },
+      {
+        "name": "此，",
+        "pinyin": "cǐ"
+      },
+      {
+        "name": "它",
+        "pinyin": "tā"
+      },
+      {
+        "name": "再",
+        "pinyin": "zài"
+      },
+      {
+        "name": "也",
+        "pinyin": "yě"
+      },
+      {
+        "name": "不",
+        "pinyin": "bù"
+      },
+      {
+        "name": "敢",
+        "pinyin": "gǎn"
+      },
+      {
+        "name": "来",
+        "pinyin": "lái"
+      },
+      {
+        "name": "捣",
+        "pinyin": "dǎo"
+      },
+      {
+        "name": "乱",
+        "pinyin": "luàn"
+      },
+      {
+        "name": "了。",
+        "pinyin": "le"
+      }
+    ]
+  ]
+}

@@ -55,7 +55,7 @@ export default {
 .math_calc {
   font-size: 100px;
   width: 100%;
-  height: calc(100vh - 48px);
+  height: calc(100vh - 140px);
   text-align: center;
 }
 </style>

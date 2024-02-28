@@ -4,9 +4,6 @@
   </div>
   <div style="margin-top: 20px">
     <el-button @click="read" style="width: 100%;" type="success">读</el-button>
-    <audio ref="audio">
-      <source :src="video" type="audio/mp3">
-    </audio>
   </div>
 </template>
 
@@ -32,8 +29,8 @@ export default {
       this.video = "https://tungsword.github.io/child/pinyin/video/" + currentPinyin.video;
     },
     read() {
-      this.$refs.audio.load();
-      this.$refs.audio.play();
+      const audio = new Audio(this.video);
+      audio.play();
     }
   }
 }
@@ -44,7 +41,6 @@ export default {
 .random_pinyin {
   font-size: 100px;
   width: 100%;
-  height: 100%;
   text-align: center;
 }
 </style>

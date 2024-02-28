@@ -7,11 +7,13 @@
     <orderPinyin v-if="currentComponent === 'orderPinyin'"/>
     <randomPinyin v-if="currentComponent === 'randomPinyin'"/>
     <classifyPinyin v-if="currentComponent === 'classifyPinyin'"/>
+    <chineseCharacter v-if="currentComponent === 'chineseCharacter'"/>
+    <story v-if="currentComponent === 'story'"/>
 
     <div v-if="currentComponent === 'home'">
       <el-row :gutter="20">
         <el-col :span="12" v-for="(item, index) in list" :key="index" class="studyCom">
-          <el-card shadow="hover" @click="showComponent(item.component)">{{ item.name }}</el-card>
+          <el-card shadow="hover" @click="showComponent(item.component)" v-if="item.show">{{ item.name }}</el-card>
         </el-col>
       </el-row>
     </div>
@@ -28,27 +30,43 @@ import mathCalc from "@/components/math/math_calc.vue";
 import orderPinyin from "@/components/pinyin/order_pinyin.vue";
 import randomPinyin from "@/components/pinyin/random_pinyin.vue";
 import classifyPinyin from "@/components/pinyin/classify_pinyin.vue";
+import chineseCharacter from "@/components/chinese/chinese_character.vue"
+import Story from "@/components/story/story.vue";
 
 const currentComponent = ref('home')
 
 const list = [
   {
     name: "数学计算",
-    component: "mathCalc"
+    component: "mathCalc",
+    show: true
   },
   {
     name: "拼音",
-    component: "classifyPinyin"
+    component: "classifyPinyin",
+    show: true
   },
   {
     name: "拼音顺序卡片",
-    component: "orderPinyin"
+    component: "orderPinyin",
+    show: true
   },
   {
     name: "拼音随机卡片",
-    component: "randomPinyin"
+    component: "randomPinyin",
+    show: true
   },
 
+  {
+    name: "故事",
+    component: "story",
+    show: true
+  },
+  {
+    name: "认字",
+    component: "chineseCharacter",
+    show: false
+  }
 ]
 
 function showComponent(component) {

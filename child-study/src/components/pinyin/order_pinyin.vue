@@ -4,9 +4,6 @@
   </div>
   <div style="margin-top: 20px">
     <el-button @click="read" style="width: 100%;" type="success">读</el-button>
-    <audio ref="audio">
-      <source :src="video" type="audio/mp3">
-    </audio>
   </div>
 </template>
 
@@ -26,7 +23,7 @@ export default {
   },
   methods: {
     refresh() {
-      if (this.index > allPinyin.data.length) {
+      if (this.index >= allPinyin.data.length) {
         this.index = 0;
       }
       const currentPinyin = allPinyin.data[this.index]
@@ -35,8 +32,8 @@ export default {
       this.index++;
     },
     read() {
-      this.$refs.audio.load();
-      this.$refs.audio.play();
+      const audio = new Audio(this.video);
+      audio.play();
     }
   }
 }
@@ -47,7 +44,6 @@ export default {
 .order_pinyin {
   font-size: 100px;
   width: 100%;
-  height: 100%;
   text-align: center;
 }
 </style>
