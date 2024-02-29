@@ -1,11 +1,10 @@
 <template>
   <pinyin_story :story="storyList"/>
 </template>
-
 <script setup>
-import sanzhixiaozhu from "@/assets/story/sanzhixiaozhu.json"
+import chinese_poetry from "@/assets/chinese/chinese_poetry.json"
 import {ref} from "vue";
 import Pinyin_story from "@/components/pinyin/pinyin_story.vue";
 
-const storyList = ref([sanzhixiaozhu])
+const storyList = ref(chinese_poetry)
 </script>
