@@ -3,7 +3,7 @@
     <span>{{ pinyin }}</span>
   </div>
   <div style="margin-top: 20px">
-    <el-button @click="read" style="width: 100%;" type="success">读</el-button>
+    <el-button @click="read" style="width: 100%;" type="primary">读</el-button>
   </div>
 </template>
 

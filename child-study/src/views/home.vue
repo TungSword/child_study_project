@@ -58,16 +58,15 @@ const list = [
     component: "randomPinyin",
     show: true
   },
-
-  {
-    name: "故事",
-    component: "story",
-    show: true
-  },
   {
     name: "唐诗三百首",
     component: "chinesePoetry",
     show: true
+  },
+  {
+    name: "故事",
+    component: "story",
+    show: false
   },
   {
     name: "认字",

@@ -1,11 +1,15 @@
 <template>
-  <div class="math_calc" @click="calcResult()">
+  <div class="math_calc">
     <span>{{ first }}</span>
     <span>{{ method }}</span>
     <span>{{ second }}</span>
     <span>=</span>
     <br>
-    <span>{{ result }}</span>
+    <el-input-number resize="true" size="large" class="result_input" v-model="result" :controls="false"></el-input-number>
+    <br>
+    <el-button class="result_button" type="primary" @click="checkResult">{{ buttonName }}</el-button>
+    <br>
+
   </div>
 </template>
 
@@ -19,7 +23,8 @@ export default {
       method: "+",
       methodCode: 0,
       methods: ["+", "-"],
-      refresh: false
+      refresh: false,
+      buttonName: "确 认",
     }
   },
   mounted() {
@@ -33,17 +38,26 @@ export default {
       this.method = this.methods[this.methodCode]
       this.result = ""
       this.refresh = false;
+      this.buttonName = "确 认"
     },
-    calcResult() {
+    checkResult() {
       if (this.refresh) {
         this.init();
         return;
       }
-      this.refresh = true;
+      let calcResult = 0;
       if (this.methodCode === 0) {
-        this.result = String(this.first + this.second);
+        calcResult = this.first + this.second;
       } else if (this.methodCode === 1) {
-        this.result = String(this.first - this.second);
+        calcResult = this.first - this.second;
+      }
+      if (this.result === calcResult) {
+        this.refresh = true
+        this.$message.success("恭喜你，答对了！")
+        this.buttonName = "下一题"
+      } else {
+        this.result = ""
+        this.$message.error("回答错误。")
       }
     }
   }
@@ -51,11 +65,26 @@ export default {
 
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
 .math_calc {
   font-size: 100px;
   width: 100%;
   height: calc(100vh - 140px);
   text-align: center;
+
+  .result_input {
+    width: 80%;
+    height: 60px;
+  }
+
+  .result_button {
+    width: 80%;
+    height: 60px;
+    font-size: 30px;
+  }
 }
+.el-input--large{
+  font-size: 30px !important;
+}
+
 </style>

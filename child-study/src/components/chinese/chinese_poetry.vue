@@ -1,5 +1,5 @@
 <template>
-  <pinyin_story :story="storyList"/>
+  <pinyin_story :story="storyList" :space="false"/>
 </template>
 <script setup>
 import chinese_poetry from "@/assets/chinese/chinese_poetry.json"
