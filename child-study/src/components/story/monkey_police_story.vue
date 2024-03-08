@@ -10,7 +10,7 @@
     </el-card>
   </div>
   <ul class="infinite-list" style="overflow: auto">
-    <li class="infinite-list-item" v-for="story in storyList" :key="story.id" @click="selectStory(story)">
+    <li class="infinite-list-item" :class="{selectStory: currentStory.id === story.id}" v-for="story in storyList" :key="story.id" @click="selectStory(story)">
       {{ story.name }}
     </li>
   </ul>
@@ -40,9 +40,26 @@ function selectStory(story) {
   audioUrl.value = getMonkeyPoliceStoryUrl(story.id);
   localStorage.setItem("monkeyStory", JSON.stringify(currentStory.value))
   const audio = document.getElementById("story_audio")
+  audio.load();
+  audio.addEventListener('ended', selectNextStory);
   setTimeout(() => {
     audio.play();
   }, 3000)
+}
+
+function selectNextStory() {
+  let isSelect = false;
+  for (let i = 0; i < storyList.value.length; i++) {
+    const story = storyList.value[i];
+    if (story.id === currentStory.value.id) {
+      isSelect = true;
+      selectStory(storyList.value[i + 1])
+      return;
+    }
+  }
+  if (!isSelect) {
+    selectStory(storyList.value[0])
+  }
 }
 
 </script>
@@ -77,6 +94,11 @@ function selectStory(story) {
   margin: 10px;
   color: var(--el-color-primary);
   cursor: pointer;
+  border-radius: 3px;
+}
+.infinite-list .selectStory{
+  background-color: var(--el-color-primary);
+  color: #FFFFFF;
 }
 
 
