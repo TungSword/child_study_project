@@ -7,21 +7,22 @@ const servcie = axios.create({
 
 servcie.interceptors.request.use(
     config => {
-        console.log("interceptors.request config", config)
+        return config;
     },
     error => {
-        console.log("interceptors.request error", error)
+        return Promise.reject(error);
     }
 )
 
 servcie.interceptors.response.use(
     response => {
-        console.log("interceptors.response response", response)
-        return response
+        if (response.status === 200){
+            return response.data
+        }
+        return Promise.reject("request error.");
     },
     error => {
-        console.log("interceptors.response error", error)
-        return error
+        return Promise.reject(error);
     }
 )
 

@@ -18,13 +18,20 @@
 </template>
 
 <script setup>
-import classifyPinyin from "@/assets/pinyin/classifyPinyin.json"
-import {ref} from "vue";
+import {onMounted, ref} from "vue";
+import resource from "@/util/resource.js";
+import {getPinyinVoiceUrl} from "@/constant/resource_constant.js";
 
-const pinyin = ref(classifyPinyin.data)
+const pinyin = ref()
+
+onMounted(async () => {
+  const classifyPinyin = await resource.getClassifyPinyin()
+  pinyin.value = classifyPinyin.data
+})
 
 function readVideo(video) {
-  const audio = new Audio("https://tungsword.github.io/child/pinyin/video/" + video);
+  const url = getPinyinVoiceUrl(video)
+  const audio = new Audio(url);
   audio.play();
 }
 </script>
@@ -34,6 +41,7 @@ function readVideo(video) {
 .classify_pinyin {
   height: calc(100vh - 140px);
   font-size: 30px;
+
   span {
     font-size: 20px;
   }

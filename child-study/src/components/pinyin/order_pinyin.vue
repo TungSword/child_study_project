@@ -8,7 +8,12 @@
 </template>
 
 <script>
-import allPinyin from "@/assets/pinyin/allPinyin.json"
+import resource from "@/util/resource.js";
+import {getPinyinVoiceUrl} from "@/constant/resource_constant.js";
+
+import {ref} from "vue";
+
+const allPinyin = ref();
 
 export default {
   data() {
@@ -18,17 +23,18 @@ export default {
       index: 0
     }
   },
-  mounted() {
+  async mounted() {
+    allPinyin.value = await resource.getAllPinyin()
     this.refresh();
   },
   methods: {
     refresh() {
-      if (this.index >= allPinyin.data.length) {
+      if (this.index >= allPinyin.value.data.length) {
         this.index = 0;
       }
-      const currentPinyin = allPinyin.data[this.index]
+      const currentPinyin = allPinyin.value.data[this.index]
       this.pinyin = currentPinyin.show;
-      this.video = "https://tungsword.github.io/child/pinyin/video/" + currentPinyin.video;
+      this.video = getPinyinVoiceUrl(currentPinyin.video)
       this.index++;
     },
     read() {

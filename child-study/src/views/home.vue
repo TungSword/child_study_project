@@ -7,9 +7,7 @@
     <orderPinyin v-if="currentComponent === 'orderPinyin'"/>
     <randomPinyin v-if="currentComponent === 'randomPinyin'"/>
     <classifyPinyin v-if="currentComponent === 'classifyPinyin'"/>
-    <chineseCharacter v-if="currentComponent === 'chineseCharacter'"/>
     <chinesePoetry v-if="currentComponent === 'chinesePoetry'"/>
-    <story v-if="currentComponent === 'story'"/>
 
     <div v-if="currentComponent === 'home'">
       <el-row :gutter="20">
@@ -31,8 +29,6 @@ import mathCalc from "@/components/math/math_calc.vue";
 import orderPinyin from "@/components/pinyin/order_pinyin.vue";
 import randomPinyin from "@/components/pinyin/random_pinyin.vue";
 import classifyPinyin from "@/components/pinyin/classify_pinyin.vue";
-import chineseCharacter from "@/components/chinese/chinese_character.vue"
-import Story from "@/components/story/story.vue";
 import chinesePoetry from "@/components/chinese/chinese_poetry.vue";
 
 const currentComponent = ref('home')
@@ -62,16 +58,6 @@ const list = [
     name: "唐诗三百首",
     component: "chinesePoetry",
     show: true
-  },
-  {
-    name: "故事",
-    component: "story",
-    show: false
-  },
-  {
-    name: "认字",
-    component: "chineseCharacter",
-    show: false
   }
 ]
 

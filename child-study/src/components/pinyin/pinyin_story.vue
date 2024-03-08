@@ -32,10 +32,10 @@
 </template>
 
 <script setup>
-import {ref, defineProps} from "vue";
+import {ref, defineProps, watchEffect} from "vue";
 const props = defineProps(['story', "space"])
 
-const storyList = ref(props.story)
+const storyList = ref()
 const showTitles = ref(true);
 const currentStory = ref({})
 function showContent(story){
@@ -43,6 +43,10 @@ function showContent(story){
   currentStory.value = story;
   document.documentElement.scrollTop
 }
+
+watchEffect(() => {
+  storyList.value = props.story
+})
 
 function hiddenContent(){
   showTitles.value = true
