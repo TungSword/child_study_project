@@ -3,11 +3,12 @@
     <span>小於同学</span>
   </div>
   <div class="content">
-    <mathCalc v-if="currentComponent === 'mathCalc'"/>
-    <orderPinyin v-if="currentComponent === 'orderPinyin'"/>
-    <randomPinyin v-if="currentComponent === 'randomPinyin'"/>
-    <classifyPinyin v-if="currentComponent === 'classifyPinyin'"/>
-    <chinesePoetry v-if="currentComponent === 'chinesePoetry'"/>
+    <math_calc v-if="currentComponent === 'mathCalc'"/>
+    <order_pinyin v-if="currentComponent === 'orderPinyin'"/>
+    <random_pinyin v-if="currentComponent === 'randomPinyin'"/>
+    <classify_pinyin v-if="currentComponent === 'classifyPinyin'"/>
+    <chinese_poetry v-if="currentComponent === 'chinesePoetry'"/>
+    <monkey_police_story v-if="currentComponent === 'monkeyPoliceStory'"/>
 
     <div v-if="currentComponent === 'home'">
       <el-row :gutter="20">
@@ -25,13 +26,13 @@
 
 <script setup>
 import {ref} from "vue";
-import mathCalc from "@/components/math/math_calc.vue";
-import orderPinyin from "@/components/pinyin/order_pinyin.vue";
-import randomPinyin from "@/components/pinyin/random_pinyin.vue";
-import classifyPinyin from "@/components/pinyin/classify_pinyin.vue";
-import chinesePoetry from "@/components/chinese/chinese_poetry.vue";
+import Math_calc from "@/components/math/math_calc.vue";
+import Order_pinyin from "@/components/pinyin/order_pinyin.vue";
+import Random_pinyin from "@/components/pinyin/random_pinyin.vue";
+import Classify_pinyin from "@/components/pinyin/classify_pinyin.vue";
+import Chinese_poetry from "@/components/chinese/chinese_poetry.vue";
+import Monkey_police_story from "@/components/story/monkey_police_story.vue";
 
-const currentComponent = ref('home')
 
 const list = [
   {
@@ -58,8 +59,15 @@ const list = [
     name: "唐诗三百首",
     component: "chinesePoetry",
     show: true
+  },
+  {
+    name: "猴子警长探案记",
+    component: "monkeyPoliceStory",
+    show: true
   }
 ]
+
+const currentComponent = ref('home')
 
 function showComponent(component) {
   currentComponent.value = component;

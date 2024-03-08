@@ -9,6 +9,7 @@ const PINYIN_VOICE_PATH = "/voice/pinyin/"
 const CHINESE_TEXT_PATH = "/text/chinese"
 // 故事路径
 const STORY_TEXT_PATH = "/text/story"
+// 猴子警长故事路径
 const STORY_MONKEY_POLICE_PATH = "/voice/monkey_story/"
 
 // allPinyin.json
@@ -20,7 +21,6 @@ export const CHINESE_POETRY_JSON_URL = `${RESOURCE_URL}${CHINESE_TEXT_PATH}/chin
 // monkeystory.json
 export const MONKEY_STORY_JSON_URL = `${RESOURCE_URL}${STORY_TEXT_PATH}/monkeystory.json`;
 
-
 // a.mp3
 export function getPinyinVoiceUrl(param) {
     return `${RESOURCE_URL}${PINYIN_VOICE_PATH}${param}`
@@ -28,7 +28,7 @@ export function getPinyinVoiceUrl(param) {
 
 // 5093673257688050822.mp3
 export function getMonkeyPoliceStoryUrl(param) {
-    return `${RESOURCE_URL}${STORY_MONKEY_POLICE_PATH}${param}`
+    return `${RESOURCE_URL}${STORY_MONKEY_POLICE_PATH}${param}.mp3`
 }
 
 
