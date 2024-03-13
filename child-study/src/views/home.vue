@@ -5,6 +5,7 @@
     </div>
     <div class="content">
       <math_calc v-if="currentComponent === 'mathCalc'"/>
+      <math_calc_multi v-if="currentComponent === 'mathCalcMulti'"></math_calc_multi>
       <order_pinyin v-if="currentComponent === 'orderPinyin'"/>
       <random_pinyin v-if="currentComponent === 'randomPinyin'"/>
       <classify_pinyin v-if="currentComponent === 'classifyPinyin'"/>
@@ -36,8 +37,13 @@ const homeName = ref(route.query.name)
 
 const list = [
   {
-    name: "数学计算",
+    name: "数学加减法",
     component: "mathCalc",
+    show: true
+  },
+  {
+    name: "数学乘除法",
+    component: "mathCalcMulti",
     show: true
   },
   {
