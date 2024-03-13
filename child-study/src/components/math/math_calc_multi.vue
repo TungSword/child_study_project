@@ -25,6 +25,7 @@ export default {
       methods: ["×", "÷"],
       refresh: false,
       buttonName: "确 认",
+      errorCount: 0
     }
   },
   mounted() {
@@ -47,23 +48,35 @@ export default {
       }
 
     },
-    checkResult() {
-      if (this.refresh) {
-        this.init();
-        return;
-      }
+    calcResult(){
       let calcResult = 0;
       if (this.methodCode === 0) {
         calcResult = this.first * this.second;
       } else if (this.methodCode === 1) {
         calcResult = this.first / this.second;
       }
-      if (this.result === calcResult) {
+      return calcResult;
+    },
+    checkResult() {
+      if (this.errorCount >= 3 && !this.refresh){
+        this.result = this.calcResult()
+        this.$message.success(`答案是【${this.result}】，继续努力哦！`)
+        this.refresh = true
+        this.buttonName = "下一题"
+        this.errorCount = 0;
+        return;
+      }
+      if (this.refresh) {
+        this.init();
+        return;
+      }
+      if (this.result === this.calcResult()) {
         this.refresh = true
         this.$message.success("恭喜你，答对了！")
         this.buttonName = "下一题"
       } else {
         this.result = ""
+        this.errorCount++;
         this.$message.error("回答错误。")
       }
     }
