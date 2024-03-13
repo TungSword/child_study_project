@@ -27,18 +27,12 @@
 </template>
 
 <script setup>
-import {onMounted, ref} from "vue";
+import {ref} from "vue";
 import {useRoute} from 'vue-router'
 import {HomeFilled} from '@element-plus/icons-vue'
 
 const route = useRoute();
 const homeName = ref(route.query.name)
-
-onMounted(() => {
-  const useRelax = route.query.useRelax
-  console.log("home mounted", name, useRelax)
-
-})
 
 const list = [
   {
@@ -112,7 +106,8 @@ function showComponent(component) {
     text-align: center;
   }
 }
-.homeButton{
+
+.homeButton {
   position: absolute;
   bottom: 20px;
   right: 20px;
