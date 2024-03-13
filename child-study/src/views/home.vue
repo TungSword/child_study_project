@@ -6,6 +6,7 @@
     <div class="content">
       <math_calc v-if="currentComponent === 'mathCalc'"/>
       <math_calc_multi v-if="currentComponent === 'mathCalcMulti'"></math_calc_multi>
+      <math_multi_table v-if="currentComponent === 'mathMultiTable'"></math_multi_table>
       <order_pinyin v-if="currentComponent === 'orderPinyin'"/>
       <random_pinyin v-if="currentComponent === 'randomPinyin'"/>
       <classify_pinyin v-if="currentComponent === 'classifyPinyin'"/>
@@ -44,6 +45,11 @@ const list = [
   {
     name: "数学乘除法",
     component: "mathCalcMulti",
+    show: true
+  },
+  {
+    name: "九九乘法表",
+    component: "mathMultiTable",
     show: true
   },
   {
