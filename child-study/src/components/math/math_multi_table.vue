@@ -20,7 +20,7 @@ export default {
       const subTable = []
       for (let j = 1; j <= 9; j++) {
         if (i <= j){
-          subTable.push(`${i}${this.method}${j}=${i*j}`)
+          subTable.push(`${i}${this.method}${j} = ${i*j}`)
         }
       }
       subTable.reverse()
@@ -37,7 +37,7 @@ export default {
   }
   .el-card__body{
     writing-mode: vertical-rl;
-    padding: 15px !important;
+    padding: 10px !important;
   }
 }
 
