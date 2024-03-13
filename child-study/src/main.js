@@ -2,7 +2,7 @@ import "@/assets/main.css"
 import {createApp} from 'vue'
 import {ElButton, ElCard, ElCol, ElInputNumber, ElMessage, ElRow} from "element-plus";
 import 'element-plus/dist/index.css'
-
+import components from "@/components/index.js";
 import App from './App.vue'
 import router from './router'
 
@@ -15,5 +15,9 @@ app.use(ElCol)
 app.use(ElButton)
 app.use(ElInputNumber)
 app.use(ElMessage)
+
+for (const component in components){
+    app.component(component, components[component])
+}
 
 app.mount('#app')

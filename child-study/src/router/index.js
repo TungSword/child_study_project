@@ -1,5 +1,13 @@
 import {createRouter, createWebHistory} from 'vue-router'
-import {routes} from "@/router/routes.js";
+import home from "@/views/home.vue";
+
+const routes = [
+    {
+        path: "/",
+        name: "首页",
+        component: home
+    }
+]
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),

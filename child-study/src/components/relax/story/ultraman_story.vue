@@ -1,13 +1,13 @@
 <template>
-  <pinyin_content :content="poetryList" :startSpace="false"/>
+  <pinyin_content :content="storyList" :startSpace="true"/>
 </template>
 <script setup>
 import {ref, onMounted} from "vue";
 import resource from "@/util/resource.js";
 
-const poetryList = ref()
+const storyList = ref()
 
 onMounted(async ()=> {
-  poetryList.value = await resource.getChinesePoetry()
+  storyList.value = await resource.getCerroUltramanStory()
 })
 </script>

@@ -20,6 +20,8 @@ export const CHINESE_POETRY_JSON_URL = `${RESOURCE_URL}${CHINESE_POETRY_PATH}chi
 // monkeystory.json
 export const MONKEY_STORY_JSON_URL = `${RESOURCE_URL}${RELAX_STORY_PATH}monkey_police_story.json`;
 
+export const CERRO_ULTRAMAN_STORY_JSON_URL = `${RESOURCE_URL}${RELAX_STORY_PATH}cerro_ultraman_story.json`;
+
 // a.mp3
 export function getPinyinVoiceUrl(param) {
     return `${RESOURCE_URL}${PINYIN_PATH}voice/${param}`

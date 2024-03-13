@@ -3,7 +3,8 @@ import {
     ALL_PINYIN_JSON_URL,
     CHINESE_POETRY_JSON_URL,
     CLASSIFY_PINYIN_JSON_URL,
-    MONKEY_STORY_JSON_URL
+    MONKEY_STORY_JSON_URL,
+    CERRO_ULTRAMAN_STORY_JSON_URL
 } from "@/constant/resource_constant.js";
 
 function getAllPinyin() {
@@ -26,9 +27,14 @@ function getResource(url) {
     return servcie.get(url)
 }
 
+function getCerroUltramanStory(){
+    return getResource(CERRO_ULTRAMAN_STORY_JSON_URL)
+}
+
 export default {
     getAllPinyin,
     getClassifyPinyin,
     getChinesePoetry,
-    getMonkeyPoliceStory
+    getMonkeyPoliceStory,
+    getCerroUltramanStory,
 }
