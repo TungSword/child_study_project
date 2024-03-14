@@ -37,7 +37,7 @@ onMounted(() => {
 })
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
 .tab-vue-app {
   display: flex;
   flex-direction: column;
