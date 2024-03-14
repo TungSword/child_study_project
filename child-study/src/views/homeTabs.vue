@@ -19,7 +19,7 @@
 </template>
 
 <script setup>
-import {ref, onMounted} from "vue";
+import {onMounted, ref} from "vue";
 import {useRoute} from 'vue-router'
 import MathViews from "@/views/math-views.vue";
 import ChineseViews from "@/views/chinese-views.vue";
@@ -31,7 +31,7 @@ const activeName = ref("math")
 
 onMounted(() => {
   const name = route.query.name;
-  if (name){
+  if (name) {
     homeName.value = name;
   }
 })
@@ -53,14 +53,9 @@ onMounted(() => {
   }
 
   .content {
-    padding: 20px;
-    overflow: auto;
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
-  }
-  .el-tabs__content{
-    flex-grow: 1;
+    height: calc(100vh - 68px) !important;
   }
 
   .studyCom {
@@ -70,7 +65,7 @@ onMounted(() => {
 }
 
 
-.el-tabs__item{
-  font-size: 20px !important;
+.el-tabs__item {
+  font-size: 16px !important;
 }
 </style>
