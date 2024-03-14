@@ -10,7 +10,9 @@
     <br>
     <el-button class="result_button" type="primary" @click="checkResult">{{ buttonName }}</el-button>
     <br>
-
+  </div>
+  <div>
+    <el-result v-if="calcSum > 0 && resultVisible" :icon="resultIcon" :title="resultInfo"/>
   </div>
 </template>
 
@@ -26,8 +28,12 @@ export default {
       methods: ["×", "÷"],
       refresh: false,
       buttonName: "确 认",
+      calcSum: 0,
       errorCount: 0,
       successCount: 0,
+      resultIcon: "",
+      resultInfo: "",
+      resultVisible: true,
     }
   },
   mounted() {
@@ -62,32 +68,40 @@ export default {
     checkResult() {
       if (this.errorCount >= 3 && !this.refresh) {
         this.result = this.calcResult()
-        this.$message.success(`答案是【${this.result}】，继续努力哦！`)
+        this.resultInfo = `答案是【${this.result}】，继续努力哦！`
+        this.resultIcon = "error"
         this.refresh = true
         this.buttonName = "下一题"
-        this.errorCount = 0;
         return;
       }
       if (this.refresh) {
+        if (this.errorCount >= 3){
+          this.resultVisible = false;
+          this.errorCount = 0;
+        }
         this.init();
         return;
       }
+      this.resultVisible = true;
       if (this.result === this.calcResult()) {
         this.refresh = true
         this.buttonName = "下一题"
         this.successCount++;
-        if (this.successCount % 10 === 0) {
-          this.$message.success(`恭喜你，连续答对【${this.successCount}】题了！`)
-        } else {
-          this.$message.success("恭喜你，答对了！")
-        }
+        this.calcSum++;
+        this.resultInfo = `恭喜你，连续答对【${this.successCount}】题了！`
+        this.resultIcon = "success"
       } else {
         this.result = ""
+        if (this.errorCount === 0) {
+          this.calcSum++;
+        }
         this.errorCount++;
+        this.resultInfo = `答案是【${this.result}】，继续努力哦！`
+        this.resultIcon = "error"
         if (this.successCount >= 10) {
-          this.$message.error("很遗憾连胜失败。")
+          this.resultInfo = "回答错误，很遗憾连胜失败"
         } else {
-          this.$message.error("回答错误。")
+          this.resultInfo = "回答错误。"
         }
         this.successCount = 0;
         this.$refs.resultRef.focus();
@@ -98,11 +112,10 @@ export default {
 
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 .math_calc {
-  font-size: 100px;
+  font-size: 80px;
   width: 100%;
-  height: calc(100vh - 140px);
   text-align: center;
 
   .result_input {

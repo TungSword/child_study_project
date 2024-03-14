@@ -1,6 +1,6 @@
 import "@/assets/main.css"
 import {createApp} from 'vue'
-import {ElButton, ElCard, ElCol, ElInputNumber, ElMessage, ElRow} from "element-plus";
+import {ElButton, ElCard, ElCol, ElInputNumber, ElMessage, ElRow, ElSelect, ElTabs, ElResult} from "element-plus";
 import 'element-plus/dist/index.css'
 import components from "@/components/index.js";
 import App from './App.vue'
@@ -15,8 +15,11 @@ app.use(ElCol)
 app.use(ElButton)
 app.use(ElInputNumber)
 app.use(ElMessage)
+app.use(ElTabs)
+app.use(ElSelect)
+app.use(ElResult)
 
-for (const component in components){
+for (const component in components) {
     app.component(component, components[component])
 }
 

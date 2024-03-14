@@ -1,0 +1,76 @@
+<template>
+  <div class="tab-vue-app">
+    <div class="header">
+      <span>{{ homeName }}同学</span>
+    </div>
+    <el-tabs v-model="activeName" class="content">
+      <el-tab-pane label="数学" name="math">
+        <math-views></math-views>
+      </el-tab-pane>
+      <el-tab-pane label="语文" name="chinese">
+        <chinese-views></chinese-views>
+      </el-tab-pane>
+      <el-tab-pane label="放松" name="relax">
+        <relax-views></relax-views>
+      </el-tab-pane>
+    </el-tabs>
+  </div>
+
+</template>
+
+<script setup>
+import {ref, onMounted} from "vue";
+import {useRoute} from 'vue-router'
+import MathViews from "@/views/math-views.vue";
+import ChineseViews from "@/views/chinese-views.vue";
+import RelaxViews from "@/views/relax-views.vue";
+
+const route = useRoute();
+const homeName = ref("小於")
+const activeName = ref("math")
+
+onMounted(() => {
+  const name = route.query.name;
+  if (name){
+    homeName.value = name;
+  }
+})
+</script>
+
+<style lang="less" scoped>
+.tab-vue-app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  .header {
+    text-align: center;
+    height: 48px;
+    line-height: 48px;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+  }
+
+  .content {
+    padding: 20px;
+    overflow: auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .el-tabs__content{
+    flex-grow: 1;
+  }
+
+  .studyCom {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+
+.el-tabs__item{
+  font-size: 20px !important;
+}
+</style>

@@ -29,13 +29,19 @@
 </template>
 
 <script setup>
-import {ref} from "vue";
+import {ref, onMounted} from "vue";
 import {useRoute} from 'vue-router'
 import {HomeFilled} from '@element-plus/icons-vue'
 
 const route = useRoute();
-const homeName = ref(route.query.name)
+const homeName = ref("小於")
 
+onMounted(() => {
+  const name = route.query.name;
+  if (name){
+    homeName.value = name;
+  }
+})
 const list = [
   {
     name: "数学加减法",
@@ -92,7 +98,7 @@ function showComponent(component) {
 
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 .vue-app {
   display: flex;
   flex-direction: column;
@@ -119,9 +125,4 @@ function showComponent(component) {
   }
 }
 
-.homeButton {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-}
 </style>
