@@ -97,6 +97,7 @@ export default {
       this.result = ""
       this.refresh = false;
       this.buttonName = "确 认"
+      this.errorCount = 0;
       this.$refs.resultRef.focus();
     },
     calcResult() {
@@ -120,7 +121,6 @@ export default {
       if (this.refresh) {
         if (this.errorCount >= 3){
           this.resultVisible = false;
-          this.errorCount = 0;
         }
         this.init();
         return;

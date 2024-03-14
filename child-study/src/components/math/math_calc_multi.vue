@@ -54,6 +54,7 @@ export default {
       if (this.methodCode === 1 && this.second === 0) {
         this.init()
       }
+      this.errorCount = 0;
       this.$refs.resultRef.focus();
     },
     calcResult() {
@@ -77,7 +78,6 @@ export default {
       if (this.refresh) {
         if (this.errorCount >= 3){
           this.resultVisible = false;
-          this.errorCount = 0;
         }
         this.init();
         return;
