@@ -62,6 +62,10 @@ onMounted(() => {
     margin-bottom: 20px;
     text-align: center;
   }
+  .el-tabs__content{
+    overflow:auto;
+    overflow-x:hidden;
+  }
 }
 
 
