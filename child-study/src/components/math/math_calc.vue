@@ -152,6 +152,8 @@ export default {
     },
     changeCalcMode() {
       localStorage.setItem("match_calc_mode", this.caclMode)
+      this.resultVisible = false;
+      this.successCount = 0;
       this.init();
     }
   }
