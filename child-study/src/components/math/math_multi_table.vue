@@ -41,7 +41,7 @@ export default {
   .math_line {
     background-color: #FFFFFF;
     border-radius: 4px;
-    box-shadow: 5px 5px 5px rgba(220, 220, 220, 0.5);
+    box-shadow: 0 0 10px rgba(220, 220, 220, 0.5);
     writing-mode: vertical-rl;
     display: flex;
     align-items: center;
