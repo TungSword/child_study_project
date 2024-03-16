@@ -152,6 +152,7 @@ export default {
     },
     changeCalcMode() {
       localStorage.setItem("match_calc_mode", this.caclMode)
+      this.init();
     }
   }
 }
