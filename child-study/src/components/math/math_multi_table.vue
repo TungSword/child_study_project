@@ -1,17 +1,19 @@
 <template>
   <div class="math_multi_table">
     <div v-for="(subTable, index) in table" :key="index" class="subTable">
-      <el-card v-for="(item, j) in subTable" :key="j">{{ item }}</el-card>
+      <div v-for="(list, j) in subTable" :key="j" class="math_line">
+        <span v-for="item in list">{{ item }}</span>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  data(){
-    return{
+  data() {
+    return {
       table: [],
-      method : "×"
+      method: "×"
     }
   },
   mounted() {
@@ -19,8 +21,8 @@ export default {
     for (let i = 1; i <= 9; i++) {
       const subTable = []
       for (let j = 1; j <= 9; j++) {
-        if (i <= j){
-          subTable.push(`${i}${this.method}${j} = ${i*j}`)
+        if (i <= j) {
+          subTable.push([i, this.method, j, '=', i * j])
         }
       }
       subTable.reverse()
@@ -31,13 +33,20 @@ export default {
 </script>
 
 <style lang="less">
-.math_multi_table{
-  .subTable{
+.math_multi_table {
+  .subTable {
     display: flex;
   }
-  .el-card__body{
+
+  .math_line {
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px 5px rgba(200, 200, 200, 0.5);
     writing-mode: vertical-rl;
-    padding: 10px !important;
+    display: flex;
+    align-items: center;
+    padding: 8px !important;
+    margin: 2px;
   }
 }
 
