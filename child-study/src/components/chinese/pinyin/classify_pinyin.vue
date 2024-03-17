@@ -8,7 +8,7 @@
           <el-col :span="6" v-for="(item, j) in classify.data" :key="j">
             <el-card @click.stop="readVideo(item.video)" style="margin-bottom: 20px; text-align: center"
                      :class="{select_pinyin: i === index && j === jIndex - 1}">
-              <span style="font-size: 30px">
+              <span>
                 {{ item.show }}
               </span>
             </el-card>
