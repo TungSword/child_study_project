@@ -12,7 +12,8 @@
       <classify_pinyin v-if="currentComponent === 'classifyPinyin'"/>
       <chinese_poetry v-if="currentComponent === 'chinesePoetry'"/>
       <monkey_police_story v-if="currentComponent === 'monkeyPoliceStory'"/>
-      <ultraman_story v-if="currentComponent === 'ultraman_story'"></ultraman_story>
+      <ultraman_story v-if="currentComponent === 'ultraman_story'"/>
+      <english_letters v-if="currentComponent === 'english_letters'"/>
 
       <div v-if="currentComponent === 'home'">
         <el-row :gutter="20">
@@ -76,6 +77,11 @@ const list = [
   {
     name: "唐诗三百首",
     component: "chinesePoetry",
+    show: true
+  },
+  {
+    name: "英文字母",
+    component: "english_letters",
     show: true
   },
   {

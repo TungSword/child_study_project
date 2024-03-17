@@ -7,6 +7,9 @@ import {
     CERRO_ULTRAMAN_STORY_JSON_URL
 } from "@/constant/resource_constant.js";
 
+function getResource(url) {
+    return servcie.get(url)
+}
 function getAllPinyin() {
     return getResource(ALL_PINYIN_JSON_URL);
 }
@@ -21,10 +24,6 @@ function getChinesePoetry() {
 
 function getMonkeyPoliceStory() {
     return getResource(MONKEY_STORY_JSON_URL)
-}
-
-function getResource(url) {
-    return servcie.get(url)
 }
 
 function getCerroUltramanStory(){

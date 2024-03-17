@@ -11,6 +11,9 @@ const CHINESE_POETRY_PATH = "/chinese/poetry/"
 const RELAX_STORY_PATH = "/relax/story/"
 const RELAX_VOICE_PATH = "/relax/voice/"
 
+// 英语
+const ENGLISH_LETTER_PATH = "/english/letters/"
+
 // allPinyin.json
 export const ALL_PINYIN_JSON_URL = `${RESOURCE_URL}${PINYIN_PATH}allPinyin.json`;
 // classifyPinyin.json
@@ -30,6 +33,11 @@ export function getPinyinVoiceUrl(param) {
 // 5093673257688050822.mp3
 export function getMonkeyPoliceStoryUrl(param) {
     return `${RESOURCE_URL}${RELAX_VOICE_PATH}monkey_police/${param}.mp3`
+}
+
+// a.mp3
+export function getEnglishLetterUrl(param){
+    return `${RESOURCE_URL}${ENGLISH_LETTER_PATH}${param}.mp3`
 }
 
 

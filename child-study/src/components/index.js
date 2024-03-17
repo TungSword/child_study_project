@@ -8,6 +8,7 @@ import pinyin_content from '@/components/common/pinyin_content.vue';
 import ultraman_story from "@/components/relax/story/ultraman_story.vue";
 import math_calc_multi from "@/components/math/math_calc_multi.vue";
 import math_multi_table from "@/components/math/math_multi_table.vue";
+import english_letters from "@/components/english/english_letters.vue"
 
 
 export default {
@@ -20,5 +21,6 @@ export default {
     "pinyin_content": pinyin_content,
     "ultraman_story": ultraman_story,
     "math_calc_multi": math_calc_multi,
-    "math_multi_table": math_multi_table
+    "math_multi_table": math_multi_table,
+    "english_letters": english_letters,
 };
