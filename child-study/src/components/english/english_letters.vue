@@ -4,7 +4,7 @@
     <el-col :span="6" v-for="(letter, i) in all_letters" :key="i">
       <el-card :id="`eng_char_${letter}`" @click.stop="readVideo(letter)"
                style="margin-bottom: 20px; text-align: center;" :class="{select_letter: i === index-1}">
-        <span style="margin-right: 8px; font-size: 30px">
+        <span style="margin-right: 8px; font-size: 20px">
            {{ letter.toUpperCase() }}
         </span>
         <span>{{ letter }}</span>
