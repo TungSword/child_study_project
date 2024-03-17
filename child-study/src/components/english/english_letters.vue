@@ -7,7 +7,7 @@
         <span style="margin-right: 8px; font-size: 30px">
            {{ letter.toUpperCase() }}
         </span>
-        <span style="font-size: 30px">{{ letter }}</span>
+        <span>{{ letter }}</span>
       </el-card>
     </el-col>
   </el-row>
