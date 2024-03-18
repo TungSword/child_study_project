@@ -45,13 +45,16 @@ onMounted(async () => {
 
 function selectStory(story) {
   currentStory.value = story;
-  audioUrl.value = getMonkeyPoliceStoryUrl(story.id);
-  localStorage.setItem("monkeyStory", JSON.stringify(currentStory.value))
-  audio.value.load();
-  audio.value.addEventListener('ended', selectNextStory);
-  audioPlay.value = setTimeout(() => {
-    audio.value.play();
-  }, 3000)
+  resource.getMonkeyPoliceStoryCacheUrl(story.id).then(url => {
+    audioUrl.value = url;
+    localStorage.setItem("monkeyStory", JSON.stringify(currentStory.value))
+    audio.value.load();
+    audio.value.addEventListener('ended', selectNextStory);
+    audioPlay.value = setTimeout(() => {
+      audio.value.play();
+    }, 3000)
+  })
+
 }
 
 function selectNextStory() {

@@ -20,9 +20,8 @@
 </template>
 
 <script setup>
-import {onMounted, ref, onBeforeUnmount} from "vue";
+import {onBeforeUnmount, onMounted, ref} from "vue";
 import resource from "@/util/resource.js";
-import {getPinyinVoiceUrl} from "@/constant/resource_constant.js";
 
 const pinyin = ref()
 const audio = new Audio();
@@ -31,6 +30,7 @@ const playInterval = ref()
 const index = ref(0);
 const jIndex = ref(0);
 const playStatus = ref(false);
+const isPlayNext = ref(true);
 
 onMounted(async () => {
   const classifyPinyin = await resource.getClassifyPinyin()
@@ -46,14 +46,14 @@ onBeforeUnmount(() => {
 
 function readVideo(video) {
   if (button_name.value[index.value] === "自动播放") {
-    const url = getPinyinVoiceUrl(video)
-    palyAudio(url)
+    resource.getPinyinVoiceCacheUrl(video).then(url => {
+      palyAudio(url)
+    })
   }
 }
 
 function playAllAudio(i) {
-  console.log(playStatus.value)
-  if (playStatus.value && i !== index.value){
+  if (playStatus.value && i !== index.value) {
     clearInterval(playInterval.value)
     button_name.value[index.value] = "自动播放"
   }
@@ -63,14 +63,20 @@ function playAllAudio(i) {
     playStatus.value = true;
     button_name.value[index.value] = "停止播放"
     playInterval.value = setInterval(() => {
-      if (jIndex.value >= pinyin.value[index.value].data.length) {
-        jIndex.value = 0;
+      if (isPlayNext.value) {
+        isPlayNext.value = false;
+        if (jIndex.value >= pinyin.value[index.value].data.length) {
+          jIndex.value = 0;
+        }
+        const currentVideo = pinyin.value[index.value].data[jIndex.value].video;
+        resource.getPinyinVoiceCacheUrl(currentVideo).then(url => {
+          palyAudio(url)
+          isPlayNext.value = true;
+        })
+        jIndex.value++
       }
-      const url = getPinyinVoiceUrl(pinyin.value[index.value].data[jIndex.value].video)
-      palyAudio(url)
-      jIndex.value++
     }, 2000)
-  } else if (button_name.value[index.value] === "停止播放"){
+  } else if (button_name.value[index.value] === "停止播放") {
     clearInterval(playInterval.value)
     button_name.value[index.value] = "自动播放"
     playStatus.value = false;

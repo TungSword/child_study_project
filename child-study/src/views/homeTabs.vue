@@ -10,6 +10,9 @@
       <el-tab-pane label="语文" name="chinese">
         <chinese-views></chinese-views>
       </el-tab-pane>
+      <el-tab-pane label="英语" name="english">
+        <english-views></english-views>
+      </el-tab-pane>
       <el-tab-pane label="放松" name="relax">
         <relax-views></relax-views>
       </el-tab-pane>
@@ -24,6 +27,7 @@ import {useRoute} from 'vue-router'
 import MathViews from "@/views/math-views.vue";
 import ChineseViews from "@/views/chinese-views.vue";
 import RelaxViews from "@/views/relax-views.vue";
+import EnglishViews from "@/views/english-views.vue";
 
 const route = useRoute();
 const homeName = ref("小於")

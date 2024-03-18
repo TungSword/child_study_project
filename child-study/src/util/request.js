@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const servcie = axios.create({
     baseURL: '',
-    timeout: 5000
+    timeout: 50000
 })
 
 servcie.interceptors.request.use(

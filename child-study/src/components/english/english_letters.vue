@@ -14,7 +14,7 @@
 </template>
 <script setup>
 import {ref, onBeforeUnmount} from "vue";
-import {getEnglishLetterUrl} from "@/constant/resource_constant.js"
+import resource from "@/util/resource.js";
 
 const all_letters = [
   "a", "b", "c", "d",
@@ -29,6 +29,7 @@ const palyInterval = ref();
 const index = ref(0);
 const button_name = ref("自动播放")
 const audio = new Audio();
+const isPlayNext = ref(true);
 
 function palyAudio(url) {
   audio.src = url;
@@ -42,8 +43,9 @@ onBeforeUnmount(() => {
 
 function readVideo(letter) {
   if (button_name.value === "自动播放") {
-    const url = getEnglishLetterUrl(letter)
-    palyAudio(url);
+    resource.getEnglishLetterCacheUrl(letter).then(url => {
+      palyAudio(url);
+    })
   }
 }
 
@@ -51,12 +53,17 @@ function palyAllVideo() {
   if (button_name.value === "自动播放") {
     button_name.value = "停止播放"
     palyInterval.value = setInterval(() => {
-      if (index.value >= all_letters.length) {
-        index.value = 0;
+      if (isPlayNext.value){
+        isPlayNext.value = false;
+        if (index.value >= all_letters.length) {
+          index.value = 0;
+        }
+        resource.getEnglishLetterCacheUrl(all_letters[index.value]).then(url => {
+          palyAudio(url);
+          isPlayNext.value = true;
+        })
+        index.value++;
       }
-      const url = getEnglishLetterUrl(all_letters[index.value]);
-      palyAudio(url)
-      index.value++;
     }, 2000)
   } else {
     clearInterval(palyInterval.value);
