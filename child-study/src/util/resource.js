@@ -13,7 +13,17 @@ import {
 import {queryData, saveData} from '@/util/indexeddb.js'
 
 function getResource(url) {
-    return servcie.get(url)
+    return new Promise(resolve => {
+        const result = sessionStorage.getItem(url)
+        if (result){
+            resolve(JSON.parse(result));
+        }else {
+            servcie.get(url).then(response => {
+                sessionStorage.setItem(url, JSON.stringify(response))
+                resolve(response)
+            })
+        }
+    })
 }
 
 function getAllPinyin() {
