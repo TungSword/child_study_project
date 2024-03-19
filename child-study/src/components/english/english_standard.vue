@@ -65,7 +65,9 @@ function playAllAudio(i) {
         const currentVideo = allEngStandard.value[index.value].data[jIndex.value].index;
         getEnglishStandardCacheUrl(currentVideo).then(url => {
           palyAudio(url)
-          isPlayNext.value = true;
+          setTimeout(() => {
+            isPlayNext.value = true;
+          }, 1000)
         })
         jIndex.value++
       }

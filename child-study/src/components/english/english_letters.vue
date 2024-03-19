@@ -60,7 +60,9 @@ function palyAllVideo() {
         }
         getEnglishLetterCacheUrl(all_letters[index.value]).then(url => {
           palyAudio(url);
-          isPlayNext.value = true;
+          setTimeout(() => {
+            isPlayNext.value = true;
+          }, 1000)
         })
         index.value++;
       }

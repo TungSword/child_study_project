@@ -69,7 +69,9 @@ function playAllAudio(i) {
         const currentVideo = pinyin.value[index.value].data[jIndex.value].video;
         getPinyinVoiceCacheUrl(currentVideo).then(url => {
           palyAudio(url)
-          isPlayNext.value = true;
+          setTimeout(() => {
+            isPlayNext.value = true;
+          }, 1000)
         })
         jIndex.value++
       }
