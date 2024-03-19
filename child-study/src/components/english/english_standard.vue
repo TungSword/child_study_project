@@ -1,27 +1,24 @@
 <template>
-  <div class="classify_pinyin">
-    <el-row  v-for="(classify, i) in pinyin" :key="i" :gutter="20">
-      <el-col :span="24" style="margin-bottom: 20px">
-        <span style="height: 60px;margin-right: 10px">{{ classify.name }}</span>
-        <el-button @click="playAllAudio(i)" type="primary">{{ button_name[i] }}</el-button>
-      </el-col>
-      <el-col :span="6" v-for="(item, j) in classify.data" :key="j">
-        <el-card @click.stop="readVideo(item.video)" style="margin-bottom: 20px; text-align: center"
-                 :class="{select_pinyin: i === index && j === jIndex - 1}">
-              <span>
-                {{ item.show }}
+  <el-row :gutter="20" v-for="(list, i) in allEngStandard" :key="i" class="english_standard">
+    <el-col :span="24" style="margin-bottom: 20px">
+      <span style="height: 60px;margin-right: 10px">{{ list.type }}</span>
+      <el-button @click="playAllAudio(i)" type="primary">{{ button_name[i] }}</el-button>
+    </el-col>
+    <el-col :span="6" v-for="(item, j) in list.data" :key="j">
+      <el-card @click.stop="readVideo(item.index)" style="margin-bottom: 20px; text-align: center"
+               :class="{select_letter: i === index && j === jIndex - 1}">
+              <span style="font-size: 20px">
+                {{ item.name }}
               </span>
-        </el-card>
-      </el-col>
-    </el-row>
-  </div>
+      </el-card>
+    </el-col>
+  </el-row>
 </template>
-
 <script setup>
 import {onBeforeUnmount, onMounted, ref} from "vue";
-import {getClassifyPinyin, getPinyinVoiceCacheUrl} from "@/util/resource.js";
+import {getEnglishStandard, getEnglishStandardCacheUrl} from "@/util/resource.js";
 
-const pinyin = ref()
+const allEngStandard = ref([])
 const audio = new Audio();
 const button_name = ref([])
 const playInterval = ref()
@@ -31,9 +28,8 @@ const playStatus = ref(false);
 const isPlayNext = ref(true);
 
 onMounted(async () => {
-  const classifyPinyin = await getClassifyPinyin()
-  pinyin.value = classifyPinyin.data
-  for (let i = 0; i < pinyin.value.length; i++) {
+  allEngStandard.value = await getEnglishStandard();
+  for (let i = 0; i < allEngStandard.value.length; i++) {
     button_name.value.push("自动播放")
   }
 })
@@ -42,9 +38,9 @@ onBeforeUnmount(() => {
   clearInterval(playInterval.value)
 })
 
-function readVideo(video) {
+function readVideo(param) {
   if (button_name.value[index.value] === "自动播放") {
-    getPinyinVoiceCacheUrl(video).then(url => {
+    getEnglishStandardCacheUrl(param).then(url => {
       palyAudio(url)
     })
   }
@@ -63,11 +59,11 @@ function playAllAudio(i) {
     playInterval.value = setInterval(() => {
       if (isPlayNext.value) {
         isPlayNext.value = false;
-        if (jIndex.value >= pinyin.value[index.value].data.length) {
+        if (jIndex.value >= allEngStandard.value[index.value].data.length) {
           jIndex.value = 0;
         }
-        const currentVideo = pinyin.value[index.value].data[jIndex.value].video;
-        getPinyinVoiceCacheUrl(currentVideo).then(url => {
+        const currentVideo = allEngStandard.value[index.value].data[jIndex.value].index;
+        getEnglishStandardCacheUrl(currentVideo).then(url => {
           palyAudio(url)
           isPlayNext.value = true;
         })
@@ -88,19 +84,14 @@ function palyAudio(url) {
 }
 </script>
 
-
 <style lang="less" scoped>
-.classify_pinyin {
-  height: calc(100vh - 140px);
-  font-size: 30px;
+.english_standard {
+  font-family: PingFang SC, Microsoft YaHei, Arial, sans-serif !important;
 
-  span {
-    font-size: 20px;
-  }
-
-  .select_pinyin {
+  .select_letter {
     background-color: #999999;
     color: #FFFFFF;
   }
 }
+
 </style>

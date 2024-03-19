@@ -1,6 +1,7 @@
 <template>
   <div class="english-views">
     <english_letters v-if="currentComponent === 'english_letters'"/>
+    <english_standard v-if="currentComponent === 'english_standard'"/>
 
     <div v-if="currentComponent === 'home'">
       <el-row :gutter="20">
@@ -23,6 +24,11 @@ const list = [
   {
     name: "英文字母",
     component: "english_letters",
+    show: true
+  },
+  {
+    name: "英文英标",
+    component: "english_standard",
     show: true
   }
 ]

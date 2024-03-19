@@ -60,6 +60,7 @@ onMounted(() => {
     display: flex;
     flex-direction: column;
     height: calc(100vh - 68px) !important;
+    padding:0 20px;
   }
 
   .studyCom {
