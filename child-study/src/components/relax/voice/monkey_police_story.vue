@@ -16,9 +16,8 @@
   </ul>
 </template>
 <script setup>
-import resource from "@/util/resource.js";
+import {getMonkeyPoliceStory, getMonkeyPoliceStoryCacheUrl} from "@/util/resource.js";
 import {onMounted, ref, onBeforeUnmount} from "vue";
-import {getMonkeyPoliceStoryUrl} from "@/constant/resource_constant.js";
 
 const storyList = ref();
 const currentStory = ref({
@@ -36,7 +35,7 @@ onBeforeUnmount(() => {
 
 onMounted(async () => {
   audio.value = document.getElementById("story_audio")
-  storyList.value = await resource.getMonkeyPoliceStory();
+  storyList.value = await getMonkeyPoliceStory();
   const saveStory = localStorage.getItem("monkeyStory")
   if (saveStory) {
     selectStory(JSON.parse(saveStory))
@@ -45,7 +44,7 @@ onMounted(async () => {
 
 function selectStory(story) {
   currentStory.value = story;
-  resource.getMonkeyPoliceStoryCacheUrl(story.id).then(url => {
+  getMonkeyPoliceStoryCacheUrl(story.id).then(url => {
     audioUrl.value = url;
     localStorage.setItem("monkeyStory", JSON.stringify(currentStory.value))
     audio.value.load();

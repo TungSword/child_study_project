@@ -4,20 +4,23 @@ import {
     CERRO_ULTRAMAN_STORY_JSON_URL,
     CHINESE_POETRY_JSON_URL,
     CLASSIFY_PINYIN_JSON_URL,
-    MONKEY_STORY_JSON_URL,
-    getPinyinVoiceUrl,
+    ENGLISH_STANDARD_URL,
+    getEnglishLetterUrl,
+    getEnglishStandardUrl,
     getMonkeyPoliceStoryUrl,
-    getEnglishLetterUrl
+    getPinyinVoiceUrl,
+    MONKEY_STORY_JSON_URL
 } from "@/constant/resource_constant.js";
-
 import {queryData, saveData} from '@/util/indexeddb.js'
+
+const dbName = "voice_data_store"
 
 function getResource(url) {
     return new Promise(resolve => {
         const result = sessionStorage.getItem(url)
-        if (result){
+        if (result) {
             resolve(JSON.parse(result));
-        }else {
+        } else {
             servcie.get(url).then(response => {
                 sessionStorage.setItem(url, JSON.stringify(response))
                 resolve(response)
@@ -25,28 +28,6 @@ function getResource(url) {
         }
     })
 }
-
-function getAllPinyin() {
-    return getResource(ALL_PINYIN_JSON_URL);
-}
-
-function getClassifyPinyin() {
-    return getResource(CLASSIFY_PINYIN_JSON_URL)
-}
-
-function getChinesePoetry() {
-    return getResource(CHINESE_POETRY_JSON_URL)
-}
-
-function getMonkeyPoliceStory() {
-    return getResource(MONKEY_STORY_JSON_URL)
-}
-
-function getCerroUltramanStory() {
-    return getResource(CERRO_ULTRAMAN_STORY_JSON_URL)
-}
-
-const dbName = "voice_data_store"
 
 async function getVoiceUrl(url) {
     const result = await queryData(dbName, url)
@@ -64,7 +45,7 @@ async function getVoiceUrl(url) {
     return url;
 }
 
-async function getBigVoiceUrl(url){
+async function getBigVoiceUrl(url) {
     const result = await queryData(dbName, url)
     if (result) {
         return URL.createObjectURL(result.data);
@@ -77,32 +58,50 @@ async function getBigVoiceUrl(url){
             })
         })
     }, 1000)
-
     return url;
 }
 
-async function getPinyinVoiceCacheUrl(param){
+export function getAllPinyin() {
+    return getResource(ALL_PINYIN_JSON_URL);
+}
+
+export function getClassifyPinyin() {
+    return getResource(CLASSIFY_PINYIN_JSON_URL)
+}
+
+export function getChinesePoetry() {
+    return getResource(CHINESE_POETRY_JSON_URL)
+}
+
+export function getEnglishStandard() {
+    return getResource(ENGLISH_STANDARD_URL)
+}
+
+export function getMonkeyPoliceStory() {
+    return getResource(MONKEY_STORY_JSON_URL)
+}
+
+export function getCerroUltramanStory() {
+    return getResource(CERRO_ULTRAMAN_STORY_JSON_URL)
+}
+
+
+export async function getPinyinVoiceCacheUrl(param) {
     const url = getPinyinVoiceUrl(param);
     return await getVoiceUrl(url);
 }
 
-async function getMonkeyPoliceStoryCacheUrl(param){
+export async function getMonkeyPoliceStoryCacheUrl(param) {
     const url = getMonkeyPoliceStoryUrl(param);
     return await getBigVoiceUrl(url);
 }
 
-async function getEnglishLetterCacheUrl(param){
+export async function getEnglishLetterCacheUrl(param) {
     const url = getEnglishLetterUrl(param);
     return await getVoiceUrl(url);
 }
 
-export default {
-    getAllPinyin,
-    getClassifyPinyin,
-    getChinesePoetry,
-    getMonkeyPoliceStory,
-    getCerroUltramanStory,
-    getPinyinVoiceCacheUrl,
-    getMonkeyPoliceStoryCacheUrl,
-    getEnglishLetterCacheUrl
+export async function getEnglishStandardCacheUrl(param) {
+    const url = getEnglishStandardUrl(param);
+    return await getVoiceUrl(url)
 }

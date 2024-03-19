@@ -13,6 +13,7 @@ const RELAX_VOICE_PATH = "/relax/voice/"
 
 // 英语
 const ENGLISH_LETTER_PATH = "/english/letters/"
+const ENGLISH_STANDARD_PATH = "/english/english_standard/"
 
 // allPinyin.json
 export const ALL_PINYIN_JSON_URL = `${RESOURCE_URL}${PINYIN_PATH}allPinyin.json`;
@@ -20,10 +21,15 @@ export const ALL_PINYIN_JSON_URL = `${RESOURCE_URL}${PINYIN_PATH}allPinyin.json`
 export const CLASSIFY_PINYIN_JSON_URL = `${RESOURCE_URL}${PINYIN_PATH}classifyPinyin.json`;
 // chinese_poetry.json
 export const CHINESE_POETRY_JSON_URL = `${RESOURCE_URL}${CHINESE_POETRY_PATH}chinese_poetry.json`;
+
+// english_standard.json
+export const ENGLISH_STANDARD_URL = `${RESOURCE_URL}${ENGLISH_STANDARD_PATH}english_standard.json`;
+
 // monkeystory.json
 export const MONKEY_STORY_JSON_URL = `${RESOURCE_URL}${RELAX_STORY_PATH}monkey_police_story.json`;
-
+// cerro_ultraman_story.json
 export const CERRO_ULTRAMAN_STORY_JSON_URL = `${RESOURCE_URL}${RELAX_STORY_PATH}cerro_ultraman_story.json`;
+
 
 // a.mp3
 export function getPinyinVoiceUrl(param) {
@@ -38,6 +44,11 @@ export function getMonkeyPoliceStoryUrl(param) {
 // a.mp3
 export function getEnglishLetterUrl(param){
     return `${RESOURCE_URL}${ENGLISH_LETTER_PATH}${param}.mp3`
+}
+
+// 3.mp3
+export function getEnglishStandardUrl(param){
+    return `${RESOURCE_URL}${ENGLISH_STANDARD_PATH}${param}.mp3`
 }
 
 

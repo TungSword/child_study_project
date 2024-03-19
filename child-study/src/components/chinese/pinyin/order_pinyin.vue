@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import resource from "@/util/resource.js";
+import {getAllPinyin, getPinyinVoiceCacheUrl} from "@/util/resource.js";
 import {ref} from "vue";
 
 const allPinyin = ref();
@@ -22,7 +22,7 @@ export default {
     }
   },
   async mounted() {
-    allPinyin.value = await resource.getAllPinyin()
+    allPinyin.value = await getAllPinyin()
     this.refresh();
   },
   methods: {
@@ -36,7 +36,7 @@ export default {
       this.index++;
     },
     read() {
-      resource.getPinyinVoiceCacheUrl(this.video).then(url => {
+      getPinyinVoiceCacheUrl(this.video).then(url => {
         const audio = new Audio(url);
         audio.play();
       })

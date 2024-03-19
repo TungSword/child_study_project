@@ -21,7 +21,7 @@
 
 <script setup>
 import {onBeforeUnmount, onMounted, ref} from "vue";
-import resource from "@/util/resource.js";
+import {getClassifyPinyin, getPinyinVoiceCacheUrl} from "@/util/resource.js";
 
 const pinyin = ref()
 const audio = new Audio();
@@ -33,7 +33,7 @@ const playStatus = ref(false);
 const isPlayNext = ref(true);
 
 onMounted(async () => {
-  const classifyPinyin = await resource.getClassifyPinyin()
+  const classifyPinyin = await getClassifyPinyin()
   pinyin.value = classifyPinyin.data
   pinyin.value.forEach(item => {
     button_name.value.push("自动播放")
@@ -46,7 +46,7 @@ onBeforeUnmount(() => {
 
 function readVideo(video) {
   if (button_name.value[index.value] === "自动播放") {
-    resource.getPinyinVoiceCacheUrl(video).then(url => {
+    getPinyinVoiceCacheUrl(video).then(url => {
       palyAudio(url)
     })
   }
@@ -69,7 +69,7 @@ function playAllAudio(i) {
           jIndex.value = 0;
         }
         const currentVideo = pinyin.value[index.value].data[jIndex.value].video;
-        resource.getPinyinVoiceCacheUrl(currentVideo).then(url => {
+        getPinyinVoiceCacheUrl(currentVideo).then(url => {
           palyAudio(url)
           isPlayNext.value = true;
         })

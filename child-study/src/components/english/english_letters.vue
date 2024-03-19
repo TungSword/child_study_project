@@ -14,7 +14,7 @@
 </template>
 <script setup>
 import {ref, onBeforeUnmount} from "vue";
-import resource from "@/util/resource.js";
+import {getEnglishLetterCacheUrl} from "@/util/resource.js";
 
 const all_letters = [
   "a", "b", "c", "d",
@@ -43,7 +43,7 @@ onBeforeUnmount(() => {
 
 function readVideo(letter) {
   if (button_name.value === "自动播放") {
-    resource.getEnglishLetterCacheUrl(letter).then(url => {
+    getEnglishLetterCacheUrl(letter).then(url => {
       palyAudio(url);
     })
   }
@@ -58,7 +58,7 @@ function palyAllVideo() {
         if (index.value >= all_letters.length) {
           index.value = 0;
         }
-        resource.getEnglishLetterCacheUrl(all_letters[index.value]).then(url => {
+        getEnglishLetterCacheUrl(all_letters[index.value]).then(url => {
           palyAudio(url);
           isPlayNext.value = true;
         })
