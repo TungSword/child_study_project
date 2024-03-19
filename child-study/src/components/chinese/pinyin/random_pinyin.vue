@@ -3,7 +3,7 @@
     <span>{{ pinyin }}</span>
   </div>
   <div style="margin-top: 20px">
-    <el-button @click="read" style="width: 100%;" type="primary" :disabled="readDisable">读</el-button>
+    <el-button @click="read" style="width: 100%;" type="primary">读</el-button>
   </div>
 </template>
 
@@ -18,7 +18,6 @@ export default {
     return {
       pinyin: "",
       video: "",
-      readDisable: true,
     }
   },
   async mounted() {
@@ -27,19 +26,17 @@ export default {
   },
   methods: {
     refresh() {
-      this.readDisable = true;
       const length = allPinyin.value.data.length;
       let index = Math.floor(Math.random() * 1000) % length;
       const currentPinyin = allPinyin.value.data[index]
       this.pinyin = currentPinyin.show;
-      resource.getPinyinVoiceCacheUrl(currentPinyin.video).then(url => {
-        this.video = url;
-        this.readDisable = false;
-      })
+      this.video = currentPinyin.video;
     },
     read() {
-      const audio = new Audio(this.video);
-      audio.play();
+      resource.getPinyinVoiceCacheUrl(this.video).then(url => {
+        const audio = new Audio(url);
+        audio.play();
+      })
     }
   }
 }

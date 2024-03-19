@@ -3,13 +3,12 @@
     <span>{{ pinyin }}</span>
   </div>
   <div style="margin-top: 20px">
-    <el-button @click="read" style="width: 100%;" type="primary" :disabled="readDisable">读</el-button>
+    <el-button @click="read" style="width: 100%;" type="primary">读</el-button>
   </div>
 </template>
 
 <script>
 import resource from "@/util/resource.js";
-
 import {ref} from "vue";
 
 const allPinyin = ref();
@@ -20,7 +19,6 @@ export default {
       pinyin: "",
       video: "",
       index: 0,
-      readDisable: true
     }
   },
   async mounted() {
@@ -29,21 +27,19 @@ export default {
   },
   methods: {
     refresh() {
-      this.readDisable = true;
       if (this.index >= allPinyin.value.data.length) {
         this.index = 0;
       }
       const currentPinyin = allPinyin.value.data[this.index]
       this.pinyin = currentPinyin.show;
-      resource.getPinyinVoiceCacheUrl(currentPinyin.video).then(url => {
-        this.video = url;
-        this.readDisable = false;
-      })
+      this.video = currentPinyin.video;
       this.index++;
     },
     read() {
-      const audio = new Audio(this.video);
-      audio.play();
+      resource.getPinyinVoiceCacheUrl(this.video).then(url => {
+        const audio = new Audio(url);
+        audio.play();
+      })
     }
   }
 }
