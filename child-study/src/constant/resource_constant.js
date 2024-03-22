@@ -1,5 +1,6 @@
 // 资源url
-export const RESOURCE_URL = "https://study-resource.pages.dev";
+export const RESOURCE_URL = "https://study-json-resource.pages.dev";
+export const VOICE_RESOURCE_URL="https://study-resource.pages.dev"
 
 // 拼音路径
 const PINYIN_PATH = "/chinese/pinyin/";
@@ -33,22 +34,22 @@ export const CERRO_ULTRAMAN_STORY_JSON_URL = `${RESOURCE_URL}${RELAX_STORY_PATH}
 
 // a.mp3
 export function getPinyinVoiceUrl(param) {
-    return `${RESOURCE_URL}${PINYIN_PATH}voice/${param}`
+    return `${VOICE_RESOURCE_URL}${PINYIN_PATH}voice/${param}`
 }
 
 // 5093673257688050822.mp3
 export function getMonkeyPoliceStoryUrl(param) {
-    return `${RESOURCE_URL}${RELAX_VOICE_PATH}monkey_police/${param}.mp3`
+    return `${VOICE_RESOURCE_URL}${RELAX_VOICE_PATH}monkey_police/${param}.mp3`
 }
 
 // a.mp3
 export function getEnglishLetterUrl(param){
-    return `${RESOURCE_URL}${ENGLISH_LETTER_PATH}${param}.mp3`
+    return `${VOICE_RESOURCE_URL}${ENGLISH_LETTER_PATH}${param}.mp3`
 }
 
 // 3.mp3
 export function getEnglishStandardUrl(param){
-    return `${RESOURCE_URL}${ENGLISH_STANDARD_PATH}${param}.mp3`
+    return `${VOICE_RESOURCE_URL}${ENGLISH_STANDARD_PATH}${param}.mp3`
 }
 
 
