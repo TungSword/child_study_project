@@ -2,14 +2,15 @@ import servcie from './request.js'
 import {
     ALL_PINYIN_JSON_URL,
     CERRO_ULTRAMAN_STORY_JSON_URL,
-    CHINESE_POETRY_JSON_URL,
+    XIAO_XUE_CLASSICAL_CHINESE_URL,
+    XIAO_XUE_POETRY_JSON_URL,
     CLASSIFY_PINYIN_JSON_URL,
     ENGLISH_STANDARD_URL,
+    MONKEY_STORY_JSON_URL,
     getEnglishLetterUrl,
     getEnglishStandardUrl,
     getMonkeyPoliceStoryUrl,
     getPinyinVoiceUrl,
-    MONKEY_STORY_JSON_URL
 } from "@/constant/resource_constant.js";
 import {queryData, saveData} from '@/util/indexeddb.js'
 
@@ -69,8 +70,12 @@ export function getClassifyPinyin() {
     return getResource(CLASSIFY_PINYIN_JSON_URL)
 }
 
-export function getChinesePoetry() {
-    return getResource(CHINESE_POETRY_JSON_URL)
+export function getXiaoXuePoetry(){
+    return getResource(XIAO_XUE_POETRY_JSON_URL)
+}
+
+export function getXiaoXueClassicalChinese(){
+    return getResource(XIAO_XUE_CLASSICAL_CHINESE_URL)
 }
 
 export function getEnglishStandard() {

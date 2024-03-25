@@ -20,8 +20,9 @@ const ENGLISH_STANDARD_PATH = "/english/english_standard/"
 export const ALL_PINYIN_JSON_URL = `${RESOURCE_URL}${PINYIN_PATH}allPinyin.json`;
 // classifyPinyin.json
 export const CLASSIFY_PINYIN_JSON_URL = `${RESOURCE_URL}${PINYIN_PATH}classifyPinyin.json`;
-// chinese_poetry.json
-export const CHINESE_POETRY_JSON_URL = `${RESOURCE_URL}${CHINESE_POETRY_PATH}chinese_poetry.json`;
+export const XIAO_XUE_POETRY_JSON_URL = `${RESOURCE_URL}${CHINESE_POETRY_PATH}xiaoxue_poetry.json`;
+export const XIAO_XUE_CLASSICAL_CHINESE_URL = `${RESOURCE_URL}${CHINESE_POETRY_PATH}xiaoxue_classical_chinese.json`;
+
 
 // english_standard.json
 export const ENGLISH_STANDARD_URL = `${RESOURCE_URL}${ENGLISH_STANDARD_PATH}english_standard.json`;
