@@ -134,10 +134,25 @@ function selectNumber(number) {
   }
 }
 
-function successMessage(){
+function successMessage() {
   if (isSuccess()) {
     if (currentInfo.value.level === shuduContents.value.length) {
-      ElMessage.success("恭喜你通过最后一关！")
+      ElMessageBox.alert(`恭喜你，通过第${currentInfo.value.level}关`, '通关成功',
+          {
+            confirmButtonText: '重新开始',
+            type: 'success',
+            "show-close": false,
+            callback: () => {
+              currentInfo.value.level = 1;
+              clickIndex.value = {
+                i: -1,
+                j: -1
+              }
+              localStorage.setItem("math_shudu_record", "")
+              getNewShudu();
+              saveShuduInfo();
+            }
+          })
     } else {
       ElMessageBox.alert(`恭喜你，通过第${currentInfo.value.level}关`, '通关成功',
           {
@@ -213,6 +228,10 @@ function confirmSelect() {
     grade: selectedValue.value[0],
   }
   drawer.value = false
+  clickIndex.value = {
+    i: -1,
+    j: -1
+  }
   localStorage.setItem("math_shudu_record", "")
   getNewShudu();
   saveShuduInfo();
@@ -264,6 +283,10 @@ onMounted(async () => {
       border-right: black solid 1px;
       border-top: black solid 1px;
       text-align: center;
+    }
+    .sudo_clear:active{
+      background-color: #FF770F;
+      color: #c1c1c1;
     }
 
     .sudo_top_border {
