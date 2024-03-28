@@ -2,12 +2,12 @@
   <pinyin_content :content="storyList" :startSpace="true"/>
 </template>
 <script setup>
-import {ref, onMounted} from "vue";
-import {getCerroUltramanStory} from "@/util/resource.js";
+import {onMounted, ref} from "vue";
+import {getUltramanStory} from "@/util/resource.js";
 
 const storyList = ref()
 
-onMounted(async ()=> {
-  storyList.value = await getCerroUltramanStory()
+onMounted(async () => {
+  storyList.value = await getUltramanStory()
 })
 </script>

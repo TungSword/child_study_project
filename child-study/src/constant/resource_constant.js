@@ -15,6 +15,8 @@ const RELAX_VOICE_PATH = "/relax/voice/"
 // 英语
 const ENGLISH_LETTER_PATH = "/english/letters/"
 const ENGLISH_STANDARD_PATH = "/english/english_standard/"
+// 数学
+const MATH_PATH = "/math/"
 
 // allPinyin.json
 export const ALL_PINYIN_JSON_URL = `${RESOURCE_URL}${PINYIN_PATH}allPinyin.json`;
@@ -22,7 +24,8 @@ export const ALL_PINYIN_JSON_URL = `${RESOURCE_URL}${PINYIN_PATH}allPinyin.json`
 export const CLASSIFY_PINYIN_JSON_URL = `${RESOURCE_URL}${PINYIN_PATH}classifyPinyin.json`;
 export const XIAO_XUE_POETRY_JSON_URL = `${RESOURCE_URL}${CHINESE_POETRY_PATH}xiaoxue_poetry.json`;
 export const XIAO_XUE_CLASSICAL_CHINESE_URL = `${RESOURCE_URL}${CHINESE_POETRY_PATH}xiaoxue_classical_chinese.json`;
-
+// shudu.json
+export const MATH_SHUDU_URL = `${RESOURCE_URL}${MATH_PATH}shudu.json`;
 
 // english_standard.json
 export const ENGLISH_STANDARD_URL = `${RESOURCE_URL}${ENGLISH_STANDARD_PATH}english_standard.json`;
@@ -30,7 +33,7 @@ export const ENGLISH_STANDARD_URL = `${RESOURCE_URL}${ENGLISH_STANDARD_PATH}engl
 // monkeystory.json
 export const MONKEY_STORY_JSON_URL = `${RESOURCE_URL}${RELAX_STORY_PATH}monkey_police_story.json`;
 // cerro_ultraman_story.json
-export const CERRO_ULTRAMAN_STORY_JSON_URL = `${RESOURCE_URL}${RELAX_STORY_PATH}cerro_ultraman_story.json`;
+export const ULTRAMAN_STORY_JSON_URL = `${RESOURCE_URL}${RELAX_STORY_PATH}ultraman_story.json`;
 
 
 // a.mp3

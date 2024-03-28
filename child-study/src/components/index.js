@@ -10,6 +10,7 @@ import math_calc_multi from "@/components/math/math_calc_multi.vue";
 import math_multi_table from "@/components/math/math_multi_table.vue";
 import english_letters from "@/components/english/english_letters.vue";
 import english_standard from "@/components/english/english_standard.vue";
+import math_sudoku from '@/components/math/math_sudoku.vue'
 
 
 export default {
@@ -25,4 +26,5 @@ export default {
     "math_multi_table": math_multi_table,
     "english_letters": english_letters,
     "english_standard": english_standard,
+    "math_sudoku": math_sudoku
 };

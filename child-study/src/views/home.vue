@@ -5,8 +5,9 @@
     </div>
     <div class="content">
       <math_calc v-if="currentComponent === 'mathCalc'"/>
-      <math_calc_multi v-if="currentComponent === 'mathCalcMulti'"></math_calc_multi>
-      <math_multi_table v-if="currentComponent === 'mathMultiTable'"></math_multi_table>
+      <math_calc_multi v-if="currentComponent === 'mathCalcMulti'"/>
+      <math_multi_table v-if="currentComponent === 'mathMultiTable'"/>
+      <math_sudoku v-if="currentComponent === 'mathSudoku'"/>
       <order_pinyin v-if="currentComponent === 'orderPinyin'"/>
       <random_pinyin v-if="currentComponent === 'randomPinyin'"/>
       <classify_pinyin v-if="currentComponent === 'classifyPinyin'"/>
@@ -34,6 +35,7 @@
 import {ref, onMounted} from "vue";
 import {useRoute} from 'vue-router'
 import {HomeFilled} from '@element-plus/icons-vue'
+import Math_sudoku from "@/components/math/math_sudoku.vue";
 
 const route = useRoute();
 const homeName = ref("小於")
@@ -58,6 +60,11 @@ const list = [
   {
     name: "九九乘法表",
     component: "mathMultiTable",
+    show: true
+  },
+  {
+    name: "数独",
+    component: "mathSudoku",
     show: true
   },
   {
