@@ -71,7 +71,7 @@ function playAllAudio(i) {
         })
         jIndex.value++
       }
-    }, 2000)
+    }, 1000)
   } else if (button_name.value[index.value] === "停止播放") {
     clearInterval(playInterval.value)
     button_name.value[index.value] = "自动播放"

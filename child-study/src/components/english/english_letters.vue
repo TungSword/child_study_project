@@ -66,7 +66,7 @@ function palyAllVideo() {
         })
         index.value++;
       }
-    }, 2000)
+    }, 1000)
   } else {
     clearInterval(palyInterval.value);
     button_name.value = "自动播放"
