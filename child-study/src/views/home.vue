@@ -98,15 +98,15 @@ const list = [
     show: true
   },
   {
+    name: "奥特曼故事",
+    component: "ultraman_story",
+    show: true
+  },
+  {
     name: "猴子警长探案记",
     component: "monkeyPoliceStory",
     show: false
   },
-  {
-    name: "奥特曼故事",
-    component: "ultraman_story",
-    show: true
-  }
 ]
 
 const currentComponent = ref('home')
