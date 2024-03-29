@@ -100,7 +100,7 @@ const list = [
   {
     name: "猴子警长探案记",
     component: "monkeyPoliceStory",
-    show: true
+    show: false
   },
   {
     name: "奥特曼故事",
