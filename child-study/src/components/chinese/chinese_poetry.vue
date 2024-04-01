@@ -52,13 +52,6 @@
   </ul>
 
   <el-card style="margin-top: 20px" class="poetry_content" v-loading="loading">
-    <template #header>
-      <div class="card-header">
-        <span>{{ cacheContent.poetry.name }}</span>
-        <span>{{ cacheContent.poetry.dynasty }} {{ cacheContent.poetry.author }}</span>
-      </div>
-    </template>
-
     <div v-if="!cacheContent.pinyinOpen" style="text-align: center">
       <p style="font-size: 20px; margin-bottom: 10px">{{ cacheContent.poetry.name }}</p>
       <p style="font-size: 14px; margin-bottom: 20px">
@@ -100,8 +93,6 @@ import {
   getChineseShijing,
   getChuZhongClassicalChinese,
   getChuZhongPoetry,
-  getGaoZhongClassicalChinese,
-  getGaoZhongPoetry,
   getXiaoXueClassicalChinese,
   getXiaoXuePoetry
 } from "@/util/resource.js";
@@ -122,14 +113,6 @@ const titleList = ref([
   {
     label: "初中文言文",
     method: getChuZhongClassicalChinese
-  },
-  {
-    label: "高中古诗",
-    method: getGaoZhongPoetry
-  },
-  {
-    label: "高中文言文",
-    method: getGaoZhongClassicalChinese
   },
   {
     label: "诗经",
