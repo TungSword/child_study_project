@@ -175,6 +175,7 @@ async function selectContent(value, start) {
   if (!start) {
     cacheContent.value.poetry = entityList.value[0]
     cacheContent.value.index = 0
+    cacheContent.value.searchOpen = false;
   }
   saveStorage()
   loading.value = false;
