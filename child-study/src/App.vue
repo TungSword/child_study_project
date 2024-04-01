@@ -16,9 +16,4 @@ import {RouterView} from 'vue-router'
   width: 100%;
   height: 100vh;
 }
-.homeButton {
-  position: fixed;
-  top: 8px;
-  left: 8px;
-}
 </style>
