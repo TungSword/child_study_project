@@ -1,6 +1,6 @@
 <template>
   <el-row style="margin-bottom: 20px">
-    <el-col :span="18">
+    <el-col :span="14">
       <el-select v-model="cacheContent.title"
                  size="large"
                  @change="selectContent(cacheContent.title, false)">
@@ -8,7 +8,7 @@
         ></el-option>
       </el-select>
     </el-col>
-    <el-col :span="6" style="text-align: right">
+    <el-col :span="10" style="text-align: right">
       <label>拼音：</label>
       <el-switch
           v-model="cacheContent.pinyinOpen"
@@ -18,7 +18,7 @@
     </el-col>
   </el-row>
   <el-row style="margin-bottom: 20px">
-    <el-col :span="18">
+    <el-col :span="14">
       <el-select
           v-model="cacheContent.index"
           size="large"
@@ -33,7 +33,7 @@
         />
       </el-select>
     </el-col>
-    <el-col :span="6" style="text-align: right">
+    <el-col :span="10" style="text-align: right">
       <label>搜索：</label>
       <el-switch
           v-model="cacheContent.searchOpen"
