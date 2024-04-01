@@ -20,10 +20,17 @@ const MATH_PATH = "/math/"
 
 // allPinyin.json
 export const ALL_PINYIN_JSON_URL = `${RESOURCE_URL}${PINYIN_PATH}allPinyin.json`;
+
 // classifyPinyin.json
 export const CLASSIFY_PINYIN_JSON_URL = `${RESOURCE_URL}${PINYIN_PATH}classifyPinyin.json`;
 export const XIAO_XUE_POETRY_JSON_URL = `${RESOURCE_URL}${CHINESE_POETRY_PATH}xiaoxue_poetry.json`;
 export const XIAO_XUE_CLASSICAL_CHINESE_URL = `${RESOURCE_URL}${CHINESE_POETRY_PATH}xiaoxue_classical_chinese.json`;
+export const CHUZHONG_POETRY_JSON_URL = `${RESOURCE_URL}${CHINESE_POETRY_PATH}chuzhong_poetry.json`;
+export const CHUZHONG_CLASSICAL_CHINESE_URL = `${RESOURCE_URL}${CHINESE_POETRY_PATH}chuzhong_classical_chinese.json`;
+export const GAOZHONG_POETRY_JSON_URL = `${RESOURCE_URL}${CHINESE_POETRY_PATH}gaozhong_poetry.json`;
+export const GAOZHONG_CLASSICAL_CHINESE_URL = `${RESOURCE_URL}${CHINESE_POETRY_PATH}gaozhong_classical_chinese.json`;
+export const CHINESE_SHIJING_JSON_URL = `${RESOURCE_URL}${CHINESE_POETRY_PATH}chinese_shijing.json`;
+
 // shudu.json
 export const MATH_SHUDU_URL = `${RESOURCE_URL}${MATH_PATH}shudu.json`;
 

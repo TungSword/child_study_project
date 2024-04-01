@@ -58,7 +58,7 @@
 <script setup>
 import {onMounted, ref} from 'vue'
 import {getMathShudu} from "@/util/resource.js";
-import {ElMessage, ElMessageBox} from 'element-plus'
+import {ElMessageBox} from 'element-plus'
 
 const grades = ref({
   20: "超级简单",
@@ -284,7 +284,8 @@ onMounted(async () => {
       border-top: black solid 1px;
       text-align: center;
     }
-    .sudo_clear:active{
+
+    .sudo_clear:active {
       background-color: #FF770F;
       color: #c1c1c1;
     }

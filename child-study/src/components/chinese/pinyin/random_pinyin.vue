@@ -2,9 +2,14 @@
   <div class="random_pinyin" @click="refresh()">
     <span>{{ pinyin }}</span>
   </div>
-  <div style="margin-top: 20px">
-    <el-button @click="read" style="width: 100%;" type="primary">读</el-button>
-  </div>
+  <el-row :gutter="20">
+    <el-col :span="12">
+      <el-button @click="read" style="width: 100%;" type="primary">读</el-button>
+    </el-col>
+    <el-col :span="12">
+      <el-button @click="refresh" style="width: 100%;">下一个</el-button>
+    </el-col>
+  </el-row>
 </template>
 
 <script>
@@ -48,5 +53,6 @@ export default {
   font-size: 100px;
   width: 100%;
   text-align: center;
+  height: calc(100vh - 200px);
 }
 </style>
