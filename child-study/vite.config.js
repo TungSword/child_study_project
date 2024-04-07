@@ -14,7 +14,6 @@ export default defineConfig({
                     name: 'vue',
                     var: 'Vue',
                     path: `https://cdn.jsdelivr.net/npm/vue@3.4.21/dist/vue.global.min.js`,
-
                 },
                 {
                     name: 'vue-demi',

@@ -1,9 +1,12 @@
 <template>
   <div class="vue-app">
     <div class="header">
-      <el-button v-if="currentComponent !== 'home'" class="icon" :icon="HomeFilled" circle
+      <el-button v-show="currentComponent !== 'home'" class="left" :icon="HomeFilled" circle
                  @click="showComponent('home')"/>
-      <span>{{ homeName }}同学</span>
+      <span class="title">{{ homeName }}同学</span>
+      <el-icon @click="showConnection" class="right">
+        <Message/>
+      </el-icon>
     </div>
     <div class="content">
       <all_compontent :component="currentComponent"/>
@@ -11,7 +14,7 @@
       <div v-if="currentComponent === 'home'">
         <el-row :gutter="20">
           <el-col :span="12" v-for="(item, index) in content_list" :key="index" class="studyCom">
-            <el-card shadow="hover" @click="showComponent(item.component)" v-if="item.show || homeName==='小於'">
+            <el-card shadow="hover" @click="showComponent(item.component)" v-if="isShowElement(item)">
               {{ item.name }}
             </el-card>
           </el-col>
@@ -24,13 +27,21 @@
 </template>
 
 <script setup>
-import {onMounted, ref} from "vue";
+import {markRaw, onMounted, ref} from "vue";
 import {useRoute} from 'vue-router'
-import {HomeFilled} from '@element-plus/icons-vue'
+import {HomeFilled, Message} from '@element-plus/icons-vue'
 import {content_list} from '@/constant/content_constant'
+import {ElMessageBox} from 'element-plus'
 
 const route = useRoute();
 const homeName = ref("小於")
+
+function isShowElement(item) {
+  if (item.owner) {
+    return item.show || item.owner.indexOf(homeName.value) > -1;
+  }
+  return item.show;
+}
 
 onMounted(() => {
   const name = route.query.name;
@@ -43,6 +54,14 @@ const currentComponent = ref('home')
 
 function showComponent(component) {
   currentComponent.value = component;
+}
+
+function showConnection() {
+  ElMessageBox.alert('E-Mail: tungsword_cn@qq.com', '联系方式', {
+    "show-close": false,
+    center: true,
+    confirmButtonText: 'OK',
+  })
 }
 </script>
 
@@ -61,12 +80,19 @@ function showComponent(component) {
     font-size: 24px;
     display: flex;
     align-items: center;
-    span {
+
+    .title {
       width: 100%;
       align-self: center;
     }
-    .icon{
+
+    .left {
       margin-left: 8px;
+    }
+
+    .right {
+      margin-right: 16px;
+      font-size: 16px;
     }
   }
 

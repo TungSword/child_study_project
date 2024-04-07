@@ -69,6 +69,7 @@ export const content_list = [
         name: "猴子警长探案记",
         component: "monkeyPoliceStory",
         show: false,
-        subject:'relax'
+        subject:'relax',
+        owner: ["小於"]
     },
 ]

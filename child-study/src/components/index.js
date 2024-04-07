@@ -10,8 +10,8 @@ import math_calc_multi from "@/components/math/math_calc_multi.vue";
 import math_multi_table from "@/components/math/math_multi_table.vue";
 import english_letters from "@/components/english/english_letters.vue";
 import english_standard from "@/components/english/english_standard.vue";
-import math_sudoku from '@/components/math/math_sudoku.vue'
-import all_compontent from "@/components/all_compontent.vue"
+import math_sudoku from '@/components/math/math_sudoku.vue';
+import all_compontent from "@/components/all_compontent.vue";
 
 
 export default {
