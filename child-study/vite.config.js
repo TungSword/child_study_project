@@ -46,7 +46,8 @@ export default defineConfig({
     ],
     resolve: {
         alias: {
-            '@': fileURLToPath(new URL('./src', import.meta.url))
+            '@': fileURLToPath(new URL('./src', import.meta.url)),
+            "three": "https://cdn.jsdelivr.net/npm/three@0.163.0/+esm"
         }
     }
 })
