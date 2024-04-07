@@ -22,6 +22,11 @@ export default defineConfig({
                     path: `https://cdn.jsdelivr.net/npm/vue-demi@0.14.7/lib/index.iife.min.js`,
                 },
                 {
+                    name:"axios",
+                    var:"axios",
+                    path:"https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"
+                },
+                {
                     name: 'vue-router',
                     var: 'VueRouter',
                     path: `https://cdn.jsdelivr.net/npm/vue-router@4.3.0/dist/vue-router.global.min.js`,
