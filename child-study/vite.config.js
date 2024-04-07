@@ -1,8 +1,6 @@
 import {fileURLToPath, URL} from 'node:url'
-
 import {defineConfig} from 'vite'
 import vue from '@vitejs/plugin-vue'
-
 import { Plugin as importToCDN } from 'vite-plugin-cdn-import'
 
 export default defineConfig({
