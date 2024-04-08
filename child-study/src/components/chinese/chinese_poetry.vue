@@ -136,7 +136,7 @@ onMounted(async () => {
   if (content) {
     cacheContent.value = JSON.parse(content)
   }
-  selectContent(cacheContent.value.title, true)
+  await selectContent(cacheContent.value.title, true)
   if (!content) {
     cacheContent.value.poetry = entityList.value[0]
     cacheContent.value.index = 0
