@@ -44,6 +44,6 @@ function saveStorage(){
 
 <style scoped>
 .scrollbar_video{
-  height: calc(100vh - 408px);
+  height: calc(100vh - 410px);
 }
 </style>
