@@ -60,17 +60,16 @@ export const content_list = [
         subject:'english'
     },
     {
+        name: "蓝色小考拉",
+        component: "penelope_video",
+        show: true,
+        subject:'english',
+    },
+    {
         name: "奥特曼故事",
         component: "ultraman_story",
         show: true,
         subject:'relax'
-    },
-    {
-        name: "蓝色小考拉",
-        component: "penelope_video",
-        show: false,
-        subject:'english',
-        owner: ["小於"]
     },
     {
         name: "猴子警长探案记",

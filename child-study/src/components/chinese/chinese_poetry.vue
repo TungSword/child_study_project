@@ -140,6 +140,7 @@ onMounted(async () => {
   if (!content) {
     cacheContent.value.poetry = entityList.value[0]
     cacheContent.value.index = 0
+    saveStorage()
   }
 })
 

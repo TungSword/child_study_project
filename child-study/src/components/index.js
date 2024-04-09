@@ -14,7 +14,7 @@ import english_letters from "@/components/english/english_letters.vue";
 import english_standard from "@/components/english/english_standard.vue";
 import math_sudoku from '@/components/math/math_sudoku.vue';
 import penelope_video from "@/components/english/penelope_video.vue";
-
+import scrollbar from "@/components/common/scrollbar.vue"
 export default {
     "all_compontent": all_compontent,
     "math_calc": math_calc,
@@ -30,5 +30,6 @@ export default {
     "english_letters": english_letters,
     "english_standard": english_standard,
     "math_sudoku": math_sudoku,
-    "penelope_video": penelope_video
+    "penelope_video": penelope_video,
+    "scrollbar": scrollbar
 };
