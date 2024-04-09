@@ -11,10 +11,14 @@
   <ultraman_story v-if="props.component === 'ultraman_story'"/>
   <english_letters v-if="props.component === 'english_letters'"/>
   <english_standard v-if="props.component === 'english_standard'"/>
-  <penelope_video v-if="props.component === 'penelope_video'"/>
+  <bilibili_video_player :video-list="penelope_video.videoList" :default-url="penelope_video.default_url"
+                         :name="penelope_video.nameEn" v-if="props.component === 'penelope'"/>
+  <bilibili_video_player :video-list="gigantosaurus_video.videoList" :default-url="gigantosaurus_video.default_url"
+                         :name="gigantosaurus_video.nameEn" v-if="props.component === 'gigantosaurus'"/>
 </template>
 
 <script setup>
+import {gigantosaurus_video, penelope_video} from "@/constant/video_constant.js"
 import {defineProps} from 'vue'
 
 const props = defineProps(['component'])

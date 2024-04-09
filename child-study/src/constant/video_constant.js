@@ -1,5 +1,6 @@
 export const penelope_video = {
     name: "蓝色小考拉",
+    nameEn: "penelope",
     default_url: "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=0&muted=0&autoplay=1&p=",
     videoList: [
         {"id": 1, "name": "gets_dressed_all_by_herself"},
@@ -50,4 +51,63 @@ export const penelope_video = {
         {"id": 46, "name": "Mums_Birthday"},
         {"id": 47, "name": "Penelope_at_the_Pool"}
     ]
+}
+
+export const gigantosaurus_video = {
+    name: "小恐龙大冒险",
+    nameEn: "gigantosaurus",
+    default_url: "//player.bilibili.com/player.html?aid=699548502&bvid=BV1om4y1i7fU&danmaku=0&muted=0&autoplay=1&p=",
+    videoList:[
+        {"id":1,"name":"Mazu Takes A Chance"},
+        {"id":2,"name":"Rock Out"},
+        {"id":3,"name":"The Crevice"},
+        {"id":4,"name":"Don't Cave In"},
+        {"id":5,"name":"The Lost Egg"},
+        {"id":6,"name":"Saving Ayati"},
+        {"id":7,"name":"The Lost Egg"},
+        {"id":8,"name":"The Lost Egg"},
+        {"id":9,"name":"The Imitator"},
+        {"id":10,"name":"The Lost Egg"},
+        {"id":11,"name":"The Biggest Hero"},
+        {"id":12,"name":"Think Quick"},
+        {"id":13,"name":"No Joke"},
+        {"id":14,"name":"Please Don't Pick The Flowers"},
+        {"id":15,"name":"Frozen Giganto"},
+        {"id":16,"name":"Seeing Stars"},
+        {"id":17,"name":"Treasure"},
+        {"id":18,"name":"Giganto's Laugh"},
+        {"id":19,"name":"Talent-O-Saurus"},
+        {"id":20,"name":"Mash The Raptor"},
+        {"id":21,"name":"Invisi-Bill"},
+        {"id":22,"name":"Dinosia"},
+        {"id":23,"name":"Differing Dino Tales"},
+        {"id":24,"name":"Big Bill"},
+        {"id":25,"name":"A Very Sticky Problem"},
+        {"id":26,"name":"The Shortest Day"},
+        {"id":27,"name":"The Best Crest"},
+        {"id":28,"name":"The Big Mean Green"},
+        {"id":29,"name":"Pathy Sees The Light"},
+        {"id":30,"name":"Bill's Night Feast"},
+        {"id":31,"name":"Forward Marsh"},
+        {"id":32,"name":"Racing Gigant"},
+        {"id":33,"name":"The Drought"},
+        {"id":34,"name":"The Challenge"},
+        {"id":35,"name":"Giganto's Boss"},
+        {"id":36,"name":"Follow The Leader"},
+        {"id":37,"name":"Bill's Broken Promise"},
+        {"id":38,"name":"Crying Wolfasaurus"},
+        {"id":39,"name":"A Tiny Favor"},
+        {"id":40,"name":"The Floating Stone"},
+        {"id":41,"name":"How Giganto Got His Roar"},
+        {"id":42,"name":"An Artist Is Born"},
+        {"id":43,"name":"Born Tree"},
+        {"id":44,"name":"A Giganto Power"},
+        {"id":45,"name":"A light In The Storm"},
+        {"id":46,"name":"Coco Bill"},
+        {"id":47,"name":"Brothers And Sisters"},
+        {"id":48,"name":"Mazu's Comet"},
+        {"id":49,"name":"Good Bye Giganto! Part 1"},
+        {"id":50,"name":"Good Bye Giganto! Part 2"}
+    ]
+
 }

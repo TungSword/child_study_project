@@ -61,7 +61,13 @@ export const content_list = [
     },
     {
         name: "蓝色小考拉",
-        component: "penelope_video",
+        component: "penelope",
+        show: true,
+        subject:'english',
+    },
+    {
+        name: "小恐龙大冒险",
+        component: "gigantosaurus",
         show: true,
         subject:'english',
     },
