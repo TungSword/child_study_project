@@ -2,7 +2,7 @@
   <ul class="scrollbar_list" style="overflow: auto">
     <li class="scrollbar_list_item" :class="{selected: item.name === selectName}"
         v-for="(item, i) in props.contents" :key="i" @click="select(item)">
-      <span style="font-size: 16px">{{ item.name }}</span>
+      <span style="font-size: 16px">{{ i + 1 }}.{{ item.name }}</span>
     </li>
   </ul>
 </template>
