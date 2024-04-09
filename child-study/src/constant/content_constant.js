@@ -66,6 +66,13 @@ export const content_list = [
         subject:'relax'
     },
     {
+        name: "蓝色小考拉",
+        component: "penelope_video",
+        show: false,
+        subject:'english',
+        owner: ["小於"]
+    },
+    {
         name: "猴子警长探案记",
         component: "monkeyPoliceStory",
         show: false,

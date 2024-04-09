@@ -11,6 +11,7 @@
   <ultraman_story v-if="props.component === 'ultraman_story'"/>
   <english_letters v-if="props.component === 'english_letters'"/>
   <english_standard v-if="props.component === 'english_standard'"/>
+  <penelope_video v-if="props.component === 'penelope_video'"/>
 </template>
 
 <script setup>

@@ -1,3 +1,5 @@
+import all_compontent from "@/components/all_compontent.vue";
+
 import math_calc from "@/components/math/math_calc.vue";
 import order_pinyin from "@/components/chinese/pinyin/order_pinyin.vue";
 import random_pinyin from "@/components/chinese/pinyin/random_pinyin.vue";
@@ -11,8 +13,7 @@ import math_multi_table from "@/components/math/math_multi_table.vue";
 import english_letters from "@/components/english/english_letters.vue";
 import english_standard from "@/components/english/english_standard.vue";
 import math_sudoku from '@/components/math/math_sudoku.vue';
-import all_compontent from "@/components/all_compontent.vue";
-
+import penelope_video from "@/components/english/penelope_video.vue";
 
 export default {
     "all_compontent": all_compontent,
@@ -28,5 +29,6 @@ export default {
     "math_multi_table": math_multi_table,
     "english_letters": english_letters,
     "english_standard": english_standard,
-    "math_sudoku": math_sudoku
+    "math_sudoku": math_sudoku,
+    "penelope_video": penelope_video
 };
