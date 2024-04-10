@@ -1,7 +1,7 @@
 export const penelope_video = {
     name: "蓝色小考拉",
     nameEn: "penelope",
-    default_url: "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=0&muted=0&autoplay=1&p=",
+    default_url: "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=0&muted=0&autoplay=true&p=",
     videoList: [
         {"id": 1, "name": "gets_dressed_all_by_herself"},
         {"id": 2, "name": "at_school"},
@@ -56,7 +56,7 @@ export const penelope_video = {
 export const gigantosaurus_video = {
     name: "小恐龙大冒险",
     nameEn: "gigantosaurus",
-    default_url: "//player.bilibili.com/player.html?aid=699548502&bvid=BV1om4y1i7fU&danmaku=0&muted=0&autoplay=1&p=",
+    default_url: "//player.bilibili.com/player.html?aid=699548502&bvid=BV1om4y1i7fU&danmaku=0&muted=0&autoplay=true&p=",
     videoList:[
         {"id":1,"name":"Mazu Takes A Chance"},
         {"id":2,"name":"Rock Out"},
