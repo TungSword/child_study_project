@@ -31,7 +31,6 @@ function select(item) {
 }
 
 function playNext() {
-  console.log("playNext", currentIndex.value, props.contents.length)
   if (currentIndex.value === props.contents.length) {
     return;
   }
@@ -39,7 +38,6 @@ function playNext() {
 }
 
 function playPreview() {
-  console.log("preview", currentIndex.value)
   if (currentIndex.value === 1) {
     return;
   }
