@@ -10,7 +10,7 @@
   <ul class="scrollbar_list" style="overflow: auto">
     <li class="scrollbar_list_item" :class="{selected: item.name === selectName}"
         v-for="(item, i) in props.contents" :key="i" @click="select(item)">
-      <span style="font-size: 16px">{{ i + 1 }}.{{ item.name }}</span>
+      <span class="scrollbar_list_item_span">{{ i + 1 }}.{{ item.name }}</span>
     </li>
   </ul>
 </template>
@@ -68,5 +68,14 @@ function playPreview() {
 .scrollbar_list .selected {
   background-color: var(--el-color-primary);
   color: #FFFFFF;
+}
+
+.scrollbar_list_item_span {
+  font-size: 16px;
+  white-space: pre-wrap;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 100%;
 }
 </style>

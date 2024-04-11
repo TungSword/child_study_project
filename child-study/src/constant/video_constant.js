@@ -5,237 +5,237 @@ export const penelope_video = {
     videoList: [
         {
             "id": 1,
-            "name": "gets_dressed_all_by_herself",
+            "name": "gets dressed all by herself",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=1"
         },
         {
             "id": 2,
-            "name": "at_school",
+            "name": "at school",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=2"
         },
         {
             "id": 3,
-            "name": "has_a_bath",
+            "name": "has a bath",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=3"
         },
         {
             "id": 4,
-            "name": "makes_sketches",
+            "name": "makes sketches",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=4"
         },
         {
             "id": 5,
-            "name": "plants_a_seed",
+            "name": "plants a seed",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=5"
         },
         {
             "id": 6,
-            "name": "rides_a_bike",
+            "name": "rides a bike",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=6"
         },
         {
             "id": 7,
-            "name": "feeds_the_Animals",
+            "name": "feeds the Animals",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=7"
         },
         {
             "id": 8,
-            "name": "goes_shopping",
+            "name": "goes shopping",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=8"
         },
         {
             "id": 9,
-            "name": "in_the_snow",
+            "name": "in the snow",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=9"
         },
         {
             "id": 10,
-            "name": "opens_a_shop",
+            "name": "opens a shop",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=10"
         },
         {
             "id": 11,
-            "name": "goes_to_the_beach",
+            "name": "goes to the beach",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=11"
         },
         {
             "id": 12,
-            "name": "play_at_teh_seaside",
+            "name": "play at teh seaside",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=12"
         },
         {
             "id": 13,
-            "name": "Penelope_Is_Polite",
+            "name": "Penelope Is Polite",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=13"
         },
         {
             "id": 14,
-            "name": "Playing_With_Colours",
+            "name": "Playing With Colours",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=14"
         },
         {
             "id": 15,
-            "name": "Penelope_Sings",
+            "name": "Penelope Sings",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=15"
         },
         {
             "id": 16,
-            "name": "Penelope_Its_Delicious",
+            "name": "Penelope Its Delicious",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=16"
         },
         {
             "id": 17,
-            "name": "Penelope_Tidies_Her_Room",
+            "name": "Penelope Tidies Her Room",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=17"
         },
         {
             "id": 18,
-            "name": "Hide_and_Seek",
+            "name": "Hide and Seek",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=18"
         },
         {
             "id": 19,
-            "name": "Grandpas_Birthday",
+            "name": "Grandpas Birthday",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=19"
         },
         {
             "id": 20,
-            "name": "Penelope_Makes_Biscuits",
+            "name": "Penelope Makes Biscuits",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=20"
         },
         {
             "id": 21,
-            "name": "Milo_and_Madeline",
+            "name": "Milo and Madeline",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=21"
         },
         {
             "id": 22,
-            "name": "Penelope_Takes_a_Nap",
+            "name": "Penelope Takes a Nap",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=22"
         },
         {
             "id": 23,
-            "name": "School_Carnival",
+            "name": "School Carnival",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=23"
         },
         {
             "id": 24,
-            "name": "Christmas_Present",
+            "name": "Christmas Present",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=24"
         },
         {
             "id": 25,
-            "name": "School_Trip",
+            "name": "School Trip",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=25"
         },
         {
             "id": 26,
-            "name": "Merry_Christmas_Penelope",
+            "name": "Merry Christmas Penelope",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=26"
         },
         {
             "id": 27,
-            "name": "Christmas_Party",
+            "name": "Christmas Party",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=27"
         },
         {
             "id": 28,
-            "name": "Lets_Close_The_Door_Penelope",
+            "name": "Lets Close The Door Penelope",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=28"
         },
         {
             "id": 29,
-            "name": "Penelope_Learns_About_Different_Shapes",
+            "name": "Penelope Learns About Different Shapes",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=29"
         },
         {
             "id": 30,
-            "name": "Lets_Hold_Hands_Penelope",
+            "name": "Lets Hold Hands Penelope",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=30"
         },
         {
             "id": 31,
-            "name": "Penelope_Builds_a_Birdhouse",
+            "name": "Penelope Builds a Birdhouse",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=31"
         },
         {
             "id": 32,
-            "name": "Penelope_Goes_Skating",
+            "name": "Penelope Goes Skating",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=32"
         },
         {
             "id": 33,
-            "name": "Penelope_Names_Some_Piglets",
+            "name": "Penelope Names Some Piglets",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=33"
         },
         {
             "id": 34,
-            "name": "Penelopes_Sweet_Dream_Book",
+            "name": "Penelopes Sweet Dream Book",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=34"
         },
         {
             "id": 35,
-            "name": "Happy_Halloween",
+            "name": "Happy Halloween",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=35"
         },
         {
             "id": 36,
-            "name": "Penelopes_Museum",
+            "name": "Penelopes Museum",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=36"
         },
         {
             "id": 37,
-            "name": "Fun_In_the_Weather",
+            "name": "Fun In the Weather",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=37"
         },
         {
             "id": 38,
-            "name": "Penelopes_Family_Concert",
+            "name": "Penelopes Family Concert",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=38"
         },
         {
             "id": 39,
-            "name": "Penelope_Goes_Fishing_With_Grandpa",
+            "name": "Penelope Goes Fishing With Grandpa",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=39"
         },
         {
             "id": 40,
-            "name": "The_Autumn_Harvest_Party",
+            "name": "The Autumn Harvest Party",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=40"
         },
         {
             "id": 41,
-            "name": "Penelope_Helps_Dad",
+            "name": "Penelope Helps Dad",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=41"
         },
         {
             "id": 42,
-            "name": "Penelope_Catches_Cold",
+            "name": "Penelope Catches Cold",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=42"
         },
         {
             "id": 43,
-            "name": "Penelope_Goes_Into_Town",
+            "name": "Penelope Goes Into Town",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=43"
         },
         {
             "id": 44,
-            "name": "Penelope_Exchanges_Some_Letters",
+            "name": "Penelope Exchanges Some Letters",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=44"
         },
         {
             "id": 45,
-            "name": "Penelope_and_Her_Friends_In_The_Summertime",
+            "name": "Penelope and Her Friends In The Summertime",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=45"
         },
         {
             "id": 46,
-            "name": "Mums_Birthday",
+            "name": "Mums Birthday",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=46"
         },
         {
             "id": 47,
-            "name": "Penelope_at_the_Pool",
+            "name": "Penelope at the Pool",
             "url": "//player.bilibili.com/player.html?aid=248463989&bvid=BV11v411V75C&danmaku=false&muted=false&autoplay=true&p=47"
         }
     ]
@@ -269,7 +269,7 @@ export const gigantosaurus_video = {
         },
         {
             "id": 5,
-            "name": "The Lost Egg_1",
+            "name": "The Lost Egg 1",
             "url": "//player.bilibili.com/player.html?aid=699548502&bvid=BV1om4y1i7fU&danmaku=false&muted=false&autoplay=true&p=5"
         },
         {
@@ -279,12 +279,12 @@ export const gigantosaurus_video = {
         },
         {
             "id": 7,
-            "name": "The Lost Egg_2",
+            "name": "The Lost Egg 2",
             "url": "//player.bilibili.com/player.html?aid=699548502&bvid=BV1om4y1i7fU&danmaku=false&muted=false&autoplay=true&p=7"
         },
         {
             "id": 8,
-            "name": "The Lost Egg_3",
+            "name": "The Lost Egg 3",
             "url": "//player.bilibili.com/player.html?aid=699548502&bvid=BV1om4y1i7fU&danmaku=false&muted=false&autoplay=true&p=8"
         },
         {
@@ -294,7 +294,7 @@ export const gigantosaurus_video = {
         },
         {
             "id": 10,
-            "name": "The Lost Egg_4",
+            "name": "The Lost Egg 4",
             "url": "//player.bilibili.com/player.html?aid=699548502&bvid=BV1om4y1i7fU&danmaku=false&muted=false&autoplay=true&p=10"
         },
         {
