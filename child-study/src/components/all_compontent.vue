@@ -11,10 +11,10 @@
   <ultraman_story v-if="props.component === 'ultraman_story'"/>
   <english_letters v-if="props.component === 'english_letters'"/>
   <english_standard v-if="props.component === 'english_standard'"/>
-  <bilibili_video_player :video-list="penelope_video.videoList" :default-url="penelope_video.default_url"
-                         :name="penelope_video.nameEn" v-if="props.component === 'penelope'"/>
-  <bilibili_video_player :video-list="gigantosaurus_video.videoList" :default-url="gigantosaurus_video.default_url"
-                         :name="gigantosaurus_video.nameEn" v-if="props.component === 'gigantosaurus'"/>
+  <bilibili_video_player :video-list="penelope_video.videoList" :name="penelope_video.nameEn"
+                         v-if="props.component === 'penelope'"/>
+  <bilibili_video_player :video-list="gigantosaurus_video.videoList" :name="gigantosaurus_video.nameEn"
+                         v-if="props.component === 'gigantosaurus'"/>
 </template>
 
 <script setup>

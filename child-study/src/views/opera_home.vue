@@ -3,17 +3,17 @@
     <div class="header">
       <el-button v-show="currentComponent !== 'home'" class="left" :icon="HomeFilled" circle
                  @click="showComponent('home')"/>
-      <span class="title">{{ homeName }}同学</span>
+      <span class="title">中国戏曲</span>
       <el-icon @click="showConnection" class="right">
         <Message/>
       </el-icon>
     </div>
     <div class="content">
-      <all_compontent :component="currentComponent"/>
+      <opera_compontent :component="currentComponent"/>
 
       <div v-if="currentComponent === 'home'">
         <el-row :gutter="20">
-          <el-col :span="12" v-for="(item, index) in content_list" :key="index" class="studyCom">
+          <el-col :span="12" v-for="(item, index) in opera_content_list" :key="index" class="studyCom">
             <el-card shadow="hover" @click="showComponent(item.component)" v-if="isShowElement(item)">
               {{ item.name }}
             </el-card>
@@ -30,16 +30,13 @@
 import {onMounted, ref} from "vue";
 import {useRoute} from 'vue-router'
 import {HomeFilled, Message} from '@element-plus/icons-vue'
-import {content_list} from '@/constant/content_constant'
+import {opera_content_list} from '@/constant/content_constant'
 import {ElMessageBox} from 'element-plus'
 
 const route = useRoute();
 const homeName = ref("小於")
 
 function isShowElement(item) {
-  if (item.owner) {
-    return item.show || item.owner.indexOf(homeName.value) > -1;
-  }
   return item.show;
 }
 

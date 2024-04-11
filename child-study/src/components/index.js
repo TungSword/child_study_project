@@ -1,4 +1,5 @@
 import all_compontent from "@/components/all_compontent.vue";
+import opera_compontent from "@/components/opera/opera_compontent.vue";
 
 import math_calc from "@/components/math/math_calc.vue";
 import order_pinyin from "@/components/chinese/pinyin/order_pinyin.vue";
@@ -15,8 +16,10 @@ import english_standard from "@/components/english/english_standard.vue";
 import math_sudoku from '@/components/math/math_sudoku.vue';
 import bilibili_video_player from "@/components/english/bilibili_video_player.vue";
 import scrollbar from "@/components/common/scrollbar.vue"
+
 export default {
     "all_compontent": all_compontent,
+    "opera_compontent": opera_compontent,
     "math_calc": math_calc,
     "order_pinyin": order_pinyin,
     "random_pinyin": random_pinyin,
