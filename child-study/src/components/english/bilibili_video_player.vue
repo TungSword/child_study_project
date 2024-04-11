@@ -9,13 +9,14 @@
 <script setup>
 import {defineProps, onMounted, ref} from 'vue';
 
-const props = defineProps(['videoList', "defaultUrl", "name"])
+const props = defineProps(['videoList', "name"])
 const videoUrl = ref("")
 const contents = ref();
 const selectName = ref();
 const cacheVideo = ref({
   name: "",
   id: 0,
+  url: "",
 })
 
 onMounted(() => {
@@ -23,19 +24,27 @@ onMounted(() => {
   const cache = localStorage.getItem(props.name + "_video_cache")
   if (cache) {
     cacheVideo.value = JSON.parse(cache)
-  } else {
-    cacheVideo.value = {
-      name: props.videoList[0].name,
-      id: props.videoList[0].id
+    if (!cacheVideo.value.url){
+      initCacheVideo()
     }
+  } else {
+    initCacheVideo()
   }
   selectVideo(cacheVideo.value)
 })
 
+function initCacheVideo(){
+  cacheVideo.value = {
+    name: props.videoList[0].name,
+    id: props.videoList[0].id,
+    url: props.videoList[0].url,
+  }
+}
+
 function selectVideo(item) {
   cacheVideo.value = item;
   selectName.value = cacheVideo.value.name;
-  videoUrl.value = props.defaultUrl + cacheVideo.value.id
+  videoUrl.value = cacheVideo.value.url
   saveStorage()
 }
 

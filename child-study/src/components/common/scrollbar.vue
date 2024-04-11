@@ -1,4 +1,12 @@
 <template>
+  <el-row :gutter="20" style="margin-top: 20px;">
+    <el-col :span="12">
+      <el-button style="width: 100%" @click="playPreview">上一集</el-button>
+    </el-col>
+    <el-col :span="12">
+      <el-button style="width: 100%" type="primary" @click="playNext">下一集</el-button>
+    </el-col>
+  </el-row>
   <ul class="scrollbar_list" style="overflow: auto">
     <li class="scrollbar_list_item" :class="{selected: item.name === selectName}"
         v-for="(item, i) in props.contents" :key="i" @click="select(item)">
@@ -11,18 +19,37 @@
 
 </script>
 <script setup>
-import {defineProps, defineEmits} from 'vue';
+import {defineProps, defineEmits, ref} from 'vue';
+
 const props = defineProps(['contents', "selectName"])
 const emits = defineEmits(['selectVideo'])
-function select(item){
+const currentIndex = ref(1);
+
+function select(item) {
   emits("selectVideo", item)
+  currentIndex.value = item.id
+}
+
+function playNext() {
+  console.log("playNext", currentIndex.value, props.contents.length)
+  if (currentIndex.value === props.contents.length) {
+    return;
+  }
+  select(props.contents[currentIndex.value])
+}
+
+function playPreview() {
+  console.log("preview", currentIndex.value)
+  if (currentIndex.value === 1) {
+    return;
+  }
+  select(props.contents[currentIndex.value - 2])
 }
 </script>
 
 <style lang="less" scoped>
 .scrollbar_list {
   padding: 0;
-  margin-top: 20px;
   list-style: none;
 }
 
