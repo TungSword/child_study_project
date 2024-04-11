@@ -1,5 +1,5 @@
 <template>
-  <el-row :gutter="20" style="margin-top: 20px;">
+  <el-row :gutter="20" style="margin-top: 10px;">
     <el-col :span="12">
       <el-button style="width: 100%" @click="playPreview">上一集</el-button>
     </el-col>
@@ -50,6 +50,8 @@ function playPreview() {
 <style lang="less" scoped>
 .scrollbar_list {
   padding: 0;
+  margin-top: 10px;
+  height: calc(100vh - 445px);
   list-style: none;
 }
 

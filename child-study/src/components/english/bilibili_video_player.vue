@@ -2,7 +2,7 @@
   <iframe style="width: 100%; height: 300px"
           :src="videoUrl"
           scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
-  <scrollbar class="scrollbar_video" @selectVideo="selectVideo" :contents="contents"
+  <scrollbar @selectVideo="selectVideo" :contents="contents"
              :selectName="selectName"></scrollbar>
 </template>
 
@@ -52,9 +52,3 @@ function saveStorage() {
   localStorage.setItem(props.name + "_video_cache", JSON.stringify(cacheVideo.value))
 }
 </script>
-
-<style scoped>
-.scrollbar_video {
-  height: calc(100vh - 410px);
-}
-</style>
