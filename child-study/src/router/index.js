@@ -1,6 +1,7 @@
 import {createRouter, createWebHistory} from 'vue-router'
 import home from "@/views/home.vue";
 import opera_home from "@/views/opera_home.vue";
+import welcome from "@/views/welcome.vue"
 
 const routes = [
     {
@@ -12,6 +13,11 @@ const routes = [
         path: "/opera",
         name: "戏曲",
         component: opera_home
+    },
+    {
+        path: "/welcome",
+        name: "欢迎",
+        component: welcome
     }
 ]
 

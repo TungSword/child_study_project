@@ -1,8 +1,7 @@
 <template>
   <div class="vue-app">
     <div class="header">
-      <el-button v-show="currentComponent !== 'home'" class="left" :icon="HomeFilled" circle
-                 @click="showComponent('home')"/>
+      <el-button class="left" :icon="HomeFilled" circle @click="showComponent('home')"/>
       <span class="title">{{ homeName }}同学</span>
       <el-icon @click="showConnection" class="right">
         <Message/>
@@ -23,18 +22,40 @@
     </div>
   </div>
 
+  <el-dialog v-model="mailVisible" title="信息" width="80%">
+    <div>
+      <span><strong>E-Mail: </strong>tungsword_cn@qq.com</span>
+      <el-button @click="copyEmail" style="margin-left: 8px" :icon="CopyDocument" circle/>
+    </div>
+    <el-divider />
+    <p style="text-align: center">您捐助，我的动力，将更好的完善网站</p>
+    <div style="text-align: center">
+      <el-image class="payment_code" :src="paymentCodeUrl" fit="fill" />
+    </div>
+
+    <template #footer>
+      <div class="dialog-footer">
+        <el-button type="primary" @click="mailVisible = false">
+          OK
+        </el-button>
+      </div>
+    </template>
+  </el-dialog>
+
 
 </template>
 
 <script setup>
 import {onMounted, ref} from "vue";
 import {useRoute} from 'vue-router'
-import {HomeFilled, Message} from '@element-plus/icons-vue'
+import {CopyDocument, HomeFilled, Message} from '@element-plus/icons-vue'
 import {content_list} from '@/constant/content_constant'
-import {ElMessageBox} from 'element-plus'
+import { ElMessage } from 'element-plus'
+import paymentCodeUrl from "@/assets/img/payment_code.jpg";
 
 const route = useRoute();
 const homeName = ref("小於")
+const mailVisible = ref(false);
 
 function isShowElement(item) {
   if (item.owner) {
@@ -57,11 +78,11 @@ function showComponent(component) {
 }
 
 function showConnection() {
-  ElMessageBox.alert('E-Mail: tungsword_cn@qq.com', '联系方式', {
-    "show-close": false,
-    center: true,
-    confirmButtonText: 'OK',
-  })
+  mailVisible.value = true;
+}
+function copyEmail(){
+  navigator.clipboard.writeText("tungsword_cn@qq.com")
+  ElMessage.success("Email复制成功！")
 }
 </script>
 
@@ -91,6 +112,7 @@ function showConnection() {
     }
 
     .right {
+      margin-left: 8px;
       margin-right: 16px;
       font-size: 16px;
     }
@@ -106,6 +128,10 @@ function showConnection() {
     margin-bottom: 20px;
     text-align: center;
   }
+}
+
+.payment_code{
+  width: 60%;
 }
 
 </style>
