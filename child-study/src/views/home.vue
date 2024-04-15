@@ -1,8 +1,8 @@
 <template>
   <div class="vue-app">
     <div class="header">
-      <el-button class="left" :icon="HomeFilled" circle @click="showComponent('home')"/>
-      <span class="title">{{ homeName }}同学</span>
+      <el-button v-show="currentComponent !== 'home'" class="left" :icon="HomeFilled" circle @click="showComponent('home')"/>
+      <span class="title" :class="{buttonShow : currentComponent === 'home'}">{{ homeName }}同学</span>
       <el-icon @click="showConnection" class="right">
         <Message/>
       </el-icon>
@@ -25,12 +25,11 @@
   <el-dialog v-model="mailVisible" title="信息" width="80%">
     <div>
       <span><strong>E-Mail: </strong>tungsword_cn@qq.com</span>
-      <el-button @click="copyEmail" style="margin-left: 8px" :icon="CopyDocument" circle/>
     </div>
-    <el-divider />
+    <el-divider/>
     <p style="text-align: center">您捐助，我的动力，将更好的完善网站</p>
     <div style="text-align: center">
-      <el-image class="payment_code" :src="paymentCodeUrl" fit="fill" />
+      <el-image class="payment_code" :src="paymentCodeUrl" fit="fill"/>
     </div>
 
     <template #footer>
@@ -48,10 +47,10 @@
 <script setup>
 import {onMounted, ref} from "vue";
 import {useRoute} from 'vue-router'
-import {CopyDocument, HomeFilled, Message} from '@element-plus/icons-vue'
+import {HomeFilled, Message} from '@element-plus/icons-vue'
 import {content_list} from '@/constant/content_constant'
-import { ElMessage } from 'element-plus'
 import paymentCodeUrl from "@/assets/img/payment_code.jpg";
+import {left} from "core-js/internals/array-reduce.js";
 
 const route = useRoute();
 const homeName = ref("小於")
@@ -80,10 +79,6 @@ function showComponent(component) {
 function showConnection() {
   mailVisible.value = true;
 }
-function copyEmail(){
-  navigator.clipboard.writeText("tungsword_cn@qq.com")
-  ElMessage.success("Email复制成功！")
-}
 </script>
 
 <style lang="less" scoped>
@@ -105,6 +100,10 @@ function copyEmail(){
     .title {
       width: 100%;
       align-self: center;
+    }
+
+    .buttonShow{
+      margin-left: 39.6px;
     }
 
     .left {
@@ -130,7 +129,7 @@ function copyEmail(){
   }
 }
 
-.payment_code{
+.payment_code {
   width: 60%;
 }
 
