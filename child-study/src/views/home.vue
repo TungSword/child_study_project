@@ -27,7 +27,7 @@
       <span><strong>E-Mail: </strong>tungsword_cn@qq.com</span>
     </div>
     <el-divider/>
-    <p style="text-align: center">您捐助，我的动力，将更好的完善网站</p>
+    <p style="text-align: center">感谢捐赠</p>
     <div style="text-align: center">
       <el-image class="payment_code" :src="paymentCodeUrl" fit="fill"/>
     </div>
