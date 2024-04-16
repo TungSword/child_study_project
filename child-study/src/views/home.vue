@@ -1,7 +1,8 @@
 <template>
   <div class="vue-app">
     <div class="header">
-      <el-button v-show="currentComponent !== 'home'" class="left" :icon="HomeFilled" circle @click="showComponent('home')"/>
+      <el-button v-show="currentComponent !== 'home'" class="left" :icon="HomeFilled" circle
+                 @click="showComponent('home')"/>
       <span class="title" :class="{buttonShow : currentComponent === 'home'}">{{ homeName }}同学</span>
       <el-icon @click="showConnection" class="right">
         <Message/>
@@ -27,10 +28,17 @@
       <span><strong>E-Mail: </strong>tungsword_cn@qq.com</span>
     </div>
     <el-divider/>
-    <p style="text-align: center">感谢捐赠</p>
-    <div style="text-align: center">
-      <el-image class="payment_code" :src="paymentCodeUrl" fit="fill"/>
-    </div>
+    <h3 style="text-align: center; margin-bottom: 20px">感谢捐赠</h3>
+    <el-row style="text-align: center">
+      <el-col :span="12">
+        <p>支付宝</p>
+        <el-image class="payment_code" :src="paymentCodeUrl" fit="fill"/>
+      </el-col>
+      <el-col :span="12">
+        <p>微信</p>
+        <el-image class="payment_code" :src="paymentCodeUrl2" fit="fill"/>
+      </el-col>
+    </el-row>
 
     <template #footer>
       <div class="dialog-footer">
@@ -50,7 +58,7 @@ import {useRoute} from 'vue-router'
 import {HomeFilled, Message} from '@element-plus/icons-vue'
 import {content_list} from '@/constant/content_constant'
 import paymentCodeUrl from "@/assets/img/payment_code.jpg";
-import {left} from "core-js/internals/array-reduce.js";
+import paymentCodeUrl2 from "@/assets/img/payment_code_2.jpg";
 
 const route = useRoute();
 const homeName = ref("小於")
@@ -102,7 +110,7 @@ function showConnection() {
       align-self: center;
     }
 
-    .buttonShow{
+    .buttonShow {
       margin-left: 39.6px;
     }
 
@@ -130,7 +138,7 @@ function showConnection() {
 }
 
 .payment_code {
-  width: 60%;
+  width: 100%;
 }
 
 </style>
