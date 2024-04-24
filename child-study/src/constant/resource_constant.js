@@ -1,6 +1,6 @@
 // 资源url
 export const RESOURCE_URL = "https://study-json-resource.pages.dev";
-export const VOICE_RESOURCE_URL="https://study-resource.pages.dev"
+export const VOICE_RESOURCE_URL = "https://study-resource.pages.dev"
 
 // 拼音路径
 const PINYIN_PATH = "/chinese/pinyin/";
@@ -11,12 +11,15 @@ const CHINESE_POETRY_PATH = "/chinese/poetry/"
 // 故事路径
 const RELAX_STORY_PATH = "/relax/story/"
 const RELAX_VOICE_PATH = "/relax/voice/"
+const RELAX_BILIB_PATH = "/relax/bilibili/";
 
 // 英语
 const ENGLISH_LETTER_PATH = "/english/letters/"
 const ENGLISH_STANDARD_PATH = "/english/english_standard/"
 // 数学
 const MATH_PATH = "/math/"
+
+const IMAGE_PATH = "/image/";
 
 // allPinyin.json
 export const ALL_PINYIN_JSON_URL = `${RESOURCE_URL}${PINYIN_PATH}allPinyin.json`;
@@ -42,6 +45,15 @@ export const MONKEY_STORY_JSON_URL = `${RESOURCE_URL}${RELAX_STORY_PATH}monkey_p
 // cerro_ultraman_story.json
 export const ULTRAMAN_STORY_JSON_URL = `${RESOURCE_URL}${RELAX_STORY_PATH}ultraman_story.json`;
 
+// B站视频资源
+export const GIGANTOSAURUS_VIDEO_URL = `${RESOURCE_URL}${RELAX_BILIB_PATH}gigantosaurus_video.json`;
+export const PENELOPE_VIDEO_URL = `${RESOURCE_URL}${RELAX_BILIB_PATH}penelope_video.json`;
+export const SHANGHAI_OPERA_VIDEO_URL = `${RESOURCE_URL}${RELAX_BILIB_PATH}shanghai_opera_video.json`;
+
+// 图片资源
+export const PAYMENT_CODE_WECHAT = `${RESOURCE_URL}${IMAGE_PATH}payment_code_wechat.jpg`;
+export const PAYMENT_CODE_ZFB = `${RESOURCE_URL}${IMAGE_PATH}payment_code_zfb.jpg`;
+
 
 // a.mp3
 export function getPinyinVoiceUrl(param) {
@@ -54,12 +66,12 @@ export function getMonkeyPoliceStoryUrl(param) {
 }
 
 // a.mp3
-export function getEnglishLetterUrl(param){
+export function getEnglishLetterUrl(param) {
     return `${VOICE_RESOURCE_URL}${ENGLISH_LETTER_PATH}${param}.mp3`
 }
 
 // 3.mp3
-export function getEnglishStandardUrl(param){
+export function getEnglishStandardUrl(param) {
     return `${VOICE_RESOURCE_URL}${ENGLISH_STANDARD_PATH}${param}.mp3`
 }
 

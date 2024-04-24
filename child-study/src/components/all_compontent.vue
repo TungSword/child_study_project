@@ -18,8 +18,16 @@
 </template>
 
 <script setup>
-import {gigantosaurus_video, penelope_video} from "@/constant/video_constant.js"
-import {defineProps} from 'vue'
+import {defineProps, onMounted, ref} from 'vue'
+import {getGigantosaurusVideo, getPenelopeVideo} from "@/util/resource.js";
+
+const penelope_video = ref();
+const gigantosaurus_video = ref();
+onMounted(async () => {
+  gigantosaurus_video.value = await getGigantosaurusVideo();
+  penelope_video.value = await getPenelopeVideo();
+})
+
 
 const props = defineProps(['component'])
 </script>

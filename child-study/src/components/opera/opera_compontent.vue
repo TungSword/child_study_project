@@ -4,8 +4,13 @@
 </template>
 
 <script setup>
-import {shanghai_opera_video} from "@/constant/traditional_opera_video_constant.js"
-import {defineProps} from 'vue'
+import {defineProps, onMounted, ref} from 'vue'
+import {getShanghaiOperaVideo} from "@/util/resource.js";
 
 const props = defineProps(['component'])
+const shanghai_opera_video = ref()
+
+onMounted(async () => {
+  shanghai_opera_video.value = await getShanghaiOperaVideo()
+})
 </script>

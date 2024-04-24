@@ -12,15 +12,22 @@ import {
     getEnglishStandardUrl,
     getMonkeyPoliceStoryUrl,
     getPinyinVoiceUrl,
+    GIGANTOSAURUS_VIDEO_URL,
     MATH_SHUDU_URL,
     MONKEY_STORY_JSON_URL,
+    PAYMENT_CODE_WECHAT,
+    PAYMENT_CODE_ZFB,
+    PENELOPE_VIDEO_URL,
+    SHANGHAI_OPERA_VIDEO_URL,
     ULTRAMAN_STORY_JSON_URL,
     XIAO_XUE_CLASSICAL_CHINESE_URL,
-    XIAO_XUE_POETRY_JSON_URL,
+    XIAO_XUE_POETRY_JSON_URL
 } from "@/constant/resource_constant.js";
 import {queryData, saveData} from '@/util/indexeddb.js'
 
-const dbName = "voice_data_store"
+const voideDbName = "voice_data_store"
+
+const imageDbName = "image_date_store"
 
 function getResource(url) {
     return new Promise(resolve => {
@@ -37,6 +44,14 @@ function getResource(url) {
 }
 
 async function getVoiceUrl(url) {
+    return await getBlobUrl(url, voideDbName)
+}
+
+async function getImageUrl(url) {
+    return await getBlobUrl(url, imageDbName);
+}
+
+async function getBlobUrl(url, dbName) {
     const result = await queryData(dbName, url)
     if (result) {
         return URL.createObjectURL(result.data);
@@ -53,13 +68,13 @@ async function getVoiceUrl(url) {
 }
 
 async function getBigVoiceUrl(url) {
-    const result = await queryData(dbName, url)
+    const result = await queryData(voideDbName, url)
     if (result) {
         return URL.createObjectURL(result.data);
     }
     setTimeout(() => {
         servcie.get(url, {responseType: 'blob'}).then(response => {
-            saveData(dbName, {
+            saveData(voideDbName, {
                 url: url,
                 data: response
             })
@@ -120,6 +135,18 @@ export function getMathShudu() {
     return getResource(MATH_SHUDU_URL)
 }
 
+export function getGigantosaurusVideo() {
+    return getResource(GIGANTOSAURUS_VIDEO_URL)
+}
+
+export function getPenelopeVideo() {
+    return getResource(PENELOPE_VIDEO_URL)
+}
+
+export function getShanghaiOperaVideo() {
+    return getResource(SHANGHAI_OPERA_VIDEO_URL)
+}
+
 
 export async function getPinyinVoiceCacheUrl(param) {
     const url = getPinyinVoiceUrl(param);
@@ -139,4 +166,12 @@ export async function getEnglishLetterCacheUrl(param) {
 export async function getEnglishStandardCacheUrl(param) {
     const url = getEnglishStandardUrl(param);
     return await getVoiceUrl(url)
+}
+
+export async function getPaymentCodeWechatUrl() {
+    return await getImageUrl(PAYMENT_CODE_WECHAT)
+}
+
+export async function getPaymentCodeZfbUrl() {
+    return await getImageUrl(PAYMENT_CODE_ZFB)
 }

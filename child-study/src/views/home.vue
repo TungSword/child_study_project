@@ -32,11 +32,11 @@
     <el-row style="text-align: center">
       <el-col :span="12">
         <p>支付宝</p>
-        <el-image class="payment_code" :src="paymentCodeUrl" fit="fill"/>
+        <el-image class="payment_code" :src="paymentCodeZfbUrl" fit="fill"/>
       </el-col>
       <el-col :span="12">
         <p>微信</p>
-        <el-image class="payment_code" :src="paymentCodeUrl2" fit="fill"/>
+        <el-image class="payment_code" :src="paymentCodeWechatUrl" fit="fill"/>
       </el-col>
     </el-row>
 
@@ -57,12 +57,13 @@ import {onMounted, ref} from "vue";
 import {useRoute} from 'vue-router'
 import {HomeFilled, Message} from '@element-plus/icons-vue'
 import {content_list} from '@/constant/content_constant'
-import paymentCodeUrl from "@/assets/img/payment_code.jpg";
-import paymentCodeUrl2 from "@/assets/img/payment_code_2.jpg";
+import {getPaymentCodeWechatUrl, getPaymentCodeZfbUrl} from "@/util/resource.js";
 
 const route = useRoute();
 const homeName = ref("小於")
 const mailVisible = ref(false);
+const paymentCodeWechatUrl = ref();
+const paymentCodeZfbUrl = ref();
 
 function isShowElement(item) {
   if (item.owner) {
@@ -71,11 +72,13 @@ function isShowElement(item) {
   return item.show;
 }
 
-onMounted(() => {
+onMounted(async () => {
   const name = route.query.name;
   if (name) {
     homeName.value = name;
   }
+  paymentCodeWechatUrl.value = await getPaymentCodeWechatUrl();
+  paymentCodeZfbUrl.value = await getPaymentCodeZfbUrl();
 })
 
 const currentComponent = ref('home')
