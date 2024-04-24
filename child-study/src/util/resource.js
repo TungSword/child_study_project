@@ -11,7 +11,10 @@ import {
     getEnglishLetterUrl,
     getEnglishStandardUrl,
     getMonkeyPoliceStoryUrl,
+    getPhonicsJsonUrl,
+    getPhonicsVideoUrl,
     getPinyinVoiceUrl,
+    getWordVideoUrl,
     GIGANTOSAURUS_VIDEO_URL,
     MATH_SHUDU_URL,
     MONKEY_STORY_JSON_URL,
@@ -135,6 +138,11 @@ export function getMathShudu() {
     return getResource(MATH_SHUDU_URL)
 }
 
+export function getPhonicsJson(phonics) {
+    const url = getPhonicsJsonUrl(phonics);
+    return getResource(url)
+}
+
 export function getGigantosaurusVideo() {
     return getResource(GIGANTOSAURUS_VIDEO_URL)
 }
@@ -146,7 +154,6 @@ export function getPenelopeVideo() {
 export function getShanghaiOperaVideo() {
     return getResource(SHANGHAI_OPERA_VIDEO_URL)
 }
-
 
 export async function getPinyinVoiceCacheUrl(param) {
     const url = getPinyinVoiceUrl(param);
@@ -166,6 +173,16 @@ export async function getEnglishLetterCacheUrl(param) {
 export async function getEnglishStandardCacheUrl(param) {
     const url = getEnglishStandardUrl(param);
     return await getVoiceUrl(url)
+}
+
+export function getWordVideoCacheUrl(word) {
+    const url = getWordVideoUrl(word);
+    return getVoiceUrl(url);
+}
+
+export function getPhonicsVideoCacheUrl(video) {
+    const url = getPhonicsVideoUrl(video);
+    return getVoiceUrl(url);
 }
 
 export async function getPaymentCodeWechatUrl() {

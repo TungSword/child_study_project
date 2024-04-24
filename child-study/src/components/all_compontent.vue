@@ -11,6 +11,7 @@
   <ultraman_story v-if="props.component === 'ultraman_story'"/>
   <english_letters v-if="props.component === 'english_letters'"/>
   <english_standard v-if="props.component === 'english_standard'"/>
+  <english_phonics v-if="props.component === 'english_phonics'"/>
   <bilibili_video_player :video-list="penelope_video.videoList" :name="penelope_video.nameEn"
                          v-if="props.component === 'penelope'"/>
   <bilibili_video_player :video-list="gigantosaurus_video.videoList" :name="gigantosaurus_video.nameEn"

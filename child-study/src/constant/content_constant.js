@@ -60,6 +60,12 @@ export const content_list = [
         subject:'english'
     },
     {
+        name: "自然拼读",
+        component: "english_phonics",
+        show: true,
+        subject:'english',
+    },
+    {
         name: "蓝色小考拉",
         component: "penelope",
         show: true,

@@ -16,9 +16,16 @@ const RELAX_BILIB_PATH = "/relax/bilibili/";
 // 英语
 const ENGLISH_LETTER_PATH = "/english/letters/"
 const ENGLISH_STANDARD_PATH = "/english/english_standard/"
+
+// 自然拼读
+const PHONICS_JSON_PATH = "/english/phonics/";
+const PHONICS_VIDEO_PATH = "/english/phonics/";
+const WORD_VIDEO_PATH = "/english/words/";
+
 // 数学
 const MATH_PATH = "/math/"
 
+// 图片
 const IMAGE_PATH = "/image/";
 
 // allPinyin.json
@@ -75,10 +82,14 @@ export function getEnglishStandardUrl(param) {
     return `${VOICE_RESOURCE_URL}${ENGLISH_STANDARD_PATH}${param}.mp3`
 }
 
+export function getWordVideoUrl(word) {
+    return `${VOICE_RESOURCE_URL}${WORD_VIDEO_PATH}${word}`
+}
 
+export function getPhonicsVideoUrl(video) {
+    return `${VOICE_RESOURCE_URL}${PHONICS_VIDEO_PATH}${video}`
+}
 
-
-
-
-
-
+export function getPhonicsJsonUrl(phonics) {
+    return `${RESOURCE_URL}${PHONICS_JSON_PATH}${phonics}.json`
+}

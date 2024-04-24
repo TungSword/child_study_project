@@ -13,8 +13,8 @@
 
       <div v-if="currentComponent === 'home'">
         <el-row :gutter="20">
-          <el-col :span="12" v-for="(item, index) in content_list" :key="index" class="studyCom">
-            <el-card shadow="hover" @click="showComponent(item.component)" v-if="isShowElement(item)">
+          <el-col :span="12" class="studyCom" v-for="(item, index) in contentList" :key="index">
+            <el-card shadow="hover" @click="showComponent(item.component)">
               {{ item.name }}
             </el-card>
           </el-col>
@@ -49,7 +49,6 @@
     </template>
   </el-dialog>
 
-
 </template>
 
 <script setup>
@@ -59,26 +58,29 @@ import {HomeFilled, Message} from '@element-plus/icons-vue'
 import {content_list} from '@/constant/content_constant'
 import {getPaymentCodeWechatUrl, getPaymentCodeZfbUrl} from "@/util/resource.js";
 
+const contentList = ref()
 const route = useRoute();
 const homeName = ref("小於")
 const mailVisible = ref(false);
 const paymentCodeWechatUrl = ref();
 const paymentCodeZfbUrl = ref();
 
-function isShowElement(item) {
-  if (item.owner) {
-    return item.show || item.owner.indexOf(homeName.value) > -1;
-  }
-  return item.show;
-}
-
 onMounted(async () => {
   const name = route.query.name;
   if (name) {
     homeName.value = name;
   }
+  // 获取图片url
   paymentCodeWechatUrl.value = await getPaymentCodeWechatUrl();
   paymentCodeZfbUrl.value = await getPaymentCodeZfbUrl();
+
+  // 过滤内容
+  contentList.value = content_list.filter(item => {
+    if (item.owner) {
+      return item.show || item.owner.indexOf(homeName.value) > -1;
+    }
+    return item.show;
+  })
 })
 
 const currentComponent = ref('home')

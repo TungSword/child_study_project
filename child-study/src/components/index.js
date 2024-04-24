@@ -16,6 +16,7 @@ import english_standard from "@/components/english/english_standard.vue";
 import math_sudoku from '@/components/math/math_sudoku.vue';
 import bilibili_video_player from "@/components/english/bilibili_video_player.vue";
 import scrollbar from "@/components/common/scrollbar.vue"
+import english_phonics from "@/components/english/english_phonics.vue"
 
 export default {
     "all_compontent": all_compontent,
@@ -34,5 +35,6 @@ export default {
     "english_standard": english_standard,
     "math_sudoku": math_sudoku,
     "bilibili_video_player": bilibili_video_player,
-    "scrollbar": scrollbar
+    "scrollbar": scrollbar,
+    "english_phonics": english_phonics
 };
