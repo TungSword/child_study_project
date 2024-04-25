@@ -12,7 +12,7 @@
         <div v-if="phonicsShowList[i][j]">
           <el-divider/>
           <el-row v-for="(word, k) in data.baseWords" :key="k" style="margin-bottom: 10px">
-            <el-col :span="24">
+            <el-col :span="24" style="margin-bottom: 4px">
               <el-button type="primary" @click="palyWordAudio(word.audio)" style="width: 100%">{{
                   word.word
                 }}
@@ -32,14 +32,14 @@
           </el-button>
           <!-- more-->
           <div v-if="showMoreWord">
-            <el-row :gutter="20" v-for="(word, k) in data.moreWords" :key="k" style="margin-bottom: 10px">
-              <el-col :span="24">
+            <el-row v-for="(word, k) in data.moreWords" :key="k" style="margin-bottom: 10px">
+              <el-col :span="24" style="margin-bottom: 4px">
                 <el-button type="primary" @click="palyWordAudio(word.audio)" style="width: 100%">{{
                     word.word
                   }}
                 </el-button>
               </el-col>
-              <el-col :span="24" :offset="6" style="margin-bottom: 4px">
+              <el-col :span="24" style="margin-bottom: 4px">
               <span v-for="(standard, l) in word.englishStandards" :key="l" style="margin-right: 20px">
                 {{ standard }}
               </span>
