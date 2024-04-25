@@ -11,19 +11,19 @@
         </p>
         <div v-if="phonicsShowList[i][j]">
           <el-divider/>
-          <el-row :gutter="20" v-for="(word, k) in data.baseWords" :key="k" style="margin-bottom: 10px">
-            <el-col :span="18" :offset="6" style="margin-bottom: 4px">
-              <span v-for="(standard, l) in word.englishStandards" :key="l" style="margin-right: 30px">
-                {{ standard }}
-              </span>
-            </el-col>
-            <el-col :span="6" class="phonics_bottom">
+          <el-row v-for="(word, k) in data.baseWords" :key="k" style="margin-bottom: 10px">
+            <el-col :span="24">
               <el-button type="primary" @click="palyWordAudio(word.audio)" style="width: 100%">{{
                   word.word
                 }}
               </el-button>
             </el-col>
-            <el-col :span="18" class="phonics_bottom">
+            <el-col :span="24" style="margin-bottom: 4px">
+              <span v-for="(standard, l) in word.englishStandards" :key="l" style="margin-right: 30px">
+                {{ standard }}
+              </span>
+            </el-col>
+            <el-col :span="24" class="phonics_bottom">
               <p>{{ word.chinese }}</p>
             </el-col>
           </el-row>
@@ -33,18 +33,18 @@
           <!-- more-->
           <div v-if="showMoreWord">
             <el-row :gutter="20" v-for="(word, k) in data.moreWords" :key="k" style="margin-bottom: 10px">
-              <el-col :span="18" :offset="6" style="margin-bottom: 4px">
-              <span v-for="(standard, l) in word.englishStandards" :key="l" style="margin-right: 20px">
-                {{ standard }}
-              </span>
-              </el-col>
-              <el-col :span="6" class="phonics_bottom">
+              <el-col :span="24">
                 <el-button type="primary" @click="palyWordAudio(word.audio)" style="width: 100%">{{
                     word.word
                   }}
                 </el-button>
               </el-col>
-              <el-col :span="18" class="phonics_bottom">
+              <el-col :span="24" :offset="6" style="margin-bottom: 4px">
+              <span v-for="(standard, l) in word.englishStandards" :key="l" style="margin-right: 20px">
+                {{ standard }}
+              </span>
+              </el-col>
+              <el-col :span="24" class="phonics_bottom">
                 <p>{{ word.chinese }}</p>
               </el-col>
             </el-row>
