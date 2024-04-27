@@ -24,7 +24,8 @@ import {
     SHANGHAI_OPERA_VIDEO_URL,
     ULTRAMAN_STORY_JSON_URL,
     XIAO_XUE_CLASSICAL_CHINESE_URL,
-    XIAO_XUE_POETRY_JSON_URL
+    XIAO_XUE_POETRY_JSON_URL,
+    HUANGMEI_OPERA_VIDEO_URL
 } from "@/constant/resource_constant.js";
 import {queryData, saveData} from '@/util/indexeddb.js'
 
@@ -153,6 +154,9 @@ export function getPenelopeVideo() {
 
 export function getShanghaiOperaVideo() {
     return getResource(SHANGHAI_OPERA_VIDEO_URL)
+}
+export function getHuangmeiOperaVideo(){
+    return getResource(HUANGMEI_OPERA_VIDEO_URL);
 }
 
 export async function getPinyinVoiceCacheUrl(param) {

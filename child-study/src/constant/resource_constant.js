@@ -56,6 +56,7 @@ export const ULTRAMAN_STORY_JSON_URL = `${RESOURCE_URL}${RELAX_STORY_PATH}ultram
 export const GIGANTOSAURUS_VIDEO_URL = `${RESOURCE_URL}${RELAX_BILIB_PATH}gigantosaurus_video.json`;
 export const PENELOPE_VIDEO_URL = `${RESOURCE_URL}${RELAX_BILIB_PATH}penelope_video.json`;
 export const SHANGHAI_OPERA_VIDEO_URL = `${RESOURCE_URL}${RELAX_BILIB_PATH}shanghai_opera_video.json`;
+export const HUANGMEI_OPERA_VIDEO_URL = `${RESOURCE_URL}${RELAX_BILIB_PATH}huangmei_opera_video.json`;
 
 // 图片资源
 export const PAYMENT_CODE_WECHAT = `${RESOURCE_URL}${IMAGE_PATH}payment_code_wechat.jpg`;

@@ -3,7 +3,7 @@
     <div class="header">
       <el-button v-show="currentComponent !== 'home'" class="left" :icon="HomeFilled" circle
                  @click="showComponent('home')"/>
-      <span class="title">中国戏曲</span>
+      <span class="title" :class="{buttonShow : currentComponent === 'home'}">中国戏曲</span>
       <el-icon @click="showConnection" class="right">
         <Message/>
       </el-icon>
@@ -13,8 +13,8 @@
 
       <div v-if="currentComponent === 'home'">
         <el-row :gutter="20">
-          <el-col :span="12" v-for="(item, index) in opera_content_list" :key="index" class="studyCom">
-            <el-card shadow="hover" @click="showComponent(item.component)" v-if="isShowElement(item)">
+          <el-col :span="12" class="studyCom" v-for="(item, index) in contentList" :key="index">
+            <el-card shadow="hover" @click="showComponent(item.component)">
               {{ item.name }}
             </el-card>
           </el-col>
@@ -23,6 +23,31 @@
     </div>
   </div>
 
+  <el-dialog v-model="mailVisible" title="信息" width="80%">
+    <div>
+      <span><strong>E-Mail: </strong>tungsword_cn@qq.com</span>
+    </div>
+    <el-divider/>
+    <h3 style="text-align: center; margin-bottom: 20px">感谢捐赠</h3>
+    <el-row style="text-align: center">
+      <el-col :span="12">
+        <p>支付宝</p>
+        <el-image class="payment_code" :src="paymentCodeZfbUrl" fit="fill"/>
+      </el-col>
+      <el-col :span="12">
+        <p>微信</p>
+        <el-image class="payment_code" :src="paymentCodeWechatUrl" fit="fill"/>
+      </el-col>
+    </el-row>
+
+    <template #footer>
+      <div class="dialog-footer">
+        <el-button type="primary" @click="mailVisible = false">
+          OK
+        </el-button>
+      </div>
+    </template>
+  </el-dialog>
 
 </template>
 
@@ -31,20 +56,31 @@ import {onMounted, ref} from "vue";
 import {useRoute} from 'vue-router'
 import {HomeFilled, Message} from '@element-plus/icons-vue'
 import {opera_content_list} from '@/constant/content_constant'
-import {ElMessageBox} from 'element-plus'
+import {getPaymentCodeWechatUrl, getPaymentCodeZfbUrl} from "@/util/resource.js";
 
+const contentList = ref()
 const route = useRoute();
 const homeName = ref("小於")
+const mailVisible = ref(false);
+const paymentCodeWechatUrl = ref();
+const paymentCodeZfbUrl = ref();
 
-function isShowElement(item) {
-  return item.show;
-}
-
-onMounted(() => {
+onMounted(async () => {
   const name = route.query.name;
   if (name) {
     homeName.value = name;
   }
+  // 获取图片url
+  paymentCodeWechatUrl.value = await getPaymentCodeWechatUrl();
+  paymentCodeZfbUrl.value = await getPaymentCodeZfbUrl();
+
+  // 过滤内容
+  contentList.value = opera_content_list.filter(item => {
+    if (item.owner) {
+      return item.show || item.owner.indexOf(homeName.value) > -1;
+    }
+    return item.show;
+  })
 })
 
 const currentComponent = ref('home')
@@ -54,11 +90,7 @@ function showComponent(component) {
 }
 
 function showConnection() {
-  ElMessageBox.alert('E-Mail: tungsword_cn@qq.com', '联系方式', {
-    "show-close": false,
-    center: true,
-    confirmButtonText: 'OK',
-  })
+  mailVisible.value = true;
 }
 </script>
 
@@ -83,11 +115,16 @@ function showConnection() {
       align-self: center;
     }
 
+    .buttonShow {
+      margin-left: 39.6px;
+    }
+
     .left {
       margin-left: 8px;
     }
 
     .right {
+      margin-left: 8px;
       margin-right: 16px;
       font-size: 16px;
     }
@@ -103,6 +140,10 @@ function showConnection() {
     margin-bottom: 20px;
     text-align: center;
   }
+}
+
+.payment_code {
+  width: 100%;
 }
 
 </style>

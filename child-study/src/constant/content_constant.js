@@ -97,6 +97,11 @@ export const opera_content_list = [
         name: "沪剧",
         component: "shanghai_opera",
         show: true,
+    },
+    {
+        name: "黄梅戏",
+        component: "huangmei_opera",
+        show: true,
     }
 ]
 
