@@ -147,7 +147,6 @@ onMounted(async () => {
 async function selectContent(value, start) {
   loading.value = true;
   poetryOptions.value = []
-  cacheContent.value.index = 0
   const method = getTitleMethod(value)
   entityList.value = await method()
   poetryOptions.value = entityList.value.map((item, index) => {
