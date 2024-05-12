@@ -68,13 +68,13 @@ export const content_list = [
     {
         name: "蓝色小考拉",
         component: "penelope",
-        show: true,
+        show: false,
         subject:'english',
     },
     {
         name: "小恐龙大冒险",
         component: "gigantosaurus",
-        show: true,
+        show: false,
         subject:'english',
     },
     {
