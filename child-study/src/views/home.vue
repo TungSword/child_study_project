@@ -23,31 +23,7 @@
     </div>
   </div>
 
-  <el-dialog v-model="mailVisible" title="信息" width="80%">
-    <div>
-      <span><strong>E-Mail: </strong>tungsword_cn@qq.com</span>
-    </div>
-    <el-divider/>
-    <h3 style="text-align: center; margin-bottom: 20px">感谢捐赠</h3>
-    <el-row style="text-align: center">
-      <el-col :span="12">
-        <p>支付宝</p>
-        <el-image class="payment_code" :src="paymentCodeZfbUrl" fit="fill"/>
-      </el-col>
-      <el-col :span="12">
-        <p>微信</p>
-        <el-image class="payment_code" :src="paymentCodeWechatUrl" fit="fill"/>
-      </el-col>
-    </el-row>
-
-    <template #footer>
-      <div class="dialog-footer">
-        <el-button type="primary" @click="mailVisible = false">
-          OK
-        </el-button>
-      </div>
-    </template>
-  </el-dialog>
+  <pay_message :visible="mailVisible" @visible="visible"></pay_message>
 
 </template>
 
@@ -56,23 +32,17 @@ import {onMounted, ref} from "vue";
 import {useRoute} from 'vue-router'
 import {HomeFilled, Message} from '@element-plus/icons-vue'
 import {content_list} from '@/constant/content_constant'
-import {getPaymentCodeWechatUrl, getPaymentCodeZfbUrl} from "@/util/resource.js";
 
 const contentList = ref()
 const route = useRoute();
 const homeName = ref("小於")
 const mailVisible = ref(false);
-const paymentCodeWechatUrl = ref();
-const paymentCodeZfbUrl = ref();
 
 onMounted(async () => {
   const name = route.query.name;
   if (name) {
     homeName.value = name;
   }
-  // 获取图片url
-  paymentCodeWechatUrl.value = await getPaymentCodeWechatUrl();
-  paymentCodeZfbUrl.value = await getPaymentCodeZfbUrl();
 
   // 过滤内容
   contentList.value = content_list.filter(item => {
@@ -91,6 +61,10 @@ function showComponent(component) {
 
 function showConnection() {
   mailVisible.value = true;
+}
+
+function visible(item) {
+  mailVisible.value = item;
 }
 </script>
 

@@ -1,5 +1,6 @@
 import all_compontent from "@/components/all_compontent.vue";
 import opera_compontent from "@/components/opera/opera_compontent.vue";
+import pay_message from "@/components/common/pay_message.vue";
 
 import math_calc from "@/components/math/math_calc.vue";
 import order_pinyin from "@/components/chinese/pinyin/order_pinyin.vue";
@@ -15,8 +16,8 @@ import english_letters from "@/components/english/english_letters.vue";
 import english_standard from "@/components/english/english_standard.vue";
 import math_sudoku from '@/components/math/math_sudoku.vue';
 import bilibili_video_player from "@/components/english/bilibili_video_player.vue";
-import scrollbar from "@/components/common/scrollbar.vue"
-import english_phonics from "@/components/english/english_phonics.vue"
+import scrollbar from "@/components/common/scrollbar.vue";
+import english_phonics from "@/components/english/english_phonics.vue";
 
 export default {
     "all_compontent": all_compontent,
@@ -36,5 +37,6 @@ export default {
     "math_sudoku": math_sudoku,
     "bilibili_video_player": bilibili_video_player,
     "scrollbar": scrollbar,
-    "english_phonics": english_phonics
+    "english_phonics": english_phonics,
+    "pay_message": pay_message
 };
