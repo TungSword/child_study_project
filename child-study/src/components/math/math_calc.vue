@@ -17,14 +17,14 @@
       <span>{{ second }}</span>
       <span>=</span>
       <br>
-      <el-input-number ref="resultRef" resize="true" size="large" class="result_input" v-model="result"
+      <el-input-number ref="resultRef" resize="true" size="large" class="result_input" v-model="result" :disabled="resultDisabled"
                        :controls="false"></el-input-number>
       <br>
       <el-button class="result_button" type="primary" @click="checkResult">{{ buttonName }}</el-button>
       <br>
     </div>
     <div>
-      <el-result v-if="calcSum > 0 && resultVisible" :icon="resultIcon" :title="resultInfo"/>
+      <el-result v-if="successCount > 0" :icon="resultIcon" :title="`答对【${this.successCount}】题啦!`"/>
     </div>
 
   </div>
@@ -44,12 +44,10 @@ export default {
       methods: ["+", "-"],
       refresh: false,
       buttonName: "确 认",
-      calcSum: 0,
+      resultDisabled: false,
       errorCount: 0,
       successCount: 0,
-      resultIcon: "",
-      resultInfo: "",
-      resultVisible: true,
+      resultIcon: "success",
       caclMode: 20,
       caclSelect: [
         {
@@ -84,6 +82,7 @@ export default {
   },
   methods: {
     init() {
+      this.resultDisabled = false;
       this.methodCode = Math.floor(Math.random() * 10) % 2
       if (this.methodCode === 1) {
         this.first = Math.floor(Math.random() * this.caclMode)
@@ -110,50 +109,41 @@ export default {
       return calcResult;
     },
     checkResult() {
-      if (this.errorCount >= 3 && !this.refresh) {
-        this.result = this.calcResult()
-        this.resultInfo = `答案是【${this.result}】，继续努力哦！`
-        this.resultIcon = "error"
-        this.refresh = true
-        this.buttonName = "下一题"
+      // 防止误触
+      if(!this.result && String(this.result).length < 1){
+        this.$message('你还没有填写答案！');
         return;
       }
+
       if (this.refresh) {
-        if (this.errorCount >= 3){
-          this.resultVisible = false;
-        }
         this.init();
         return;
       }
-      this.resultVisible = true;
+
+      // 判断计算是否正确
       if (this.result === this.calcResult()) {
         this.refresh = true
         this.buttonName = "下一题"
         this.successCount++;
-        this.calcSum++;
-        this.resultInfo = `恭喜你，连续答对【${this.successCount}】题了！`
-        this.resultIcon = "success"
+        this.$message.success(`恭喜你，答对了！`);
       } else {
         this.result = ""
-        if (this.errorCount === 0) {
-          this.calcSum++;
-        }
         this.errorCount++;
-        this.resultInfo = `答案是【${this.result}】，继续努力哦！`
-        this.resultIcon = "error"
-        if (this.successCount >= 10) {
-          this.resultInfo = "回答错误，很遗憾连胜失败"
-        } else {
-          this.resultInfo = "回答错误。"
+        // 同一题目错误三次，直接给出答案
+        if (this.errorCount > 2){
+          this.result = this.calcResult()
+          this.$message.error(`答案是【${this.result}】，继续努力哦！`);
+          this.refresh = true
+          this.buttonName = "下一题"
+          this.resultDisabled = true;
+        }else {
+          this.$message.error('答错了，继续努力！');
+          this.$refs.resultRef.focus();
         }
-        this.successCount = 0;
-        this.$refs.resultRef.focus();
       }
     },
     changeCalcMode() {
       localStorage.setItem("match_calc_mode", this.caclMode)
-      this.resultVisible = false;
-      this.successCount = 0;
       this.init();
     }
   }
