@@ -26,7 +26,7 @@ import {onBeforeUnmount, onMounted, ref} from 'vue'
 
 const plans = ref([
   {
-    content: "写拼音",
+    content: "写数学",
     time: 20,
     startTime: null,
     endTime: null,
@@ -40,6 +40,13 @@ const plans = ref([
     showContent: ""
   },
   {
+    content: "学拼音",
+    time: 20,
+    startTime: null,
+    endTime: null,
+    showContent: ""
+  },
+  {
     content: "读英语",
     time: 10,
     startTime: null,
@@ -47,14 +54,7 @@ const plans = ref([
     showContent: ""
   },
   {
-    content: "写数学一",
-    time: 20,
-    startTime: null,
-    endTime: null,
-    showContent: ""
-  },
-  {
-    content: "写数学二",
+    content: "写数学",
     time: 20,
     startTime: null,
     endTime: null,
@@ -62,8 +62,8 @@ const plans = ref([
   }
 ]);
 // 开始时间
-const startHour = 17;
-const startMinute = 0;
+const startHour = 7;
+const startMinute = 20;
 // 休息时间，分钟
 const freeTime = 5;
 let taskInterVal = ref();
