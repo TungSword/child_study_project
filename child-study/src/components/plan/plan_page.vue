@@ -17,7 +17,7 @@
     <p>剩余时间：{{ currentPlan.time }}</p>
   </el-card>
   <el-card v-else style="margin-top: 20px">
-    <h3>计划未开始</h3>
+    <h3>任务未开始</h3>
   </el-card>
 </template>
 
