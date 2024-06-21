@@ -68,7 +68,12 @@ const startMinute = 20;
 const freeTime = 5;
 let taskInterVal = ref();
 let showCurrentPlan = ref(false);
-const currentPlan = ref({})
+const currentPlan = ref({
+  content: "",
+  minutes: 0,
+  seconds: 0,
+  time: ""
+})
 
 onBeforeUnmount(() => {
   clearInterval(taskInterVal.value)
