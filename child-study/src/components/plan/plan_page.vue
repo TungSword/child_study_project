@@ -22,7 +22,7 @@
 </template>
 
 <script setup>
-import {onMounted, ref} from 'vue'
+import {onBeforeUnmount, onMounted, ref} from 'vue'
 
 const plans = ref([
   {
@@ -66,9 +66,13 @@ const startHour = 17;
 const startMinute = 0;
 // 休息时间，分钟
 const freeTime = 5;
-let taskInterVal = null;
+let taskInterVal = ref();
 let showCurrentPlan = ref(false);
 const currentPlan = ref({})
+
+onBeforeUnmount(() => {
+  clearInterval(taskInterVal.value)
+})
 
 onMounted(async () => {
   const startDate = new Date()
@@ -88,12 +92,8 @@ onMounted(async () => {
     plan.showContent = `${i + 1}、${plan.content}：${plan.time}分钟，${startTime} - ${endTime}`
     calcTime = calcTime + (plan.time + freeTime) * 60 * 1000;
   }
-  if (taskInterVal) {
-    console.log("clear task")
-    clearInterval(taskInterVal)
-  }
 
-  taskInterVal = setInterval(() => {
+  taskInterVal.value = setInterval(() => {
     startTask()
   }, 1000)
 })
