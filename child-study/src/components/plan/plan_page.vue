@@ -2,7 +2,7 @@
   <el-card>
     <template #header>
       <div class="card-header">
-        <h3>每日计划</h3>
+        <h3>每日任务</h3>
       </div>
     </template>
     <p v-for="plan in plans" style="margin-bottom: 8px">{{ plan.showContent }}</p>
@@ -62,8 +62,8 @@ const plans = ref([
   }
 ]);
 // 开始时间
-const startHour = 17;
-const startMinute = 0;
+const startHour = 15;
+const startMinute = 20;
 // 休息时间，分钟
 const freeTime = 5;
 let taskInterVal = ref();
@@ -107,8 +107,18 @@ function startTask() {
       const time = Math.floor((plan.endTime.getTime() - now.getTime()) / 1000)
       const minutes = Math.floor(time / 60)
       const seconds = time % 60
+      const currentContent = `当前任务：${plan.content}`
+      if (currentContent !== currentPlan.value.content) {
+        const msg = new SpeechSynthesisUtterance(`当前任务是${plan.content}`)
+        window.speechSynthesis.speak(msg)
+      } else if (currentPlan.value.minutes !== minutes) {
+        const msg = new SpeechSynthesisUtterance(`${plan.content}任务剩余时间${minutes}分钟`)
+        window.speechSynthesis.speak(msg)
+      }
       currentPlan.value = {
-        content: `当前任务：${plan.content}`,
+        content: currentContent,
+        minutes: minutes,
+        seconds: seconds,
         time: `${String(minutes).length === 2 ? minutes : '0' + minutes}:${String(seconds).length === 2 ? seconds : '0' + seconds}`
       }
       return;
@@ -120,8 +130,18 @@ function startTask() {
         const time = Math.floor((plan.startTime.getTime() - now.getTime()) / 1000)
         const minutes = Math.floor(time / 60)
         const seconds = time % 60
+        const currentContent = "休息一下..."
+        if (currentContent !== currentPlan.value.content) {
+          const msg = new SpeechSynthesisUtterance(`休息时间到了`)
+          window.speechSynthesis.speak(msg)
+        } else if (currentPlan.value.minutes !== minutes) {
+          const msg = new SpeechSynthesisUtterance(`休息剩余时间${minutes}分钟`)
+          window.speechSynthesis.speak(msg)
+        }
         currentPlan.value = {
-          content: "休息一下...",
+          content: currentContent,
+          minutes: minutes,
+          seconds: seconds,
           time: `${String(minutes).length === 2 ? minutes : '0' + minutes}:${String(seconds).length === 2 ? seconds : '0' + seconds}`
         }
         return;
