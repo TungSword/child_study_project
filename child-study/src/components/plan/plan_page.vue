@@ -62,8 +62,8 @@ const plans = ref([
   }
 ]);
 // 开始时间
-const startHour = 7;
-const startMinute = 20;
+const startHour = 17;
+const startMinute = 0;
 // 休息时间，分钟
 const freeTime = 5;
 let taskInterVal = ref();
