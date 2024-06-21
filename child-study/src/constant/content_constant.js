@@ -90,6 +90,13 @@ export const content_list = [
         subject:'relax',
         owner:['小於']
     },
+    {
+        name: "每日计划",
+        component: "planPage",
+        show: false,
+        subject:'relax',
+        owner:['小於']
+    },
 ]
 
 export const opera_content_list = [
