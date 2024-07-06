@@ -88,7 +88,7 @@ export const content_list = [
         component: "monkeyPoliceStory",
         show: false,
         subject:'relax',
-        owner:[]
+        owner:['小於']
     },
     {
         name: "每日计划",
