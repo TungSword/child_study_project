@@ -31,7 +31,7 @@
             more
           </el-button>
           <!-- more-->
-          <div v-if="showMoreWord">
+          <div v-if="showMoreWord && false">
             <el-row v-for="(word, k) in data.moreWords" :key="k" style="margin-bottom: 10px">
               <el-col :span="24" style="margin-bottom: 4px">
                 <el-button type="primary" @click="palyWordAudio(word.audio)" style="width: 100%">{{
