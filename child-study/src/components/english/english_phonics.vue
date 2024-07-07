@@ -9,7 +9,7 @@
           <span>{{ data.letter }}</span>
           <span>[{{ data.standard }}]</span>
         </p>
-        <div v-if="phonicsShowList[i][j]">
+        <div v-if="phonicsShowList[i][j] && false">
           <el-divider/>
           <el-row v-for="(word, k) in data.baseWords" :key="k" style="margin-bottom: 10px">
             <el-col :span="24" style="margin-bottom: 4px">
