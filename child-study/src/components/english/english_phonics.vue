@@ -9,7 +9,7 @@
           <span>{{ data.letter }}</span>
           <span>[{{ data.standard }}]</span>
         </p>
-        <div v-if="phonicsShowList[i][j] && false">
+        <div v-if="phonicsShowList[i][j]">
           <el-divider/>
           <el-row v-for="(word, k) in data.baseWords" :key="k" style="margin-bottom: 10px">
             <el-col :span="24" style="margin-bottom: 4px">
@@ -31,7 +31,7 @@
             more
           </el-button>
           <!-- more-->
-          <div v-if="showMoreWord && false">
+          <div v-if="showMoreWord">
             <el-row v-for="(word, k) in data.moreWords" :key="k" style="margin-bottom: 10px">
               <el-col :span="24" style="margin-bottom: 4px">
                 <el-button type="primary" @click="palyWordAudio(word.audio)" style="width: 100%">{{
