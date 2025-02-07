@@ -68,27 +68,28 @@ export const content_list = [
     {
         name: "蓝色小考拉",
         component: "penelope",
-        show: false,
+        show: true,
         subject:'english',
     },
     {
         name: "小恐龙大冒险",
         component: "gigantosaurus",
-        show: false,
+        show: true,
         subject:'english',
     },
     {
         name: "奥特曼故事",
         component: "ultraman_story",
         show: true,
-        subject:'relax'
+        subject:'relax',
+        owner:['小於']
     },
     {
         name: "猴子警长探案记",
         component: "monkeyPoliceStory",
         show: true,
         subject:'relax',
-        owner:[]
+        owner:['小於']
     },
     {
         name: "每日计划",
