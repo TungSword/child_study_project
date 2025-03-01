@@ -94,6 +94,7 @@ export const content_list = [
     {
         name:"哈利 · 波特",
         component: "harryPotter",
+        show: true,
         subject: 'relax',
         owner:['小於']
     }
