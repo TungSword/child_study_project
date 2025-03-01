@@ -98,6 +98,12 @@ export const content_list = [
         subject:'relax',
         owner:['小於']
     },
+    {
+        name:"哈利 · 波特",
+        component: "harryPotter",
+        subject: 'relax',
+        owner:['小於']
+    }
 ]
 
 export const opera_content_list = [

@@ -17,6 +17,7 @@
   <bilibili_video_player :video-list="gigantosaurus_video.videoList" :name="gigantosaurus_video.nameEn"
                          v-if="props.component === 'gigantosaurus'"/>
   <plan_page v-if="props.component === 'planPage'"/>
+  <harry_potter v-if="props.component === 'harryPotter'"/>
 </template>
 
 <script setup>

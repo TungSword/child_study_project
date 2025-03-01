@@ -19,6 +19,7 @@ import bilibili_video_player from "@/components/english/bilibili_video_player.vu
 import scrollbar from "@/components/common/scrollbar.vue";
 import english_phonics from "@/components/english/english_phonics.vue";
 import plan_page from "@/components/plan/plan_page.vue";
+import harry_potter from "@/components/english/harry_potter.vue"
 
 export default {
     "all_compontent": all_compontent,
@@ -40,5 +41,6 @@ export default {
     "scrollbar": scrollbar,
     "english_phonics": english_phonics,
     "pay_message": pay_message,
-    "plan_page":plan_page
+    "plan_page":plan_page,
+    "harry_potter": harry_potter
 };

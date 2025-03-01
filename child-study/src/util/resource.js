@@ -25,7 +25,8 @@ import {
     ULTRAMAN_STORY_JSON_URL,
     XIAO_XUE_CLASSICAL_CHINESE_URL,
     XIAO_XUE_POETRY_JSON_URL,
-    HUANGMEI_OPERA_VIDEO_URL
+    HUANGMEI_OPERA_VIDEO_URL,
+    HARRY_POTTER_URL
 } from "@/constant/resource_constant.js";
 import {queryData, saveData} from '@/util/indexeddb.js'
 
@@ -157,6 +158,10 @@ export function getShanghaiOperaVideo() {
 }
 export function getHuangmeiOperaVideo(){
     return getResource(HUANGMEI_OPERA_VIDEO_URL);
+}
+
+export function getHarryPotterResource(param){
+    return getResource(HARRY_POTTER_URL + param);
 }
 
 export async function getPinyinVoiceCacheUrl(param) {

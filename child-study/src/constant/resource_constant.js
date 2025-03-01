@@ -62,6 +62,8 @@ export const HUANGMEI_OPERA_VIDEO_URL = `${RESOURCE_URL}${RELAX_BILIB_PATH}huang
 export const PAYMENT_CODE_WECHAT = `${RESOURCE_URL}${IMAGE_PATH}payment_code_wechat.jpg`;
 export const PAYMENT_CODE_ZFB = `${RESOURCE_URL}${IMAGE_PATH}payment_code_zfb.jpg`;
 
+// Harry Potter source
+export const HARRY_POTTER_URL = "https://harry-porrer.pages.dev/Harry Potter/";
 
 // a.mp3
 export function getPinyinVoiceUrl(param) {
