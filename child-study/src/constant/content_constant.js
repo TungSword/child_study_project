@@ -92,13 +92,6 @@ export const content_list = [
         owner:['小於']
     },
     {
-        name: "每日计划",
-        component: "planPage",
-        show: false,
-        subject:'relax',
-        owner:['小於']
-    },
-    {
         name:"哈利 · 波特",
         component: "harryPotter",
         subject: 'relax',
