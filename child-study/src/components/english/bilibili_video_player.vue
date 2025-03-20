@@ -1,7 +1,7 @@
 <template>
   <iframe style="width: 100%; height: 300px"
           :src="videoUrl"
-          scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+          scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
   <scrollbar @selectVideo="selectVideo" :contents="contents"
              :selectName="selectName"></scrollbar>
 </template>
