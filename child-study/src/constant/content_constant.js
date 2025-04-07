@@ -204,13 +204,6 @@ export const category_content_list = [
                 subject: 'math'
             },
             {
-                name: "数独",
-                component: "mathSudoku",
-                show: true,
-                subject: 'math'
-            },
-
-            {
                 name: "唐诗三百首",
                 component: "chinesePoetry",
                 type: "content",
@@ -226,6 +219,12 @@ export const category_content_list = [
         type: "group",
         depth: 1,
         subContents:[
+              {
+                name: "数独",
+                component: "mathSudoku",
+                show: true,
+                subject: 'math'
+            },
             {
                 name: "奥特曼故事",
                 component: "ultraman_story",
