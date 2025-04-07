@@ -1,5 +1,5 @@
 <template>
-  <el-dialog v-model="mailVisible" title="信息" width="80%">
+  <el-dialog v-model="mailVisible" title="信息" width="80%" @close="hiddenInfo">
     <div>
       <span><strong>E-Mail: </strong>tungsword_cn@qq.com</span>
     </div>
