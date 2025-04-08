@@ -17,6 +17,7 @@ import {
     getWordVideoUrl,
     GIGANTOSAURUS_VIDEO_URL,
     MATH_SHUDU_URL,
+    MATH_CALCULATION_CARD_URL,
     MONKEY_STORY_JSON_URL,
     PAYMENT_CODE_WECHAT,
     PAYMENT_CODE_ZFB,
@@ -138,6 +139,10 @@ export function getUltramanStory() {
 
 export function getMathShudu() {
     return getResource(MATH_SHUDU_URL)
+}
+
+export function getMathCalculationCard(){
+    return getResource(MATH_CALCULATION_CARD_URL)
 }
 
 export function getPhonicsJson(phonics) {
