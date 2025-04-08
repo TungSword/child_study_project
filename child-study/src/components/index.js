@@ -20,6 +20,7 @@ import scrollbar from "@/components/common/scrollbar.vue";
 import english_phonics from "@/components/english/english_phonics.vue";
 import plan_page from "@/components/plan/plan_page.vue";
 import harry_potter from "@/components/english/harry_potter.vue"
+import math_calculation_card from "@/components/math/math_calculation_card.vue"
 
 export default {
     "all_compontent": all_compontent,
@@ -42,5 +43,6 @@ export default {
     "english_phonics": english_phonics,
     "pay_message": pay_message,
     "plan_page":plan_page,
-    "harry_potter": harry_potter
+    "harry_potter": harry_potter,
+    "math_calculation_card": math_calculation_card
 };
