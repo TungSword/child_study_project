@@ -44,6 +44,9 @@ export const CHINESE_SHIJING_JSON_URL = `${RESOURCE_URL}${CHINESE_POETRY_PATH}ch
 // shudu.json
 export const MATH_SHUDU_URL = `${RESOURCE_URL}${MATH_PATH}shudu.json`;
 
+// 数据卡片
+export const MATH_CALCULATION_CARD_URL = `${RESOURCE_URL}${MATH_PATH}calculation_card.json`;
+
 // english_standard.json
 export const ENGLISH_STANDARD_URL = `${RESOURCE_URL}${ENGLISH_STANDARD_PATH}english_standard.json`;
 
