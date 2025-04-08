@@ -18,6 +18,7 @@
                          v-if="props.component === 'gigantosaurus'"/>
   <plan_page v-if="props.component === 'planPage'"/>
   <harry_potter v-if="props.component === 'harryPotter'"/>
+  <math_calculation_card v-if="props.component === 'mathCalculationCard'"/>
 </template>
 
 <script setup>
