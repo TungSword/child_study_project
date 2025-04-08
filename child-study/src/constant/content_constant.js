@@ -97,6 +97,13 @@ export const content_list = [
         show: true,
         subject: 'relax',
         owner: ['小於']
+    },
+    {
+        name: "速算卡片",
+        component: "mathCalculationCard",
+        type: "content",
+        show: true,
+        subject: 'math'
     }
 ]
 
@@ -211,6 +218,14 @@ export const category_content_list = [
                 show: true,
                 subject: 'chinese'
             },
+            {
+                name: "速算卡片",
+                component: "mathCalculationCard",
+                type: "content",
+                depth: 2,
+                show: true,
+                subject: 'math'
+            }
         ]
     },
     {
