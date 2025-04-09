@@ -16,7 +16,7 @@
                          v-if="props.component === 'penelope'"/>
   <bilibili_video_player :video-list="gigantosaurus_video.videoList" :name="gigantosaurus_video.nameEn"
                          v-if="props.component === 'gigantosaurus'"/>
-   <bilibili_video_player :video-list="chessTutorials_video.videoList" :name="getChessTutorials_video.nameEn"
+   <bilibili_video_player :video-list="chessTutorials_video.videoList" :name="chessTutorials_video.nameEn"
                          v-if="props.component === 'chessTutorials'"/>
   <plan_page v-if="props.component === 'planPage'"/>
   <harry_potter v-if="props.component === 'harryPotter'"/>
