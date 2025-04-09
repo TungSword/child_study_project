@@ -104,6 +104,13 @@ export const content_list = [
         type: "content",
         show: true,
         subject: 'math'
+    },
+    {
+        name: "国际象棋",
+        component: "chessTutorials",
+        type: "content",
+        show: true,
+        subject: 'relax'
     }
 ]
 
@@ -266,6 +273,14 @@ export const category_content_list = [
                 show: true,
                 subject: 'relax',
                 owner: ['小於']
+            }，
+            {
+              name: "国际象棋",
+              component: "chessTutorials",
+              type: "content",
+              depth: 2,
+              show: true,
+              subject: 'relax',
             }
         ]
     }
