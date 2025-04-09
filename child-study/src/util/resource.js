@@ -16,6 +16,7 @@ import {
     getPinyinVoiceUrl,
     getWordVideoUrl,
     GIGANTOSAURUS_VIDEO_URL,
+    CHESS_TUTORIALS_URL,
     MATH_SHUDU_URL,
     MATH_CALCULATION_CARD_URL,
     MONKEY_STORY_JSON_URL,
@@ -152,6 +153,10 @@ export function getPhonicsJson(phonics) {
 
 export function getGigantosaurusVideo() {
     return getResource(GIGANTOSAURUS_VIDEO_URL)
+}
+
+export function getChessTutorials(){
+    return getResource(CHESS_TUTORIALS_URL)
 }
 
 export function getPenelopeVideo() {
