@@ -16,6 +16,8 @@
                          v-if="props.component === 'penelope'"/>
   <bilibili_video_player :video-list="gigantosaurus_video.videoList" :name="gigantosaurus_video.nameEn"
                          v-if="props.component === 'gigantosaurus'"/>
+   <bilibili_video_player :video-list="chessTutorials_video.videoList" :name="getChessTutorials_video.nameEn"
+                         v-if="props.component === 'chessTutorials'"/>
   <plan_page v-if="props.component === 'planPage'"/>
   <harry_potter v-if="props.component === 'harryPotter'"/>
   <math_calculation_card v-if="props.component === 'mathCalculationCard'"/>
@@ -23,13 +25,15 @@
 
 <script setup>
 import {defineProps, onMounted, ref} from 'vue'
-import {getGigantosaurusVideo, getPenelopeVideo} from "@/util/resource.js";
+import {getGigantosaurusVideo, getPenelopeVideo, getChessTutorials} from "@/util/resource.js";
 
 const penelope_video = ref();
 const gigantosaurus_video = ref();
+const chessTutorials_video = ref();
 onMounted(async () => {
   gigantosaurus_video.value = await getGigantosaurusVideo();
   penelope_video.value = await getPenelopeVideo();
+  chessTutorials_video.value = await getChessTutorials();
 })
 
 
