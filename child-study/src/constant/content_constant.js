@@ -273,7 +273,7 @@ export const category_content_list = [
                 show: true,
                 subject: 'relax',
                 owner: ['小於']
-            }，
+            },
             {
               name: "国际象棋",
               component: "chessTutorials",
